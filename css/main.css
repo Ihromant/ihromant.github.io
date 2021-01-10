@@ -2,7 +2,6 @@
 .modal-window {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -12,7 +11,35 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+.no-spacing table, .no-spacing tr, .no-spacing td {
+  border-spacing: 0px;
+}
+
+.battle-field {
+  position: relative;
+  width: 800px;
+  height: 600px;
+}
+
+.battle-field > * {
+  position: absolute;
+}
+
+.modal-brown {
+  background-image:url(https://ihromant.github.io/img/background/brown.jpg);
+  border:1px solid yellow;
+  color:white;
+}
+
+.scroll-list {
+  display: block;
+  width: 480px;
+  height: 360px;
+  overflow-y: auto;
+}
+
 .number-box {
+  position: absolute;
   border: 1px solid yellow;
   background-color: blue;
   text-align: center;
@@ -20,6 +47,14 @@
   height: 12px;
   font-size: 12px;
   color: yellow;
+}
+
+#tooltip {
+  position: absolute;
+  padding: 6px;
+  background: #ffd;
+  border: 1px #886 solid;
+  border-radius: 5px;
 }
 
 .cursor-cancel {
