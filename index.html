@@ -5,160 +5,315 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <meta name="google-signin-client_id"
           content="235960911800-avpo5llp7b16s4sr4rqap30u8759t3kl.apps.googleusercontent.com">
-    <link rel="stylesheet" href="https://ihromant.github.io/css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script type="text/javascript" charset="utf-8" src="https://ihromant.github.io/classes.js"></script>
+    <script type="text/javascript" charset="utf-8" src="classes.js"></script>
 </head>
 <body onload="main()">
 <div id="wrapper" style="height: 1000px;">
     <table style="border-spacing: 0px;">
         <tr>
-            <td>
-                <svg width="80" height="556">
-                    <g id="x-hero" display="none">
-                        <rect width="80" height="195" fill="crimson" stroke="yellow" x="0" y="0"></rect>
-                        <rect width="80" height="64" fill="none" stroke="yellow" x="0" y="6"></rect>
-                        <image id="x-port" x="11" y="5"></image>
-                        <rect width="80" height="55" fill="none" stroke="yellow" x="0" y="70"></rect>
-                        <rect width="76" height="51" fill="saddlebrown" stroke="yellow" x="2" y="72"></rect>
-                        <text x="3" y="82" fill="white" font-size="10">Attack:</text>
-                        <text x="3" y="94" fill="white" font-size="10">Defense:</text>
-                        <text x="3" y="106" fill="white" font-size="10">Power:</text>
-                        <text x="3" y="118" fill="white" font-size="10">Knowledge:</text>
-                        <text id="x-att" x="65" y="82" fill="white" font-size="10">1</text>
-                        <text id="x-def" x="65" y="94" fill="white" font-size="10">3</text>
-                        <text id="x-pow" x="65" y="106" fill="white" font-size="10">1</text>
-                        <text id="x-knw" x="65" y="118" fill="white" font-size="10">1</text>
-                        <rect width="80" height="35" fill="none" stroke="yellow" x="0" y="125"></rect>
-                        <rect width="76" height="31" fill="saddlebrown" stroke="yellow" x="2" y="127"></rect>
-                        <text x="3" y="140" fill="white" font-size="10">Morale:</text>
-                        <text x="3" y="155" fill="white" font-size="10">Luck:</text>
-                        <text id="x-mor" x="65" y="140" fill="white" font-size="10">0</text>
-                        <text id="x-lck" x="65" y="155" fill="white" font-size="10">0</text>
-                        <rect width="80" height="35" fill="none" stroke="yellow" x="0" y="160"></rect>
-                        <rect width="76" height="31" fill="saddlebrown" stroke="yellow" x="2" y="162"></rect>
-                        <text x="25" y="175" fill="white" font-size="10">Mana:</text>
-                        <text id="x-mana" x="25" y="187" fill="white" font-size="10">10/10</text>
-                    </g>
-                    <g id="x-unit" display="none">
-                        <rect width="80" height="195" fill="crimson" stroke="yellow" x="0" y="300"></rect>
-                        <rect width="80" height="64" fill="none" stroke="yellow" x="0" y="306"></rect>
-                        <image id="xu-port" x="11" y="305"></image>
-                        <rect width="80" height="55" fill="none" stroke="yellow" x="0" y="370"></rect>
-                        <rect width="76" height="51" fill="saddlebrown" stroke="yellow" x="2" y="372"></rect>
-                        <text id="xu-cnt" x="55" y="365" fill="white" font-size="12">1</text>
-                        <text x="3" y="382" fill="white" font-size="10">Attack:</text>
-                        <text x="3" y="394" fill="white" font-size="10">Defense:</text>
-                        <text x="3" y="406" fill="white" font-size="10">Damage:</text>
-                        <text x="3" y="418" fill="white" font-size="10">Health:</text>
-                        <text id="xu-att" x="55" y="382" fill="white" font-size="10">1</text>
-                        <text id="xu-def" x="55" y="394" fill="white" font-size="10">3</text>
-                        <text id="xu-dam" x="55" y="406" fill="white" font-size="10">1</text>
-                        <text id="xu-hlt" x="55" y="418" fill="white" font-size="10">1</text>
-                        <rect width="80" height="35" fill="none" stroke="yellow" x="0" y="425"></rect>
-                        <rect width="76" height="31" fill="saddlebrown" stroke="yellow" x="2" y="427"></rect>
-                        <text x="3" y="440" fill="white" font-size="10">Morale:</text>
-                        <text x="3" y="455" fill="white" font-size="10">Luck:</text>
-                        <text id="xu-mor" x="55" y="440" fill="white" font-size="10">0</text>
-                        <text id="xu-lck" x="55" y="455" fill="white" font-size="10">0</text>
-                    </g>
-                </svg>
+            <td class="no-spacing" width="80" height="556">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <table style="width:80px;height:170px;">
+                                <tbody id="x-hero" style="display:none;font-size:8px;" class="modal-brown">
+                                <tr>
+                                    <td style="text-align:center">
+                                        <img id="x-port" width="58" height="64" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td>Attack:</td>
+                                                <td id="x-att">1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Defense:</td>
+                                                <td id="x-def">3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Power:</td>
+                                                <td id="x-pow">1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Knowledge:</td>
+                                                <td id="x-knw">1</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td>Attack:</td>
+                                                <td id="x-mor">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Knowledge:</td>
+                                                <td id="x-lck">0</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td>Mana:</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="x-mana">10/10</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="80" height="150"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table style="width:80px;height:170px;">
+                                <tbody id="x-unit" style="display:none;font-size:8px;" class="modal-brown">
+                                <tr>
+                                    <td style="text-align:center">
+                                        <img id="xu-port" width="58" height="64" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="xu-cnt">10</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td>Attack:</td>
+                                                <td id="xu-att"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Defense:</td>
+                                                <td id="xu-def"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Damage:</td>
+                                                <td id="xu-dam"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Health:</td>
+                                                <td id="xu-hlt"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td>Morale:</td>
+                                                <td id="xu-mor">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Luck:</td>
+                                                <td id="xu-lck">0</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </td>
             <td>
-                <svg width="800" height="600">
-                    <image id="background" width="800" height="556"></image>
-                    <foreignObject width="150" height="175" x="-30" y="-30">
-                        <canvas id="x-hero-canvas" width="150" height="175"></canvas>
-                    </foreignObject>
-                    <foreignObject width="150" height="175" x="680" y="-30">
-                        <canvas id="o-hero-canvas" width="150" height="175"></canvas>
-                    </foreignObject>
-                    <g id="hexagons"></g>
-                    <g id="units"></g>
-                    <g id="objects"></g>
-                    <rect id="controls" width="800" height="600" fill="white" fill-opacity="0"></rect>
-                    <g id="bottom-controls">
-                        <rect width="800" height="72" fill="crimson" stroke="yellow" x="0" y="528"></rect>
-                        <rect width="796" height="68" fill="saddlebrown" stroke="none" x="2" y="530"></rect>
-                        <image id="settings" x="0" y="540"
-                               href="https://ihromant.github.io/img/controls/settings.png"></image>
-                        <image id="surrender" x="48" y="540"
-                               href="https://ihromant.github.io/img/controls/surrender.png"></image>
-                        <image id="flee" x="96" y="540" href="https://ihromant.github.io/img/controls/flee.png"></image>
-                        <image id="auto" x="144" y="540"
-                               href="https://ihromant.github.io/img/controls/auto.png"></image>
-                        <image id="cast" x="656" y="540"
-                               href="https://ihromant.github.io/img/controls/cast.png"></image>
-                        <image id="wait" x="704" y="540"
-                               href="https://ihromant.github.io/img/controls/wait.png"></image>
-                        <image id="defend" x="752" y="540"
-                               href="https://ihromant.github.io/img/controls/defend.png"></image>
-                    </g>
-                    <g>
-                        <rect id="tooltip-background" display="none" stroke="#886" fill="#ffd" rx="5" ry="5"></rect>
-                        <text id="tooltip" display="none">Tooltip</text>
-                    </g>
-                </svg>
+                <div class="battle-field">
+                    <img id="background" style="width:800px;height: 556px"
+                         src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+                    <img id="x-hero-canvas" width="150" height="175" style="top:-30px;left:-30px;"
+                         src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+                    <img id="o-hero-canvas" width="150" height="175" style="top:-30px;left:680px;"
+                         src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+                    <svg id="hexagons" width="800" height="600"></svg>
+                    <div id="units" style="position:relative;"></div>
+                    <div id="objects" style="position:relative;"></div>
+                    <div id="controls" style="width:800px;height:600px;background-color:#ffffff00"></div>
+                    <div id="bottom-controls" style="top:528px;left:0px;width:800px;height:72px;"></div>
+                    <div id="tooltip" style="display:none;"></div>
+                </div>
             </td>
-            <td>
-                <svg width="80" height="556">
-                    <g id="o-hero" display="none">
-                        <rect width="80" height="195" fill="crimson" stroke="yellow" x="0" y="0"></rect>
-                        <rect width="80" height="64" fill="none" stroke="yellow" x="0" y="6"></rect>
-                        <image id="o-port" x="11" y="5"></image>
-                        <rect width="80" height="55" fill="none" stroke="yellow" x="0" y="70"></rect>
-                        <rect width="76" height="51" fill="saddlebrown" stroke="yellow" x="2" y="72"></rect>
-                        <text x="3" y="82" fill="white" font-size="10">Attack:</text>
-                        <text x="3" y="94" fill="white" font-size="10">Defense:</text>
-                        <text x="3" y="106" fill="white" font-size="10">Power:</text>
-                        <text x="3" y="118" fill="white" font-size="10">Knowledge:</text>
-                        <text id="o-att" x="65" y="82" fill="white" font-size="10">1</text>
-                        <text id="o-def" x="65" y="94" fill="white" font-size="10">3</text>
-                        <text id="o-pow" x="65" y="106" fill="white" font-size="10">1</text>
-                        <text id="o-knw" x="65" y="118" fill="white" font-size="10">1</text>
-                        <rect width="80" height="35" fill="none" stroke="yellow" x="0" y="125"></rect>
-                        <rect width="76" height="31" fill="saddlebrown" stroke="yellow" x="2" y="127"></rect>
-                        <text x="3" y="140" fill="white" font-size="10">Morale:</text>
-                        <text x="3" y="155" fill="white" font-size="10">Luck:</text>
-                        <text id="o-mor" x="65" y="140" fill="white" font-size="10">0</text>
-                        <text id="o-lck" x="65" y="155" fill="white" font-size="10">0</text>
-                        <rect width="80" height="35" fill="none" stroke="yellow" x="0" y="160"></rect>
-                        <rect width="76" height="31" fill="saddlebrown" stroke="yellow" x="2" y="162"></rect>
-                        <text x="25" y="175" fill="white" font-size="10">Mana:</text>
-                        <text id="o-mana" x="25" y="187" fill="white" font-size="10">10/10</text>
-                    </g>
-                    <g id="o-unit" display="none">
-                        <rect width="80" height="195" fill="crimson" stroke="yellow" x="0" y="300"></rect>
-                        <rect width="80" height="64" fill="none" stroke="yellow" x="0" y="306"></rect>
-                        <image id="ou-port" x="11" y="305"></image>
-                        <rect width="80" height="55" fill="none" stroke="yellow" x="0" y="370"></rect>
-                        <rect width="76" height="51" fill="saddlebrown" stroke="yellow" x="2" y="372"></rect>
-                        <text id="ou-cnt" x="55" y="365" fill="white" font-size="12">1</text>
-                        <text x="3" y="382" fill="white" font-size="10">Attack:</text>
-                        <text x="3" y="394" fill="white" font-size="10">Defense:</text>
-                        <text x="3" y="406" fill="white" font-size="10">Damage:</text>
-                        <text x="3" y="418" fill="white" font-size="10">Health:</text>
-                        <text id="ou-att" x="55" y="382" fill="white" font-size="10">1</text>
-                        <text id="ou-def" x="55" y="394" fill="white" font-size="10">3</text>
-                        <text id="ou-dam" x="55" y="406" fill="white" font-size="10">1</text>
-                        <text id="ou-hlt" x="55" y="418" fill="white" font-size="10">1</text>
-                        <rect width="80" height="35" fill="none" stroke="yellow" x="0" y="425"></rect>
-                        <rect width="76" height="31" fill="saddlebrown" stroke="yellow" x="2" y="427"></rect>
-                        <text x="3" y="440" fill="white" font-size="10">Morale:</text>
-                        <text x="3" y="455" fill="white" font-size="10">Luck:</text>
-                        <text id="ou-mor" x="55" y="440" fill="white" font-size="10">0</text>
-                        <text id="ou-lck" x="55" y="455" fill="white" font-size="10">0</text>
-                    </g>
-                </svg>
+            <td class="no-spacing" width="80" height="556">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <table style="width:80px;height:170px;">
+                                <tbody id="o-hero" style="display:none;font-size:8px;" class="modal-brown">
+                                <tr>
+                                    <td style="text-align:center">
+                                        <img id="o-port" width="58" height="64" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td>Attack:</td>
+                                                <td id="o-att">1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Defense:</td>
+                                                <td id="o-def">3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Power:</td>
+                                                <td id="o-pow">1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Knowledge:</td>
+                                                <td id="o-knw">1</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td>Attack:</td>
+                                                <td id="o-mor">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Knowledge:</td>
+                                                <td id="o-lck">0</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td>Mana:</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="o-mana">10/10</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="80" height="150"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table style="width:80px;height:170px;">
+                                <tbody id="o-unit" style="display:none;font-size:8px;" class="modal-brown">
+                                <tr>
+                                    <td style="text-align:center;">
+                                        <img id="ou-port" width="58" height="64" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="ou-cnt">10</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td>Attack:</td>
+                                                <td id="ou-att"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Defense:</td>
+                                                <td id="ou-def"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Damage:</td>
+                                                <td id="ou-dam"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Health:</td>
+                                                <td id="ou-hlt"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td>Morale:</td>
+                                                <td id="ou-mor">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Luck:</td>
+                                                <td id="ou-lck">0</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </td>
         </tr>
     </table>
 </div>
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
-<div id="modal-window" class="modal-window">
-    <!-- Modal content -->
-    <div id="modal-content" class="modal-content">
-    </div>
+<div id="modals" style="display:none;">
+    <table id="waiting-modal" class="modal-brown">
+        <tbody>
+        <tr>
+            <td id="waiting-status"></td>
+        </tr>
+        <tr>
+            <td>
+                <img id="waiting-anim" width="350" height="280" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="></td>
+        </tr>
+        </tbody>
+    </table>
+    <table id="settings-modal" class="modal-brown"></table>
+    <table id="log-modal" class="modal-brown scroll-list">
+        <tbody id="log-content">
+        </tbody>
+    </table>
 </div>
 </body>
 </html>
