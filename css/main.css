@@ -57,6 +57,87 @@
   border-radius: 5px;
 }
 
+.select-unit {
+  background-image: url(https://ihromant.github.io/img/background/blue.jpg);
+}
+
+.town-img {
+  width: 48px;
+  height: 32px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.final-select-img {
+  width: 58px;
+  height: 64px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.town-img.active {
+  border: 2px solid yellow;
+}
+
+.town-img:not(.active):hover {
+  border: 2px solid orange;
+}
+
+.final-select-img:hover {
+  border: 1px solid orange;
+}
+
+.hero-screen {
+  position: relative;
+}
+
+.hero-screen:before, .hero-screen:after, .hero-screen > *:before, .hero-screen > *:after {
+  display: block;
+  content: "";
+  width: 46px;
+  height: 46px;
+  position: absolute;
+}
+
+.hero-screen:before {
+  background-image: url(https://ihromant.github.io/img/parts/left_top.png);
+  top: 0px;
+  left: 0px;
+}
+
+.hero-screen:after {
+  background-image: url(https://ihromant.github.io/img/parts/right_top.png);
+  top: 0px;
+  right: 0px;
+}
+
+.hero-screen > *:before {
+  background-image: url(https://ihromant.github.io/img/parts/left_bot.png);
+  bottom: 0px;
+  left: 0px;
+}
+
+.hero-screen > *:after {
+  background-image: url(https://ihromant.github.io/img/parts/right_bot.png);
+  bottom: 0px;
+  right: 0px;
+}
+
+.unit-portrait {
+  width: 58px;
+  height: 64px;
+  border: 1px solid #80808036;
+}
+
+.artifact-slot {
+  width: 44px;
+  height: 44px;
+  padding: 0px;
+  background: url(https://ihromant.github.io/img/icons/44x44/sec_skill/empty.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .cursor-cancel {
   cursor: url(https://ihromant.github.io/cursors/Cursor47.cur), auto;
 }

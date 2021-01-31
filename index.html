@@ -10,23 +10,191 @@
     <script type="text/javascript" charset="utf-8" src="classes.js"></script>
 </head>
 <body onload="main()">
-<div id="wrapper" style="height: 1000px;">
-    <table style="border-spacing: 0px;">
-        <tr>
-            <td class="no-spacing" width="80" height="556">
-                <table>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <table style="width:80px;height:170px;">
-                                <tbody id="x-hero" style="display:none;font-size:8px;" class="modal-brown">
-                                <tr>
-                                    <td style="text-align:center">
-                                        <img id="x-port" width="58" height="64" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<table style="border:1px solid yellow;background:url(https://ihromant.github.io/img/background/brown.jpg);">
+    <tbody>
+    <tr>
+        <td>
+            <div style="color:white;">Choose background</div>
+            <select id="choose-background">
+                <option value="sand">Sand</option>
+                <option value="grass">Grass</option>
+                <option value="dirt">Dirt</option>
+                <option value="lava">Lava</option>
+                <option value="subterranean">Subterranean</option>
+                <option value="rough">Rough</option>
+                <option value="snow">Snow</option>
+                <option value="swamp">Swamp</option>
+            </select>
+        </td>
+        <td>
+            <table id="x-hero" style="border:1px solid yellow;height:80px;background:url(https://ihromant.github.io/img/background/blue.jpg);">
+                <tbody>
+                <tr>
+                    <td>
+                        <img id="x-portrait" src="https://ihromant.github.io/img/icons/48x32/default/unknown_hero.png">
+                    </td>
+                    <td class="unit-portrait">
+                        <img id="x-unit-portrait-0" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                    </td>
+                    <td class="unit-portrait">
+                        <img id="x-unit-portrait-1" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                    </td>
+                    <td class="unit-portrait">
+                        <img id="x-unit-portrait-2" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                    </td>
+                    <td class="unit-portrait">
+                        <img id="x-unit-portrait-3" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                    </td>
+                    <td class="unit-portrait">
+                        <img id="x-unit-portrait-4" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                    </td>
+                    <td class="unit-portrait">
+                        <img id="x-unit-portrait-5" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                    </td>
+                    <td class="unit-portrait">
+                        <img id="x-unit-portrait-6" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                    </td>
+                    <td>
+                        <img id="start-battle-button" src="https://ihromant.github.io/img/icons/ok.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="height:20px;">
+                        <span id="x-unit-number-0" style="width:50px;color:white;display:none;"></span>
+                    </td>
+                    <td>
+                        <span id="x-unit-number-1" style="width:50px;color:white;display:none;"></span>
+                    </td>
+                    <td>
+                        <span id="x-unit-number-2" style="width:50px;color:white;display:none;"></span>
+                    </td>
+                    <td>
+                        <span id="x-unit-number-3" style="width:50px;color:white;display:none;"></span>
+                    </td>
+                    <td>
+                        <span id="x-unit-number-4" style="width:50px;color:white;display:none;"></span>
+                    </td>
+                    <td>
+                        <span id="x-unit-number-5" style="width:50px;color:white;display:none;"></span>
+                    </td>
+                    <td>
+                        <span id="x-unit-number-6" style="width:50px;color:white;display:none;"></span>
+                    </td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div style="color:white;">Choose opp type</div>
+            <select id="choose-opponent-type">
+                <option value="hero">Hero</option>
+                <option value="neutral">Neutral</option>
+                <option value="bank">Creature bank</option>
+                <option value="garrison">Garrison</option>
+            </select>
+        </td>
+        <td>
+            <table id="o-hero" style="border:1px solid yellow;height:80px;background:url(https://ihromant.github.io/img/background/blue.jpg);">
+                <tbody>
+                <tr>
+                    <td>
+                        <img id="o-portrait" src="https://ihromant.github.io/img/icons/48x32/default/unknown_hero.png">
+                    </td>
+                    <td class="unit-portrait">
+                        <img id="o-unit-portrait-0" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                    </td>
+                    <td class="unit-portrait">
+                        <img id="o-unit-portrait-1" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                    </td>
+                    <td class="unit-portrait">
+                        <img id="o-unit-portrait-2" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                    </td>
+                    <td class="unit-portrait">
+                        <img id="o-unit-portrait-3" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                    </td>
+                    <td class="unit-portrait">
+                        <img id="o-unit-portrait-4" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                    </td>
+                    <td class="unit-portrait">
+                        <img id="o-unit-portrait-5" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                    </td>
+                    <td class="unit-portrait">
+                        <img id="o-unit-portrait-6" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="height:20px;">
+                        <span id="o-unit-number-0" style="width:50px;color:white;display:none;"></span>
+                    </td>
+                    <td>
+                        <span id="o-unit-number-1" style="width:50px;color:white;display:none;"></span>
+                    </td>
+                    <td>
+                        <span id="o-unit-number-2" style="width:50px;color:white;display:none;"></span>
+                    </td>
+                    <td>
+                        <span id="o-unit-number-3" style="width:50px;color:white;display:none;"></span>
+                    </td>
+                    <td>
+                        <span id="o-unit-number-4" style="width:50px;color:white;display:none;"></span>
+                    </td>
+                    <td>
+                        <span id="o-unit-number-5" style="width:50px;color:white;display:none;"></span>
+                    </td>
+                    <td>
+                        <span id="o-unit-number-6" style="width:50px;color:white;display:none;"></span>
+                    </td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <table id="o-neutrals" style="display:none;border:1px solid yellow;height:80px;background:url(https://ihromant.github.io/img/background/blue.jpg);">
+                <tr>
+                    <td class="unit-portrait">
+                        <img id="o-neutral-portrait" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                    </td>
+                    <td>Upgraded? <input id="o-neutral-upgraded" type="checkbox"></td>
+                    <td>
+                        Additional stack?
+                        <select id="o-neutral-additional">
+                            <option value="equal">0</option>
+                            <option value="less">-1</option>
+                            <option value="more">+1</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height:20px;">
+                        <input id="o-neutral-number" type="number" style="width:50px;" min="1" max="9999" value="1">
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div id="modals" style="display:none;">
+    <div id="wrapper" style="height: 650px;">
+        <table style="border-spacing: 0px;">
+            <tr>
+                <td class="no-spacing" width="80" height="556">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <table style="width:80px;height:170px;">
+                                    <tbody id="x-hero-sided" style="display:none;font-size:8px;" class="modal-brown">
+                                    <tr><td style="text-align:center"><img id="x-port" width="58" height="64" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="></td></tr>
+                                    <tr><td>
                                         <table>
                                             <tbody>
                                             <tr>
@@ -47,10 +215,8 @@
                                             </tr>
                                             </tbody>
                                         </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+                                    </td></tr>
+                                    <tr><td>
                                         <table>
                                             <tbody>
                                             <tr>
@@ -63,10 +229,8 @@
                                             </tr>
                                             </tbody>
                                         </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+                                    </td></tr>
+                                    <tr><td>
                                         <table>
                                             <tbody>
                                             <tr>
@@ -77,29 +241,19 @@
                                             </tr>
                                             </tbody>
                                         </table>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="80" height="150"></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table style="width:80px;height:170px;">
-                                <tbody id="x-unit" style="display:none;font-size:8px;" class="modal-brown">
-                                <tr>
-                                    <td style="text-align:center">
-                                        <img id="xu-port" width="58" height="64" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="xu-cnt">10</td>
-                                </tr>
-                                <tr>
-                                    <td>
+                                    </td></tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr><td width="80" height="150"></td></tr>
+                        <tr>
+                            <td>
+                                <table style="width:80px;height:170px;">
+                                    <tbody id="x-unit" style="display:none;font-size:8px;" class="modal-brown">
+                                    <tr><td style="text-align:center"><img id="xu-port" width="58" height="64" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="></td></tr>
+                                    <tr><td id="xu-cnt">10</td></tr>
+                                    <tr><td>
                                         <table>
                                             <tbody>
                                             <tr>
@@ -120,10 +274,8 @@
                                             </tr>
                                             </tbody>
                                         </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+                                    </td></tr>
+                                    <tr><td>
                                         <table>
                                             <tbody>
                                             <tr>
@@ -136,45 +288,36 @@
                                             </tr>
                                             </tbody>
                                         </table>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </td>
-            <td>
-                <div class="battle-field">
-                    <img id="background" style="width:800px;height: 556px"
-                         src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
-                    <img id="x-hero-canvas" width="150" height="175" style="top:-30px;left:-30px;"
-                         src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
-                    <img id="o-hero-canvas" width="150" height="175" style="top:-30px;left:680px;"
-                         src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
-                    <svg id="hexagons" width="800" height="600"></svg>
-                    <div id="units" style="position:relative;"></div>
-                    <div id="objects" style="position:relative;"></div>
-                    <div id="controls" style="width:800px;height:600px;background-color:#ffffff00"></div>
-                    <div id="bottom-controls" style="top:528px;left:0px;width:800px;height:72px;"></div>
-                    <div id="tooltip" style="display:none;"></div>
-                </div>
-            </td>
-            <td class="no-spacing" width="80" height="556">
-                <table>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <table style="width:80px;height:170px;">
-                                <tbody id="o-hero" style="display:none;font-size:8px;" class="modal-brown">
-                                <tr>
-                                    <td style="text-align:center">
-                                        <img id="o-port" width="58" height="64" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+                                    </td></tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <div class="battle-field">
+                        <img id="background" style="width:800px;height: 556px" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+                        <img id="x-hero-canvas" width="150" height="175" style="top:-30px;left:-30px;" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+                        <img id="o-hero-canvas" width="150" height="175" style="top:-30px;left:680px;" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+                        <svg id="hexagons" width="800" height="600"></svg>
+                        <div id="units" style="position:relative;"></div>
+                        <div id="objects" style="position:relative;"></div>
+                        <div id="controls" style="width:800px;height:600px;background-color:#ffffff00"></div>
+                        <div id="bottom-controls" style="top:528px;left:0px;width:800px;height:72px;"></div>
+                        <div id="tooltip" style="display:none;"></div>
+                    </div>
+                </td>
+                <td class="no-spacing" width="80" height="556">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <table style="width:80px;height:170px;">
+                                    <tbody id="o-hero-sided" style="display:none;font-size:8px;" class="modal-brown">
+                                    <tr><td style="text-align:center"><img id="o-port" width="58" height="64" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="></td></tr>
+                                    <tr><td>
                                         <table>
                                             <tbody>
                                             <tr>
@@ -195,10 +338,8 @@
                                             </tr>
                                             </tbody>
                                         </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+                                    </td></tr>
+                                    <tr><td>
                                         <table>
                                             <tbody>
                                             <tr>
@@ -211,10 +352,8 @@
                                             </tr>
                                             </tbody>
                                         </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+                                    </td></tr>
+                                    <tr><td>
                                         <table>
                                             <tbody>
                                             <tr>
@@ -225,29 +364,19 @@
                                             </tr>
                                             </tbody>
                                         </table>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="80" height="150"></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table style="width:80px;height:170px;">
-                                <tbody id="o-unit" style="display:none;font-size:8px;" class="modal-brown">
-                                <tr>
-                                    <td style="text-align:center;">
-                                        <img id="ou-port" width="58" height="64" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="ou-cnt">10</td>
-                                </tr>
-                                <tr>
-                                    <td>
+                                    </td></tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr><td width="80" height="150"></td></tr>
+                        <tr>
+                            <td>
+                                <table style="width:80px;height:170px;">
+                                    <tbody id="o-unit" style="display:none;font-size:8px;" class="modal-brown">
+                                    <tr><td style="text-align:center;"><img id="ou-port" width="58" height="64" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="></td></tr>
+                                    <tr><td id="ou-cnt">10</td></tr>
+                                    <tr><td>
                                         <table>
                                             <tbody>
                                             <tr>
@@ -268,10 +397,8 @@
                                             </tr>
                                             </tbody>
                                         </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+                                    </td></tr>
+                                    <tr><td>
                                         <table>
                                             <tbody>
                                             <tr>
@@ -284,7 +411,466 @@
                                             </tr>
                                             </tbody>
                                         </table>
+                                    </td></tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <table id="waiting-modal" class="modal-brown">
+        <tbody>
+        <tr>
+            <td id="waiting-status"></td>
+        </tr>
+        <tr>
+            <td><img id="waiting-anim" width="350" height="280" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="></td>
+        </tr>
+        </tbody>
+    </table>
+    <table id="settings-modal" class="modal-brown"></table>
+    <table id="log-modal" class="modal-brown scroll-list">
+        <tbody id="log-content">
+        </tbody>
+    </table>
+    <table id="select-unit-modal" class="select-unit">
+        <tbody>
+        <tr>
+            <td>
+                <table>
+                    <tbody>
+                    <tr id="castle-row"></tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tbody>
+                    <tr id="top-selection-row"></tr>
+                    <tr id="bot-selection-row"></tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table id="hero-modal" style="border:1px solid yellow;width:600px;height:600px;background:url(https://ihromant.github.io/img/background/brown.jpg);">
+        <tbody>
+        <tr>
+            <td>
+                <table style="width:600px;height:600px;">
+                    <tbody>
+                    <tr>
+                        <td class="hero-screen" style="border:1px solid yellow;height:calc(100% - 80px);">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <img id="hero-modal-portrait" src="https://ihromant.github.io/img/icons/58x64/hero/ciele.png">
+                                                            </td>
+                                                            <td style="border:1px solid #80808036;">
+                                                                <div id="hero-modal-heroname" style="color:yellow;">Ciele</div>
+                                                                <div id="hero-modal-herodata" style="color:white;">Level 1, Elementalist</div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table style="border:1px solid #80808036;">
+                                                        <tr>
+                                                            <td style="color:yellow;width:50px;font-size:10px;text-align:center;">Attack</td>
+                                                            <td style="color:yellow;width:50px;font-size:10px;text-align:center;">Defense</td>
+                                                            <td style="color:yellow;width:50px;font-size:10px;text-align:center;">Power</td>
+                                                            <td style="color:yellow;width:50px;font-size:10px;text-align:center;">Knowledge</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <td style="width:50px;text-align:center;"><img src="https://ihromant.github.io/img/icons/44x44/default/attack.png"></td>
+                                                            <td style="width:50px;text-align:center;"><img src="https://ihromant.github.io/img/icons/44x44/default/defense.png"></td>
+                                                            <td style="width:50px;text-align:center;"><img src="https://ihromant.github.io/img/icons/44x44/default/power.png"></td>
+                                                            <td style="width:50px;text-align:center;"><img src="https://ihromant.github.io/img/icons/44x44/default/knowledge.png"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table style="border:1px solid #80808036;">
+                                                        <tr>
+                                                            <td style="color:white;width:50px;text-align:center;">
+                                                                <div style="display:flex;flex-direction:row;">
+                                                                    <span id="hero-modal-mod-attack">0(</span>
+                                                                    <input id="hero-modal-attack-input" type="number" style="width:20px;" min="0" max="99" value="0">
+                                                                    <span>)</span>
+                                                                </div>
+                                                            </td>
+                                                            <td style="color:white;width:50px;text-align:center;">
+                                                                <div style="display:flex;flex-direction:row;">
+                                                                    <span id="hero-modal-mod-defense">0(</span>
+                                                                    <input id="hero-modal-defense-input" type="number" style="width:20px;" min="0" max="99" value="0">
+                                                                    <span>)</span>
+                                                                </div>
+                                                            </td>
+                                                            <td style="color:white;width:50px;text-align:center;">
+                                                                <div style="display:flex;flex-direction:row;">
+                                                                    <span id="hero-modal-mod-power">1(</span>
+                                                                    <input id="hero-modal-power-input" type="number" style="width:20px;" min="1" max="99" value="1">
+                                                                    <span>)</span>
+                                                                </div>
+                                                            </td>
+                                                            <td style="color:white;width:50px;text-align:center;">
+                                                                <div style="display:flex;flex-direction:row;">
+                                                                    <span id="hero-modal-mod-knowledge">1(</span>
+                                                                    <input id="hero-modal-knowledge-input" type="number" style="width:20px;" min="1" max="99" value="1">
+                                                                    <span>)</span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <div style="display:flex;flex-direction:row;">
+                                                                    <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+                                                                    <div>
+                                                                        <div style="color:yellow;">Speciality</div>
+                                                                        <div style="color:white;">Magic arrow</div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div style="display:flex;flex-direction:row;justify-content:center;">
+                                                                    <img id="hero-modal-morale" style="width:42px;height:38px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                    <img id="hero-modal-luck" style="width:42px;height:38px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div style="display:flex;flex-direction:row;">
+                                                                    <img src="https://ihromant.github.io/img/icons/44x44/default/experience.png">
+                                                                    <div>
+                                                                        <div style="color:yellow;">Experience</div>
+                                                                        <div style="color:white;">51</div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div style="display:flex;flex-direction:row;">
+                                                                    <img src="https://ihromant.github.io/img/icons/44x44/default/mana.png">
+                                                                    <div>
+                                                                        <div style="color:yellow;">Mana points</div>
+                                                                        <div style="color:white;">30/30</div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div id="hero-modal-skill-0" style="display:flex;flex-direction:row;">
+                                                                    <img src="https://ihromant.github.io/img/icons/44x44/sec_skill/wisdom_basic.png">
+                                                                    <div>
+                                                                        <div style="color:white;">Basic</div>
+                                                                        <div style="color:white;">Wisdom</div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div id="hero-modal-skill-1" style="display:flex;flex-direction:row;">
+                                                                    <img src="https://ihromant.github.io/img/icons/44x44/sec_skill/empty.png">
+                                                                    <span></span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div id="hero-modal-skill-2" style="display:flex;flex-direction:row;">
+                                                                    <img src="https://ihromant.github.io/img/icons/44x44/sec_skill/empty.png">
+                                                                    <span></span>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div id="hero-modal-skill-3" style="display:flex;flex-direction:row;">
+                                                                    <img src="https://ihromant.github.io/img/icons/44x44/sec_skill/empty.png">
+                                                                    <span></span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div id="hero-modal-skill-4" style="display:flex;flex-direction:row;">
+                                                                    <img src="https://ihromant.github.io/img/icons/44x44/sec_skill/empty.png">
+                                                                    <span></span>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div id="hero-modal-skill-5" style="display:flex;flex-direction:row;">
+                                                                    <img src="https://ihromant.github.io/img/icons/44x44/sec_skill/empty.png">
+                                                                    <span></span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div id="hero-modal-skill-6" style="display:flex;flex-direction:row;">
+                                                                    <img src="https://ihromant.github.io/img/icons/44x44/sec_skill/empty.png">
+                                                                    <span></span>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div id="hero-modal-skill-7" style="display:flex;flex-direction:row;">
+                                                                    <img src="https://ihromant.github.io/img/icons/44x44/sec_skill/empty.png">
+                                                                    <span></span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
                                     </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <td style="width:120px;">
+                                                                <table>
+                                                                    <tr style="height:40px;"></tr>
+                                                                    <tr>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-weapon" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-ring-0" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr style="height:20px;"></tr>
+                                                                    <tr>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-misc-0" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2">
+                                                                            <div style="position:relative;left:15px;" class="artifact-slot">
+                                                                                <img id="unit-modal-misc-1" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2">
+                                                                            <div style="position:relative;left:30px;" class="artifact-slot">
+                                                                                <img id="unit-modal-misc-2" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-misc-3" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-misc-4" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td>
+                                                                <table>
+                                                                    <tr>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-helm" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-necklace" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-torso" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr style="height:100px;"></tr>
+                                                                    <tr>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-feet" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td>
+                                                                <table>
+                                                                    <tr>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-ballista" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-ammo-cart" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-first-aid-tent" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-catapult" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr style="height:10px;"></tr>
+                                                                    <tr>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-shield" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-ring-1" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr style="height:5px;"></tr>
+                                                                    <tr>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-cape" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr style="height:10px;"></tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td class="artifact-slot">
+                                                                            <img id="unit-modal-spell-book" style="width:44px;height:44px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <td class="artifact-slot"></td>
+                                                            <td class="artifact-slot"></td>
+                                                            <td class="artifact-slot"></td>
+                                                            <td class="artifact-slot"></td>
+                                                            <td class="artifact-slot"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid yellow;height:80px;background:url(https://ihromant.github.io/img/background/blue.jpg);">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td class="unit-portrait">
+                                        <img id="hero-modal-unit-portrait-0" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                                    </td>
+                                    <td class="unit-portrait">
+                                        <img id="hero-modal-unit-portrait-1" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                                    </td>
+                                    <td class="unit-portrait">
+                                        <img id="hero-modal-unit-portrait-2" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                                    </td>
+                                    <td class="unit-portrait">
+                                        <img id="hero-modal-unit-portrait-3" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                                    </td>
+                                    <td class="unit-portrait">
+                                        <img id="hero-modal-unit-portrait-4" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                                    </td>
+                                    <td class="unit-portrait">
+                                        <img id="hero-modal-unit-portrait-5" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                                    </td>
+                                    <td class="unit-portrait">
+                                        <img id="hero-modal-unit-portrait-6" src="https://ihromant.github.io/img/icons/58x64/default/add.png">
+                                    </td>
+                                    <td>
+                                        <img id="hero-modal-ok" src="https://ihromant.github.io/img/icons/ok.png">
+                                        <img id="hero-modal-cancel" src="https://ihromant.github.io/img/icons/cancel.png">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="height:20px;">
+                                        <div style="display:flex;flex-direction:row;">
+                                            <input id="hero-modal-unit-number-0" type="number" style="padding:0px;border-spacing:0px;width:35px;display:none;" min="1" max="9999" value="1">
+                                            <img id="hero-modal-unit-delete-0" style="display:none;" src="https://ihromant.github.io/img/icons/trash.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div style="display:flex;flex-direction:row;">
+                                            <input id="hero-modal-unit-number-1" type="number" style="padding:0px;border-spacing:0px;width:35px;display:none;" min="1" max="9999" value="1">
+                                            <img id="hero-modal-unit-delete-1" style="display:none;" src="https://ihromant.github.io/img/icons/trash.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div style="display:flex;flex-direction:row;">
+                                            <input id="hero-modal-unit-number-2" type="number" style="padding:0px;border-spacing:0px;width:35px;display:none;" min="1" max="9999" value="1">
+                                            <img id="hero-modal-unit-delete-2" style="display:none;" src="https://ihromant.github.io/img/icons/trash.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div style="display:flex;flex-direction:row;">
+                                            <input id="hero-modal-unit-number-3" type="number" style="padding:0px;border-spacing:0px;width:35px;display:none;" min="1" max="9999" value="1">
+                                            <img id="hero-modal-unit-delete-3" style="display:none;" src="https://ihromant.github.io/img/icons/trash.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div style="display:flex;flex-direction:row;">
+                                            <input id="hero-modal-unit-number-4" type="number" style="padding:0px;border-spacing:0px;width:35px;display:none;" min="1" max="9999" value="1">
+                                            <img id="hero-modal-unit-delete-4" style="display:none;" src="https://ihromant.github.io/img/icons/trash.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div style="display:flex;flex-direction:row;">
+                                            <input id="hero-modal-unit-number-5" type="number" style="padding:0px;border-spacing:0px;width:35px;display:none;" min="1" max="9999" value="1">
+                                            <img id="hero-modal-unit-delete-5" style="display:none;" src="https://ihromant.github.io/img/icons/trash.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div style="display:flex;flex-direction:row;">
+                                            <input id="hero-modal-unit-number-6" type="number" style="padding:0px;border-spacing:0px;width:35px;display:none;" min="1" max="9999" value="1">
+                                            <img id="hero-modal-unit-delete-6" style="display:none;" src="https://ihromant.github.io/img/icons/trash.png">
+                                        </div>
+                                    </td>
+                                    <td></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -294,25 +880,13 @@
                 </table>
             </td>
         </tr>
-    </table>
-</div>
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
-<div id="modals" style="display:none;">
-    <table id="waiting-modal" class="modal-brown">
-        <tbody>
-        <tr>
-            <td id="waiting-status"></td>
-        </tr>
-        <tr>
-            <td>
-                <img id="waiting-anim" width="350" height="280" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="></td>
-        </tr>
         </tbody>
     </table>
-    <table id="settings-modal" class="modal-brown"></table>
-    <table id="log-modal" class="modal-brown scroll-list">
-        <tbody id="log-content">
-        </tbody>
+    <table id="selection-modal" class="select-unit">
+        <tbody id="selection-content"></tbody>
+    </table>
+    <table id="magic-book" style="background-color:ivory;">
+        <tbody id="magic-book-content"></tbody>
     </table>
 </div>
 </body>
