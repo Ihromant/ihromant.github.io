@@ -7619,6 +7619,7 @@
   "spellBySchools": [
     {
       "id": 1,
+      "spellId": 0,
       "schoolLvl": 0,
       "spellCost": 5,
       "baseEffect": 10,
@@ -7628,6 +7629,7 @@
     },
     {
       "id": 2,
+      "spellId": 0,
       "schoolLvl": 1,
       "spellCost": 4,
       "baseEffect": 10,
@@ -7637,6 +7639,7 @@
     },
     {
       "id": 3,
+      "spellId": 0,
       "schoolLvl": 2,
       "spellCost": 4,
       "baseEffect": 20,
@@ -7646,6 +7649,7 @@
     },
     {
       "id": 4,
+      "spellId": 0,
       "schoolLvl": 3,
       "spellCost": 4,
       "baseEffect": 30,
@@ -7655,6 +7659,7 @@
     },
     {
       "id": 5,
+      "spellId": 1,
       "schoolLvl": 0,
       "spellCost": 6,
       "massive": false,
@@ -7663,6 +7668,7 @@
     },
     {
       "id": 6,
+      "spellId": 1,
       "schoolLvl": 1,
       "spellCost": 5,
       "massive": false,
@@ -7671,6 +7677,7 @@
     },
     {
       "id": 7,
+      "spellId": 1,
       "schoolLvl": 2,
       "spellCost": 5,
       "massive": false,
@@ -7679,6 +7686,7 @@
     },
     {
       "id": 8,
+      "spellId": 1,
       "schoolLvl": 3,
       "spellCost": 5,
       "massive": true,
@@ -7687,6 +7695,7 @@
     },
     {
       "id": 9,
+      "spellId": 2,
       "schoolLvl": 0,
       "spellCost": 5,
       "massive": false,
@@ -7695,6 +7704,7 @@
     },
     {
       "id": 10,
+      "spellId": 2,
       "schoolLvl": 1,
       "spellCost": 4,
       "massive": false,
@@ -7703,6 +7713,7 @@
     },
     {
       "id": 11,
+      "spellId": 2,
       "schoolLvl": 2,
       "spellCost": 4,
       "massive": false,
@@ -7711,6 +7722,7 @@
     },
     {
       "id": 12,
+      "spellId": 2,
       "schoolLvl": 3,
       "spellCost": 4,
       "massive": true,
@@ -7719,6 +7731,7 @@
     },
     {
       "id": 13,
+      "spellId": 3,
       "schoolLvl": 0,
       "spellCost": 5,
       "massive": false,
@@ -7727,6 +7740,7 @@
     },
     {
       "id": 14,
+      "spellId": 3,
       "schoolLvl": 1,
       "spellCost": 4,
       "massive": false,
@@ -7735,6 +7749,7 @@
     },
     {
       "id": 15,
+      "spellId": 3,
       "schoolLvl": 2,
       "spellCost": 4,
       "massive": false,
@@ -7743,6 +7758,7 @@
     },
     {
       "id": 16,
+      "spellId": 3,
       "schoolLvl": 3,
       "spellCost": 4,
       "massive": true,
@@ -7751,6 +7767,7 @@
     },
     {
       "id": 17,
+      "spellId": 4,
       "schoolLvl": 0,
       "spellCost": 6,
       "massive": false,
@@ -7759,6 +7776,7 @@
     },
     {
       "id": 18,
+      "spellId": 4,
       "schoolLvl": 1,
       "spellCost": 5,
       "massive": false,
@@ -7767,6 +7785,7 @@
     },
     {
       "id": 19,
+      "spellId": 4,
       "schoolLvl": 2,
       "spellCost": 5,
       "massive": false,
@@ -7775,6 +7794,7 @@
     },
     {
       "id": 20,
+      "spellId": 4,
       "schoolLvl": 3,
       "spellCost": 5,
       "massive": true,
@@ -7783,6 +7803,7 @@
     },
     {
       "id": 21,
+      "spellId": 5,
       "schoolLvl": 0,
       "spellCost": 5,
       "massive": false,
@@ -7791,6 +7812,7 @@
     },
     {
       "id": 22,
+      "spellId": 5,
       "schoolLvl": 1,
       "spellCost": 4,
       "massive": false,
@@ -7799,6 +7821,7 @@
     },
     {
       "id": 23,
+      "spellId": 5,
       "schoolLvl": 2,
       "spellCost": 4,
       "massive": false,
@@ -7807,6 +7830,7 @@
     },
     {
       "id": 24,
+      "spellId": 5,
       "schoolLvl": 3,
       "spellCost": 4,
       "massive": true,
@@ -7815,6 +7839,7 @@
     },
     {
       "id": 25,
+      "spellId": 6,
       "schoolLvl": 0,
       "spellCost": 5,
       "massive": false,
@@ -7823,6 +7848,7 @@
     },
     {
       "id": 26,
+      "spellId": 6,
       "schoolLvl": 1,
       "spellCost": 4,
       "massive": false,
@@ -7831,6 +7857,7 @@
     },
     {
       "id": 27,
+      "spellId": 6,
       "schoolLvl": 2,
       "spellCost": 4,
       "massive": false,
@@ -7839,6 +7866,7 @@
     },
     {
       "id": 28,
+      "spellId": 6,
       "schoolLvl": 3,
       "spellCost": 4,
       "massive": true,
@@ -7847,6 +7875,7 @@
     },
     {
       "id": 29,
+      "spellId": 7,
       "schoolLvl": 0,
       "spellCost": 6,
       "baseEffect": 10,
@@ -7856,6 +7885,7 @@
     },
     {
       "id": 30,
+      "spellId": 7,
       "schoolLvl": 1,
       "spellCost": 5,
       "baseEffect": 10,
@@ -7865,6 +7895,7 @@
     },
     {
       "id": 31,
+      "spellId": 7,
       "schoolLvl": 2,
       "spellCost": 5,
       "baseEffect": 20,
@@ -7874,6 +7905,7 @@
     },
     {
       "id": 32,
+      "spellId": 7,
       "schoolLvl": 3,
       "spellCost": 5,
       "baseEffect": 30,
@@ -7883,6 +7915,7 @@
     },
     {
       "id": 33,
+      "spellId": 8,
       "schoolLvl": 0,
       "spellCost": 5,
       "massive": false,
@@ -7890,6 +7923,7 @@
     },
     {
       "id": 34,
+      "spellId": 8,
       "schoolLvl": 1,
       "spellCost": 4,
       "massive": false,
@@ -7897,6 +7931,7 @@
     },
     {
       "id": 35,
+      "spellId": 8,
       "schoolLvl": 2,
       "spellCost": 4,
       "massive": false,
@@ -7904,6 +7939,7 @@
     },
     {
       "id": 36,
+      "spellId": 8,
       "schoolLvl": 3,
       "spellCost": 4,
       "massive": true,
@@ -7911,6 +7947,7 @@
     },
     {
       "id": 37,
+      "spellId": 9,
       "schoolLvl": 0,
       "spellCost": 5,
       "massive": false,
@@ -7919,6 +7956,7 @@
     },
     {
       "id": 38,
+      "spellId": 9,
       "schoolLvl": 1,
       "spellCost": 4,
       "massive": false,
@@ -7927,6 +7965,7 @@
     },
     {
       "id": 39,
+      "spellId": 9,
       "schoolLvl": 2,
       "spellCost": 4,
       "massive": false,
@@ -7935,6 +7974,7 @@
     },
     {
       "id": 40,
+      "spellId": 9,
       "schoolLvl": 3,
       "spellCost": 4,
       "massive": true,
@@ -7943,6 +7983,7 @@
     },
     {
       "id": 41,
+      "spellId": 10,
       "schoolLvl": 0,
       "spellCost": 6,
       "massive": false,
@@ -7951,6 +7992,7 @@
     },
     {
       "id": 42,
+      "spellId": 10,
       "schoolLvl": 1,
       "spellCost": 5,
       "massive": false,
@@ -7959,6 +8001,7 @@
     },
     {
       "id": 43,
+      "spellId": 10,
       "schoolLvl": 2,
       "spellCost": 5,
       "massive": false,
@@ -7967,6 +8010,7 @@
     },
     {
       "id": 44,
+      "spellId": 10,
       "schoolLvl": 3,
       "spellCost": 5,
       "massive": true,
@@ -7975,6 +8019,7 @@
     },
     {
       "id": 45,
+      "spellId": 11,
       "schoolLvl": 0,
       "spellCost": 5,
       "massive": false,
@@ -7983,6 +8028,7 @@
     },
     {
       "id": 46,
+      "spellId": 11,
       "schoolLvl": 1,
       "spellCost": 4,
       "massive": false,
@@ -7991,6 +8037,7 @@
     },
     {
       "id": 47,
+      "spellId": 11,
       "schoolLvl": 2,
       "spellCost": 4,
       "massive": false,
@@ -7999,6 +8046,7 @@
     },
     {
       "id": 48,
+      "spellId": 11,
       "schoolLvl": 3,
       "spellCost": 4,
       "massive": true,
@@ -8007,30 +8055,35 @@
     },
     {
       "id": 49,
+      "spellId": 12,
       "schoolLvl": 0,
       "spellCost": 2,
       "massive": false
     },
     {
       "id": 50,
+      "spellId": 12,
       "schoolLvl": 1,
       "spellCost": 1,
       "massive": false
     },
     {
       "id": 51,
+      "spellId": 12,
       "schoolLvl": 2,
       "spellCost": 1,
       "massive": false
     },
     {
       "id": 52,
+      "spellId": 12,
       "schoolLvl": 3,
       "spellCost": 1,
       "massive": false
     },
     {
       "id": 53,
+      "spellId": 13,
       "schoolLvl": 0,
       "spellCost": 8,
       "baseEffect": 50,
@@ -8039,6 +8092,7 @@
     },
     {
       "id": 54,
+      "spellId": 13,
       "schoolLvl": 1,
       "spellCost": 7,
       "baseEffect": 50,
@@ -8047,6 +8101,7 @@
     },
     {
       "id": 55,
+      "spellId": 13,
       "schoolLvl": 2,
       "spellCost": 7,
       "baseEffect": 75,
@@ -8055,6 +8110,7 @@
     },
     {
       "id": 56,
+      "spellId": 13,
       "schoolLvl": 3,
       "spellCost": 7,
       "baseEffect": 100,
@@ -8063,30 +8119,35 @@
     },
     {
       "id": 57,
+      "spellId": 14,
       "schoolLvl": 0,
       "spellCost": 2,
       "massive": false
     },
     {
       "id": 58,
+      "spellId": 14,
       "schoolLvl": 1,
       "spellCost": 1,
       "massive": false
     },
     {
       "id": 59,
+      "spellId": 14,
       "schoolLvl": 2,
       "spellCost": 1,
       "massive": false
     },
     {
       "id": 60,
+      "spellId": 14,
       "schoolLvl": 3,
       "spellCost": 1,
       "massive": false
     },
     {
       "id": 61,
+      "spellId": 15,
       "schoolLvl": 0,
       "spellCost": 10,
       "baseEffect": 10,
@@ -8096,6 +8157,7 @@
     },
     {
       "id": 62,
+      "spellId": 15,
       "schoolLvl": 1,
       "spellCost": 8,
       "baseEffect": 10,
@@ -8105,6 +8167,7 @@
     },
     {
       "id": 63,
+      "spellId": 15,
       "schoolLvl": 2,
       "spellCost": 8,
       "baseEffect": 25,
@@ -8114,6 +8177,7 @@
     },
     {
       "id": 64,
+      "spellId": 15,
       "schoolLvl": 3,
       "spellCost": 8,
       "baseEffect": 50,
@@ -8123,6 +8187,7 @@
     },
     {
       "id": 65,
+      "spellId": 16,
       "schoolLvl": 0,
       "spellCost": 8,
       "massive": false,
@@ -8131,6 +8196,7 @@
     },
     {
       "id": 66,
+      "spellId": 16,
       "schoolLvl": 1,
       "spellCost": 6,
       "massive": false,
@@ -8139,6 +8205,7 @@
     },
     {
       "id": 67,
+      "spellId": 16,
       "schoolLvl": 2,
       "spellCost": 6,
       "massive": false,
@@ -8147,6 +8214,7 @@
     },
     {
       "id": 68,
+      "spellId": 16,
       "schoolLvl": 3,
       "spellCost": 6,
       "massive": true,
@@ -8155,6 +8223,7 @@
     },
     {
       "id": 69,
+      "spellId": 17,
       "schoolLvl": 0,
       "spellCost": 7,
       "massive": false,
@@ -8163,6 +8232,7 @@
     },
     {
       "id": 70,
+      "spellId": 17,
       "schoolLvl": 1,
       "spellCost": 5,
       "massive": false,
@@ -8171,6 +8241,7 @@
     },
     {
       "id": 71,
+      "spellId": 17,
       "schoolLvl": 2,
       "spellCost": 5,
       "massive": false,
@@ -8179,6 +8250,7 @@
     },
     {
       "id": 72,
+      "spellId": 17,
       "schoolLvl": 3,
       "spellCost": 5,
       "massive": true,
@@ -8187,6 +8259,7 @@
     },
     {
       "id": 73,
+      "spellId": 18,
       "schoolLvl": 0,
       "spellCost": 10,
       "massive": false,
@@ -8195,6 +8268,7 @@
     },
     {
       "id": 74,
+      "spellId": 18,
       "schoolLvl": 1,
       "spellCost": 8,
       "massive": false,
@@ -8203,6 +8277,7 @@
     },
     {
       "id": 75,
+      "spellId": 18,
       "schoolLvl": 2,
       "spellCost": 8,
       "massive": false,
@@ -8211,6 +8286,7 @@
     },
     {
       "id": 76,
+      "spellId": 18,
       "schoolLvl": 3,
       "spellCost": 8,
       "massive": false,
@@ -8219,6 +8295,7 @@
     },
     {
       "id": 77,
+      "spellId": 19,
       "schoolLvl": 0,
       "spellCost": 7,
       "massive": false,
@@ -8227,6 +8304,7 @@
     },
     {
       "id": 78,
+      "spellId": 19,
       "schoolLvl": 1,
       "spellCost": 5,
       "massive": false,
@@ -8235,6 +8313,7 @@
     },
     {
       "id": 79,
+      "spellId": 19,
       "schoolLvl": 2,
       "spellCost": 5,
       "massive": false,
@@ -8243,6 +8322,7 @@
     },
     {
       "id": 80,
+      "spellId": 19,
       "schoolLvl": 3,
       "spellCost": 5,
       "massive": true,
@@ -8251,6 +8331,7 @@
     },
     {
       "id": 81,
+      "spellId": 20,
       "schoolLvl": 0,
       "spellCost": 8,
       "baseEffect": 10,
@@ -8261,6 +8342,7 @@
     },
     {
       "id": 82,
+      "spellId": 20,
       "schoolLvl": 1,
       "spellCost": 6,
       "baseEffect": 10,
@@ -8271,6 +8353,7 @@
     },
     {
       "id": 83,
+      "spellId": 20,
       "schoolLvl": 2,
       "spellCost": 6,
       "baseEffect": 20,
@@ -8281,6 +8364,7 @@
     },
     {
       "id": 84,
+      "spellId": 20,
       "schoolLvl": 3,
       "spellCost": 6,
       "baseEffect": 50,
@@ -8291,6 +8375,7 @@
     },
     {
       "id": 85,
+      "spellId": 21,
       "schoolLvl": 0,
       "spellCost": 8,
       "massive": false,
@@ -8299,6 +8384,7 @@
     },
     {
       "id": 86,
+      "spellId": 21,
       "schoolLvl": 1,
       "spellCost": 6,
       "massive": false,
@@ -8307,6 +8393,7 @@
     },
     {
       "id": 87,
+      "spellId": 21,
       "schoolLvl": 2,
       "spellCost": 6,
       "massive": false,
@@ -8315,6 +8402,7 @@
     },
     {
       "id": 88,
+      "spellId": 21,
       "schoolLvl": 3,
       "spellCost": 6,
       "massive": false,
@@ -8323,6 +8411,7 @@
     },
     {
       "id": 89,
+      "spellId": 22,
       "schoolLvl": 0,
       "spellCost": 8,
       "baseEffect": 10,
@@ -8332,6 +8421,7 @@
     },
     {
       "id": 90,
+      "spellId": 22,
       "schoolLvl": 1,
       "spellCost": 6,
       "baseEffect": 10,
@@ -8341,6 +8431,7 @@
     },
     {
       "id": 91,
+      "spellId": 22,
       "schoolLvl": 2,
       "spellCost": 6,
       "baseEffect": 20,
@@ -8350,6 +8441,7 @@
     },
     {
       "id": 92,
+      "spellId": 22,
       "schoolLvl": 3,
       "spellCost": 6,
       "baseEffect": 50,
@@ -8359,6 +8451,7 @@
     },
     {
       "id": 93,
+      "spellId": 23,
       "schoolLvl": 0,
       "spellCost": 7,
       "massive": false,
@@ -8366,6 +8459,7 @@
     },
     {
       "id": 94,
+      "spellId": 23,
       "schoolLvl": 1,
       "spellCost": 5,
       "massive": false,
@@ -8373,6 +8467,7 @@
     },
     {
       "id": 95,
+      "spellId": 23,
       "schoolLvl": 2,
       "spellCost": 5,
       "massive": false,
@@ -8380,6 +8475,7 @@
     },
     {
       "id": 96,
+      "spellId": 23,
       "schoolLvl": 3,
       "spellCost": 5,
       "massive": false,
@@ -8387,6 +8483,7 @@
     },
     {
       "id": 97,
+      "spellId": 24,
       "schoolLvl": 0,
       "spellCost": 8,
       "massive": false,
@@ -8395,6 +8492,7 @@
     },
     {
       "id": 98,
+      "spellId": 24,
       "schoolLvl": 1,
       "spellCost": 6,
       "massive": false,
@@ -8403,6 +8501,7 @@
     },
     {
       "id": 99,
+      "spellId": 24,
       "schoolLvl": 2,
       "spellCost": 6,
       "massive": false,
@@ -8411,6 +8510,7 @@
     },
     {
       "id": 100,
+      "spellId": 24,
       "schoolLvl": 3,
       "spellCost": 6,
       "massive": true,
@@ -8419,6 +8519,7 @@
     },
     {
       "id": 101,
+      "spellId": 25,
       "schoolLvl": 0,
       "spellCost": 8,
       "massive": true,
@@ -8427,6 +8528,7 @@
     },
     {
       "id": 102,
+      "spellId": 25,
       "schoolLvl": 1,
       "spellCost": 6,
       "massive": true,
@@ -8435,6 +8537,7 @@
     },
     {
       "id": 103,
+      "spellId": 25,
       "schoolLvl": 2,
       "spellCost": 6,
       "massive": true,
@@ -8443,6 +8546,7 @@
     },
     {
       "id": 104,
+      "spellId": 25,
       "schoolLvl": 3,
       "spellCost": 6,
       "massive": true,
@@ -8451,6 +8555,7 @@
     },
     {
       "id": 105,
+      "spellId": 26,
       "schoolLvl": 0,
       "spellCost": 10,
       "baseEffect": 10,
@@ -8460,6 +8565,7 @@
     },
     {
       "id": 106,
+      "spellId": 26,
       "schoolLvl": 1,
       "spellCost": 8,
       "baseEffect": 10,
@@ -8469,6 +8575,7 @@
     },
     {
       "id": 107,
+      "spellId": 26,
       "schoolLvl": 2,
       "spellCost": 8,
       "baseEffect": 20,
@@ -8478,6 +8585,7 @@
     },
     {
       "id": 108,
+      "spellId": 26,
       "schoolLvl": 3,
       "spellCost": 8,
       "baseEffect": 30,
@@ -8487,6 +8595,7 @@
     },
     {
       "id": 109,
+      "spellId": 27,
       "schoolLvl": 0,
       "spellCost": 4,
       "powerEffect": 1,
@@ -8494,6 +8603,7 @@
     },
     {
       "id": 110,
+      "spellId": 27,
       "schoolLvl": 1,
       "spellCost": 2,
       "powerEffect": 1,
@@ -8501,6 +8611,7 @@
     },
     {
       "id": 111,
+      "spellId": 27,
       "schoolLvl": 2,
       "spellCost": 2,
       "powerEffect": 2,
@@ -8508,6 +8619,7 @@
     },
     {
       "id": 112,
+      "spellId": 27,
       "schoolLvl": 3,
       "spellCost": 2,
       "powerEffect": 3,
@@ -8515,54 +8627,63 @@
     },
     {
       "id": 113,
+      "spellId": 28,
       "schoolLvl": 0,
       "spellCost": 4,
       "massive": false
     },
     {
       "id": 114,
+      "spellId": 28,
       "schoolLvl": 1,
       "spellCost": 2,
       "massive": false
     },
     {
       "id": 115,
+      "spellId": 28,
       "schoolLvl": 2,
       "spellCost": 2,
       "massive": false
     },
     {
       "id": 116,
+      "spellId": 28,
       "schoolLvl": 3,
       "spellCost": 2,
       "massive": false
     },
     {
       "id": 117,
+      "spellId": 29,
       "schoolLvl": 0,
       "spellCost": 8,
       "massive": false
     },
     {
       "id": 118,
+      "spellId": 29,
       "schoolLvl": 1,
       "spellCost": 6,
       "massive": false
     },
     {
       "id": 119,
+      "spellId": 29,
       "schoolLvl": 2,
       "spellCost": 6,
       "massive": false
     },
     {
       "id": 120,
+      "spellId": 29,
       "schoolLvl": 3,
       "spellCost": 6,
       "massive": false
     },
     {
       "id": 121,
+      "spellId": 30,
       "schoolLvl": 0,
       "spellCost": 18,
       "baseEffect": 10,
@@ -8572,6 +8693,7 @@
     },
     {
       "id": 122,
+      "spellId": 30,
       "schoolLvl": 1,
       "spellCost": 15,
       "baseEffect": 10,
@@ -8581,6 +8703,7 @@
     },
     {
       "id": 123,
+      "spellId": 30,
       "schoolLvl": 2,
       "spellCost": 15,
       "baseEffect": 25,
@@ -8590,6 +8713,7 @@
     },
     {
       "id": 124,
+      "spellId": 30,
       "schoolLvl": 3,
       "spellCost": 15,
       "baseEffect": 50,
@@ -8599,6 +8723,7 @@
     },
     {
       "id": 125,
+      "spellId": 31,
       "schoolLvl": 0,
       "spellCost": 15,
       "baseEffect": 10,
@@ -8608,6 +8733,7 @@
     },
     {
       "id": 126,
+      "spellId": 31,
       "schoolLvl": 1,
       "spellCost": 12,
       "baseEffect": 10,
@@ -8617,6 +8743,7 @@
     },
     {
       "id": 127,
+      "spellId": 31,
       "schoolLvl": 2,
       "spellCost": 12,
       "baseEffect": 20,
@@ -8626,6 +8753,7 @@
     },
     {
       "id": 128,
+      "spellId": 31,
       "schoolLvl": 3,
       "spellCost": 12,
       "baseEffect": 50,
@@ -8635,6 +8763,7 @@
     },
     {
       "id": 129,
+      "spellId": 32,
       "schoolLvl": 0,
       "spellCost": 12,
       "massive": false,
@@ -8643,6 +8772,7 @@
     },
     {
       "id": 130,
+      "spellId": 32,
       "schoolLvl": 1,
       "spellCost": 9,
       "massive": false,
@@ -8651,6 +8781,7 @@
     },
     {
       "id": 131,
+      "spellId": 32,
       "schoolLvl": 2,
       "spellCost": 9,
       "massive": false,
@@ -8659,6 +8790,7 @@
     },
     {
       "id": 132,
+      "spellId": 32,
       "schoolLvl": 3,
       "spellCost": 9,
       "massive": true,
@@ -8667,6 +8799,7 @@
     },
     {
       "id": 133,
+      "spellId": 33,
       "schoolLvl": 0,
       "spellCost": 15,
       "baseEffect": 15,
@@ -8676,6 +8809,7 @@
     },
     {
       "id": 134,
+      "spellId": 33,
       "schoolLvl": 1,
       "spellCost": 12,
       "baseEffect": 15,
@@ -8685,6 +8819,7 @@
     },
     {
       "id": 135,
+      "spellId": 33,
       "schoolLvl": 2,
       "spellCost": 12,
       "baseEffect": 30,
@@ -8694,6 +8829,7 @@
     },
     {
       "id": 136,
+      "spellId": 33,
       "schoolLvl": 3,
       "spellCost": 12,
       "baseEffect": 60,
@@ -8703,6 +8839,7 @@
     },
     {
       "id": 137,
+      "spellId": 34,
       "schoolLvl": 0,
       "spellCost": 18,
       "baseEffect": 25,
@@ -8713,6 +8850,7 @@
     },
     {
       "id": 138,
+      "spellId": 34,
       "schoolLvl": 1,
       "spellCost": 15,
       "baseEffect": 25,
@@ -8723,6 +8861,7 @@
     },
     {
       "id": 139,
+      "spellId": 34,
       "schoolLvl": 2,
       "spellCost": 15,
       "baseEffect": 25,
@@ -8733,6 +8872,7 @@
     },
     {
       "id": 140,
+      "spellId": 34,
       "schoolLvl": 3,
       "spellCost": 15,
       "baseEffect": 100,
@@ -8743,6 +8883,7 @@
     },
     {
       "id": 141,
+      "spellId": 35,
       "schoolLvl": 0,
       "spellCost": 12,
       "massive": false,
@@ -8751,6 +8892,7 @@
     },
     {
       "id": 142,
+      "spellId": 35,
       "schoolLvl": 1,
       "spellCost": 9,
       "massive": false,
@@ -8759,6 +8901,7 @@
     },
     {
       "id": 143,
+      "spellId": 35,
       "schoolLvl": 2,
       "spellCost": 9,
       "massive": false,
@@ -8767,6 +8910,7 @@
     },
     {
       "id": 144,
+      "spellId": 35,
       "schoolLvl": 3,
       "spellCost": 9,
       "massive": true,
@@ -8775,6 +8919,7 @@
     },
     {
       "id": 145,
+      "spellId": 36,
       "schoolLvl": 0,
       "spellCost": 12,
       "massive": false,
@@ -8783,6 +8928,7 @@
     },
     {
       "id": 146,
+      "spellId": 36,
       "schoolLvl": 1,
       "spellCost": 9,
       "massive": false,
@@ -8791,6 +8937,7 @@
     },
     {
       "id": 147,
+      "spellId": 36,
       "schoolLvl": 2,
       "spellCost": 9,
       "massive": false,
@@ -8799,6 +8946,7 @@
     },
     {
       "id": 148,
+      "spellId": 36,
       "schoolLvl": 3,
       "spellCost": 9,
       "massive": true,
@@ -8807,6 +8955,7 @@
     },
     {
       "id": 149,
+      "spellId": 37,
       "schoolLvl": 0,
       "spellCost": 12,
       "baseEffect": 15,
@@ -8816,6 +8965,7 @@
     },
     {
       "id": 150,
+      "spellId": 37,
       "schoolLvl": 1,
       "spellCost": 9,
       "baseEffect": 15,
@@ -8825,6 +8975,7 @@
     },
     {
       "id": 151,
+      "spellId": 37,
       "schoolLvl": 2,
       "spellCost": 9,
       "baseEffect": 30,
@@ -8834,6 +8985,7 @@
     },
     {
       "id": 152,
+      "spellId": 37,
       "schoolLvl": 3,
       "spellCost": 9,
       "baseEffect": 60,
@@ -8843,6 +8995,7 @@
     },
     {
       "id": 153,
+      "spellId": 38,
       "schoolLvl": 0,
       "spellCost": 12,
       "massive": false,
@@ -8851,6 +9004,7 @@
     },
     {
       "id": 154,
+      "spellId": 38,
       "schoolLvl": 1,
       "spellCost": 9,
       "massive": false,
@@ -8859,6 +9013,7 @@
     },
     {
       "id": 155,
+      "spellId": 38,
       "schoolLvl": 2,
       "spellCost": 9,
       "massive": false,
@@ -8867,6 +9022,7 @@
     },
     {
       "id": 156,
+      "spellId": 38,
       "schoolLvl": 3,
       "spellCost": 9,
       "massive": true,
@@ -8875,6 +9031,7 @@
     },
     {
       "id": 157,
+      "spellId": 39,
       "schoolLvl": 0,
       "spellCost": 15,
       "massive": false,
@@ -8882,6 +9039,7 @@
     },
     {
       "id": 158,
+      "spellId": 39,
       "schoolLvl": 1,
       "spellCost": 12,
       "massive": false,
@@ -8889,6 +9047,7 @@
     },
     {
       "id": 159,
+      "spellId": 39,
       "schoolLvl": 2,
       "spellCost": 6,
       "massive": false,
@@ -8896,6 +9055,7 @@
     },
     {
       "id": 160,
+      "spellId": 39,
       "schoolLvl": 3,
       "spellCost": 3,
       "massive": false,
@@ -8903,6 +9063,7 @@
     },
     {
       "id": 161,
+      "spellId": 40,
       "schoolLvl": 0,
       "spellCost": 15,
       "massive": false,
@@ -8911,6 +9072,7 @@
     },
     {
       "id": 162,
+      "spellId": 40,
       "schoolLvl": 1,
       "spellCost": 12,
       "massive": false,
@@ -8919,6 +9081,7 @@
     },
     {
       "id": 163,
+      "spellId": 40,
       "schoolLvl": 2,
       "spellCost": 12,
       "massive": false,
@@ -8927,6 +9090,7 @@
     },
     {
       "id": 164,
+      "spellId": 40,
       "schoolLvl": 3,
       "spellCost": 12,
       "massive": false,
@@ -8935,6 +9099,7 @@
     },
     {
       "id": 165,
+      "spellId": 41,
       "schoolLvl": 0,
       "spellCost": 12,
       "massive": false,
@@ -8943,6 +9108,7 @@
     },
     {
       "id": 166,
+      "spellId": 41,
       "schoolLvl": 1,
       "spellCost": 9,
       "massive": false,
@@ -8951,6 +9117,7 @@
     },
     {
       "id": 167,
+      "spellId": 41,
       "schoolLvl": 2,
       "spellCost": 9,
       "massive": false,
@@ -8959,6 +9126,7 @@
     },
     {
       "id": 168,
+      "spellId": 41,
       "schoolLvl": 3,
       "spellCost": 9,
       "massive": true,
@@ -8967,6 +9135,7 @@
     },
     {
       "id": 169,
+      "spellId": 42,
       "schoolLvl": 0,
       "spellCost": 20,
       "massive": true,
@@ -8975,6 +9144,7 @@
     },
     {
       "id": 170,
+      "spellId": 42,
       "schoolLvl": 1,
       "spellCost": 17,
       "massive": true,
@@ -8983,6 +9153,7 @@
     },
     {
       "id": 171,
+      "spellId": 42,
       "schoolLvl": 2,
       "spellCost": 17,
       "massive": true,
@@ -8991,6 +9162,7 @@
     },
     {
       "id": 172,
+      "spellId": 42,
       "schoolLvl": 3,
       "spellCost": 17,
       "massive": true,
@@ -8999,6 +9171,7 @@
     },
     {
       "id": 173,
+      "spellId": 43,
       "schoolLvl": 0,
       "spellCost": 15,
       "baseEffect": 30,
@@ -9008,6 +9181,7 @@
     },
     {
       "id": 174,
+      "spellId": 43,
       "schoolLvl": 1,
       "spellCost": 12,
       "baseEffect": 30,
@@ -9017,6 +9191,7 @@
     },
     {
       "id": 175,
+      "spellId": 43,
       "schoolLvl": 2,
       "spellCost": 12,
       "baseEffect": 60,
@@ -9026,6 +9201,7 @@
     },
     {
       "id": 176,
+      "spellId": 43,
       "schoolLvl": 3,
       "spellCost": 12,
       "baseEffect": 160,
@@ -9035,6 +9211,7 @@
     },
     {
       "id": 177,
+      "spellId": 44,
       "schoolLvl": 0,
       "spellCost": 12,
       "massive": false,
@@ -9043,6 +9220,7 @@
     },
     {
       "id": 178,
+      "spellId": 44,
       "schoolLvl": 1,
       "spellCost": 9,
       "massive": false,
@@ -9051,6 +9229,7 @@
     },
     {
       "id": 179,
+      "spellId": 44,
       "schoolLvl": 2,
       "spellCost": 9,
       "massive": false,
@@ -9059,6 +9238,7 @@
     },
     {
       "id": 180,
+      "spellId": 44,
       "schoolLvl": 3,
       "spellCost": 9,
       "massive": false,
@@ -9067,6 +9247,7 @@
     },
     {
       "id": 181,
+      "spellId": 45,
       "schoolLvl": 0,
       "spellCost": 24,
       "massive": false,
@@ -9075,6 +9256,7 @@
     },
     {
       "id": 182,
+      "spellId": 45,
       "schoolLvl": 1,
       "spellCost": 20,
       "massive": false,
@@ -9083,6 +9265,7 @@
     },
     {
       "id": 183,
+      "spellId": 45,
       "schoolLvl": 2,
       "spellCost": 20,
       "massive": false,
@@ -9091,6 +9274,7 @@
     },
     {
       "id": 184,
+      "spellId": 45,
       "schoolLvl": 3,
       "spellCost": 20,
       "massive": true,
@@ -9099,6 +9283,7 @@
     },
     {
       "id": 185,
+      "spellId": 46,
       "schoolLvl": 0,
       "spellCost": 24,
       "baseEffect": 25,
@@ -9109,6 +9294,7 @@
     },
     {
       "id": 186,
+      "spellId": 46,
       "schoolLvl": 1,
       "spellCost": 20,
       "baseEffect": 25,
@@ -9119,6 +9305,7 @@
     },
     {
       "id": 187,
+      "spellId": 46,
       "schoolLvl": 2,
       "spellCost": 20,
       "baseEffect": 50,
@@ -9129,6 +9316,7 @@
     },
     {
       "id": 188,
+      "spellId": 46,
       "schoolLvl": 3,
       "spellCost": 20,
       "baseEffect": 100,
@@ -9139,6 +9327,7 @@
     },
     {
       "id": 189,
+      "spellId": 47,
       "schoolLvl": 0,
       "spellCost": 16,
       "baseEffect": 20,
@@ -9148,6 +9337,7 @@
     },
     {
       "id": 190,
+      "spellId": 47,
       "schoolLvl": 1,
       "spellCost": 12,
       "baseEffect": 20,
@@ -9157,6 +9347,7 @@
     },
     {
       "id": 191,
+      "spellId": 47,
       "schoolLvl": 2,
       "spellCost": 12,
       "baseEffect": 40,
@@ -9166,6 +9357,7 @@
     },
     {
       "id": 192,
+      "spellId": 47,
       "schoolLvl": 3,
       "spellCost": 12,
       "baseEffect": 80,
@@ -9175,6 +9367,7 @@
     },
     {
       "id": 193,
+      "spellId": 48,
       "schoolLvl": 0,
       "spellCost": 24,
       "baseEffect": 30,
@@ -9184,6 +9377,7 @@
     },
     {
       "id": 194,
+      "spellId": 48,
       "schoolLvl": 1,
       "spellCost": 20,
       "baseEffect": 30,
@@ -9193,6 +9387,7 @@
     },
     {
       "id": 195,
+      "spellId": 48,
       "schoolLvl": 2,
       "spellCost": 20,
       "baseEffect": 60,
@@ -9202,6 +9397,7 @@
     },
     {
       "id": 196,
+      "spellId": 48,
       "schoolLvl": 3,
       "spellCost": 20,
       "baseEffect": 120,
@@ -9211,6 +9407,7 @@
     },
     {
       "id": 197,
+      "spellId": 49,
       "schoolLvl": 0,
       "spellCost": 16,
       "massive": false,
@@ -9219,6 +9416,7 @@
     },
     {
       "id": 198,
+      "spellId": 49,
       "schoolLvl": 1,
       "spellCost": 12,
       "massive": false,
@@ -9227,6 +9425,7 @@
     },
     {
       "id": 199,
+      "spellId": 49,
       "schoolLvl": 2,
       "spellCost": 12,
       "massive": false,
@@ -9235,6 +9434,7 @@
     },
     {
       "id": 200,
+      "spellId": 49,
       "schoolLvl": 3,
       "spellCost": 12,
       "massive": false,
@@ -9243,6 +9443,7 @@
     },
     {
       "id": 201,
+      "spellId": 50,
       "schoolLvl": 0,
       "spellCost": 20,
       "massive": false,
@@ -9251,6 +9452,7 @@
     },
     {
       "id": 202,
+      "spellId": 50,
       "schoolLvl": 1,
       "spellCost": 16,
       "massive": false,
@@ -9259,6 +9461,7 @@
     },
     {
       "id": 203,
+      "spellId": 50,
       "schoolLvl": 2,
       "spellCost": 16,
       "massive": false,
@@ -9267,6 +9470,7 @@
     },
     {
       "id": 204,
+      "spellId": 50,
       "schoolLvl": 3,
       "spellCost": 16,
       "massive": false,
@@ -9275,6 +9479,7 @@
     },
     {
       "id": 205,
+      "spellId": 51,
       "schoolLvl": 0,
       "spellCost": 16,
       "massive": false,
@@ -9283,6 +9488,7 @@
     },
     {
       "id": 206,
+      "spellId": 51,
       "schoolLvl": 1,
       "spellCost": 12,
       "massive": false,
@@ -9291,6 +9497,7 @@
     },
     {
       "id": 207,
+      "spellId": 51,
       "schoolLvl": 2,
       "spellCost": 12,
       "massive": false,
@@ -9299,6 +9506,7 @@
     },
     {
       "id": 208,
+      "spellId": 51,
       "schoolLvl": 3,
       "spellCost": 12,
       "massive": false,
@@ -9307,6 +9515,7 @@
     },
     {
       "id": 209,
+      "spellId": 52,
       "schoolLvl": 0,
       "spellCost": 16,
       "massive": false,
@@ -9315,6 +9524,7 @@
     },
     {
       "id": 210,
+      "spellId": 52,
       "schoolLvl": 1,
       "spellCost": 12,
       "massive": false,
@@ -9323,6 +9533,7 @@
     },
     {
       "id": 211,
+      "spellId": 52,
       "schoolLvl": 2,
       "spellCost": 12,
       "massive": false,
@@ -9331,6 +9542,7 @@
     },
     {
       "id": 212,
+      "spellId": 52,
       "schoolLvl": 3,
       "spellCost": 12,
       "massive": false,
@@ -9339,6 +9551,7 @@
     },
     {
       "id": 213,
+      "spellId": 53,
       "schoolLvl": 0,
       "spellCost": 24,
       "massive": false,
@@ -9347,6 +9560,7 @@
     },
     {
       "id": 214,
+      "spellId": 53,
       "schoolLvl": 1,
       "spellCost": 20,
       "massive": false,
@@ -9355,6 +9569,7 @@
     },
     {
       "id": 215,
+      "spellId": 53,
       "schoolLvl": 2,
       "spellCost": 20,
       "massive": false,
@@ -9363,6 +9578,7 @@
     },
     {
       "id": 216,
+      "spellId": 53,
       "schoolLvl": 3,
       "spellCost": 20,
       "massive": false,
@@ -9371,6 +9587,7 @@
     },
     {
       "id": 217,
+      "spellId": 54,
       "schoolLvl": 0,
       "spellCost": 16,
       "massive": false,
@@ -9379,6 +9596,7 @@
     },
     {
       "id": 218,
+      "spellId": 54,
       "schoolLvl": 1,
       "spellCost": 12,
       "massive": false,
@@ -9387,6 +9605,7 @@
     },
     {
       "id": 219,
+      "spellId": 54,
       "schoolLvl": 2,
       "spellCost": 12,
       "massive": false,
@@ -9395,6 +9614,7 @@
     },
     {
       "id": 220,
+      "spellId": 54,
       "schoolLvl": 3,
       "spellCost": 12,
       "massive": true,
@@ -9403,6 +9623,7 @@
     },
     {
       "id": 221,
+      "spellId": 55,
       "schoolLvl": 0,
       "spellCost": 20,
       "baseEffect": 40,
@@ -9412,6 +9633,7 @@
     },
     {
       "id": 222,
+      "spellId": 55,
       "schoolLvl": 1,
       "spellCost": 16,
       "baseEffect": 40,
@@ -9421,6 +9643,7 @@
     },
     {
       "id": 223,
+      "spellId": 55,
       "schoolLvl": 2,
       "spellCost": 16,
       "baseEffect": 80,
@@ -9430,6 +9653,7 @@
     },
     {
       "id": 224,
+      "spellId": 55,
       "schoolLvl": 3,
       "spellCost": 16,
       "baseEffect": 160,
@@ -9439,6 +9663,7 @@
     },
     {
       "id": 225,
+      "spellId": 56,
       "schoolLvl": 0,
       "spellCost": 16,
       "baseEffect": 25,
@@ -9448,6 +9673,7 @@
     },
     {
       "id": 226,
+      "spellId": 56,
       "schoolLvl": 1,
       "spellCost": 12,
       "baseEffect": 25,
@@ -9457,6 +9683,7 @@
     },
     {
       "id": 227,
+      "spellId": 56,
       "schoolLvl": 2,
       "spellCost": 12,
       "baseEffect": 50,
@@ -9466,6 +9693,7 @@
     },
     {
       "id": 228,
+      "spellId": 56,
       "schoolLvl": 3,
       "spellCost": 12,
       "baseEffect": 100,
@@ -9475,6 +9703,7 @@
     },
     {
       "id": 229,
+      "spellId": 57,
       "schoolLvl": 0,
       "spellCost": 16,
       "massive": false,
@@ -9483,6 +9712,7 @@
     },
     {
       "id": 230,
+      "spellId": 57,
       "schoolLvl": 1,
       "spellCost": 12,
       "massive": false,
@@ -9491,6 +9721,7 @@
     },
     {
       "id": 231,
+      "spellId": 57,
       "schoolLvl": 2,
       "spellCost": 12,
       "massive": false,
@@ -9499,6 +9730,7 @@
     },
     {
       "id": 232,
+      "spellId": 57,
       "schoolLvl": 3,
       "spellCost": 12,
       "massive": true,
@@ -9507,6 +9739,7 @@
     },
     {
       "id": 233,
+      "spellId": 58,
       "schoolLvl": 0,
       "spellCost": 12,
       "baseEffect": 140,
@@ -9514,6 +9747,7 @@
     },
     {
       "id": 234,
+      "spellId": 58,
       "schoolLvl": 1,
       "spellCost": 8,
       "baseEffect": 140,
@@ -9521,6 +9755,7 @@
     },
     {
       "id": 235,
+      "spellId": 58,
       "schoolLvl": 2,
       "spellCost": 8,
       "baseEffect": 120,
@@ -9528,6 +9763,7 @@
     },
     {
       "id": 236,
+      "spellId": 58,
       "schoolLvl": 3,
       "spellCost": 8,
       "baseEffect": 100,
@@ -9535,6 +9771,7 @@
     },
     {
       "id": 237,
+      "spellId": 59,
       "schoolLvl": 0,
       "spellCost": 16,
       "baseEffect": 300,
@@ -9542,6 +9779,7 @@
     },
     {
       "id": 238,
+      "spellId": 59,
       "schoolLvl": 1,
       "spellCost": 12,
       "baseEffect": 300,
@@ -9549,6 +9787,7 @@
     },
     {
       "id": 239,
+      "spellId": 59,
       "schoolLvl": 2,
       "spellCost": 12,
       "baseEffect": 300,
@@ -9556,6 +9795,7 @@
     },
     {
       "id": 240,
+      "spellId": 59,
       "schoolLvl": 3,
       "spellCost": 12,
       "baseEffect": 200,
@@ -9563,6 +9803,7 @@
     },
     {
       "id": 241,
+      "spellId": 60,
       "schoolLvl": 0,
       "spellCost": 0,
       "baseEffect": 600,
@@ -9572,6 +9813,7 @@
     },
     {
       "id": 242,
+      "spellId": 60,
       "schoolLvl": 1,
       "spellCost": 0,
       "baseEffect": 600,
@@ -9581,6 +9823,7 @@
     },
     {
       "id": 243,
+      "spellId": 60,
       "schoolLvl": 2,
       "spellCost": 0,
       "baseEffect": 600,
@@ -9590,6 +9833,7 @@
     },
     {
       "id": 244,
+      "spellId": 60,
       "schoolLvl": 3,
       "spellCost": 0,
       "baseEffect": 600,
@@ -9599,6 +9843,7 @@
     },
     {
       "id": 245,
+      "spellId": 61,
       "schoolLvl": 0,
       "spellCost": 25,
       "massive": false,
@@ -9607,6 +9852,7 @@
     },
     {
       "id": 246,
+      "spellId": 61,
       "schoolLvl": 1,
       "spellCost": 20,
       "massive": false,
@@ -9615,6 +9861,7 @@
     },
     {
       "id": 247,
+      "spellId": 61,
       "schoolLvl": 2,
       "spellCost": 20,
       "massive": false,
@@ -9623,6 +9870,7 @@
     },
     {
       "id": 248,
+      "spellId": 61,
       "schoolLvl": 3,
       "spellCost": 20,
       "massive": false,
@@ -9631,6 +9879,7 @@
     },
     {
       "id": 249,
+      "spellId": 62,
       "schoolLvl": 0,
       "spellCost": 25,
       "baseEffect": 0,
@@ -9640,6 +9889,7 @@
     },
     {
       "id": 250,
+      "spellId": 62,
       "schoolLvl": 1,
       "spellCost": 20,
       "baseEffect": 0,
@@ -9649,6 +9899,7 @@
     },
     {
       "id": 251,
+      "spellId": 62,
       "schoolLvl": 2,
       "spellCost": 20,
       "baseEffect": 0,
@@ -9658,6 +9909,7 @@
     },
     {
       "id": 252,
+      "spellId": 62,
       "schoolLvl": 3,
       "spellCost": 20,
       "baseEffect": 0,
@@ -9667,6 +9919,7 @@
     },
     {
       "id": 253,
+      "spellId": 63,
       "schoolLvl": 0,
       "spellCost": 25,
       "baseEffect": 0,
@@ -9676,6 +9929,7 @@
     },
     {
       "id": 254,
+      "spellId": 63,
       "schoolLvl": 1,
       "spellCost": 20,
       "baseEffect": 0,
@@ -9685,6 +9939,7 @@
     },
     {
       "id": 255,
+      "spellId": 63,
       "schoolLvl": 2,
       "spellCost": 20,
       "baseEffect": 0,
@@ -9694,6 +9949,7 @@
     },
     {
       "id": 256,
+      "spellId": 63,
       "schoolLvl": 3,
       "spellCost": 20,
       "baseEffect": 0,
@@ -9703,6 +9959,7 @@
     },
     {
       "id": 257,
+      "spellId": 64,
       "schoolLvl": 0,
       "spellCost": 25,
       "baseEffect": 3,
@@ -9712,6 +9969,7 @@
     },
     {
       "id": 258,
+      "spellId": 64,
       "schoolLvl": 1,
       "spellCost": 20,
       "baseEffect": 3,
@@ -9721,6 +9979,7 @@
     },
     {
       "id": 259,
+      "spellId": 64,
       "schoolLvl": 2,
       "spellCost": 20,
       "baseEffect": 6,
@@ -9730,6 +9989,7 @@
     },
     {
       "id": 260,
+      "spellId": 64,
       "schoolLvl": 3,
       "spellCost": 20,
       "baseEffect": 10,
@@ -9739,6 +9999,7 @@
     },
     {
       "id": 261,
+      "spellId": 65,
       "schoolLvl": 0,
       "spellCost": 25,
       "baseEffect": 0,
@@ -9748,6 +10009,7 @@
     },
     {
       "id": 262,
+      "spellId": 65,
       "schoolLvl": 1,
       "spellCost": 20,
       "baseEffect": 0,
@@ -9757,6 +10019,7 @@
     },
     {
       "id": 263,
+      "spellId": 65,
       "schoolLvl": 2,
       "spellCost": 20,
       "baseEffect": 0,
@@ -9766,6 +10029,7 @@
     },
     {
       "id": 264,
+      "spellId": 65,
       "schoolLvl": 3,
       "spellCost": 20,
       "baseEffect": 0,
@@ -9775,6 +10039,7 @@
     },
     {
       "id": 265,
+      "spellId": 66,
       "schoolLvl": 0,
       "spellCost": 30,
       "baseEffect": 100,
@@ -9784,6 +10049,7 @@
     },
     {
       "id": 266,
+      "spellId": 66,
       "schoolLvl": 1,
       "spellCost": 25,
       "baseEffect": 100,
@@ -9793,6 +10059,7 @@
     },
     {
       "id": 267,
+      "spellId": 66,
       "schoolLvl": 2,
       "spellCost": 25,
       "baseEffect": 200,
@@ -9802,6 +10069,7 @@
     },
     {
       "id": 268,
+      "spellId": 66,
       "schoolLvl": 3,
       "spellCost": 25,
       "baseEffect": 300,
@@ -9811,6 +10079,7 @@
     },
     {
       "id": 269,
+      "spellId": 67,
       "schoolLvl": 0,
       "spellCost": 25,
       "baseEffect": 0,
@@ -9820,6 +10089,7 @@
     },
     {
       "id": 270,
+      "spellId": 67,
       "schoolLvl": 1,
       "spellCost": 20,
       "baseEffect": 0,
@@ -9829,6 +10099,7 @@
     },
     {
       "id": 271,
+      "spellId": 67,
       "schoolLvl": 2,
       "spellCost": 20,
       "baseEffect": 0,
@@ -9838,6 +10109,7 @@
     },
     {
       "id": 272,
+      "spellId": 67,
       "schoolLvl": 3,
       "spellCost": 20,
       "baseEffect": 0,
@@ -9847,6 +10119,7 @@
     },
     {
       "id": 273,
+      "spellId": 68,
       "schoolLvl": 0,
       "spellCost": 20,
       "baseEffect": 140,
@@ -9854,6 +10127,7 @@
     },
     {
       "id": 274,
+      "spellId": 68,
       "schoolLvl": 1,
       "spellCost": 15,
       "baseEffect": 140,
@@ -9861,6 +10135,7 @@
     },
     {
       "id": 275,
+      "spellId": 68,
       "schoolLvl": 2,
       "spellCost": 15,
       "baseEffect": 120,
@@ -9868,6 +10143,7 @@
     },
     {
       "id": 276,
+      "spellId": 68,
       "schoolLvl": 3,
       "spellCost": 15,
       "baseEffect": 100,
@@ -9875,6 +10151,7 @@
     },
     {
       "id": 277,
+      "spellId": 69,
       "schoolLvl": 0,
       "spellCost": 25,
       "baseEffect": 300,
@@ -9883,6 +10160,7 @@
     },
     {
       "id": 278,
+      "spellId": 69,
       "schoolLvl": 1,
       "spellCost": 20,
       "baseEffect": 300,
@@ -9891,6 +10169,7 @@
     },
     {
       "id": 279,
+      "spellId": 69,
       "schoolLvl": 2,
       "spellCost": 20,
       "baseEffect": 300,
@@ -9899,6 +10178,7 @@
     },
     {
       "id": 280,
+      "spellId": 69,
       "schoolLvl": 3,
       "spellCost": 20,
       "baseEffect": 200,
@@ -10905,2521 +11185,3025 @@
   "heroToSecondaries": [
     {
       "id": 1,
+      "heroTypeId": 0,
       "skillId": 0,
       "frequency": 5
     },
     {
       "id": 2,
+      "heroTypeId": 0,
       "skillId": 2,
       "frequency": 5
     },
     {
       "id": 3,
+      "heroTypeId": 0,
       "skillId": 7,
       "frequency": 5
     },
     {
       "id": 4,
+      "heroTypeId": 0,
       "skillId": 8,
       "frequency": 8
     },
     {
       "id": 5,
+      "heroTypeId": 0,
       "skillId": 9,
       "frequency": 2
     },
     {
       "id": 6,
+      "heroTypeId": 0,
       "skillId": 4,
       "frequency": 10
     },
     {
       "id": 7,
+      "heroTypeId": 0,
       "skillId": 5,
       "frequency": 3
     },
     {
       "id": 8,
+      "heroTypeId": 0,
       "skillId": 1,
       "frequency": 7
     },
     {
       "id": 9,
+      "heroTypeId": 0,
       "skillId": 3,
       "frequency": 5
     },
     {
       "id": 10,
+      "heroTypeId": 0,
       "skillId": 6,
       "frequency": 7
     },
     {
       "id": 11,
+      "heroTypeId": 0,
       "skillId": 19,
       "frequency": 1
     },
     {
       "id": 12,
+      "heroTypeId": 0,
       "skillId": 20,
       "frequency": 2
     },
     {
       "id": 13,
+      "heroTypeId": 0,
       "skillId": 21,
       "frequency": 1
     },
     {
       "id": 14,
+      "heroTypeId": 0,
       "skillId": 22,
       "frequency": 1
     },
     {
       "id": 15,
+      "heroTypeId": 0,
       "skillId": 23,
       "frequency": 3
     },
     {
       "id": 16,
+      "heroTypeId": 0,
       "skillId": 24,
       "frequency": 3
     },
     {
       "id": 17,
+      "heroTypeId": 0,
       "skillId": 25,
       "frequency": 2
     },
     {
       "id": 18,
+      "heroTypeId": 0,
       "skillId": 26,
       "frequency": 1
     },
     {
       "id": 19,
+      "heroTypeId": 0,
       "skillId": 27,
       "frequency": 4
     },
     {
       "id": 20,
+      "heroTypeId": 0,
       "skillId": 11,
       "frequency": 4
     },
     {
       "id": 21,
+      "heroTypeId": 0,
       "skillId": 18,
       "frequency": 2
     },
     {
       "id": 22,
+      "heroTypeId": 0,
       "skillId": 12,
       "frequency": 6
     },
     {
       "id": 23,
+      "heroTypeId": 0,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 24,
+      "heroTypeId": 0,
       "skillId": 14,
       "frequency": 5
     },
     {
       "id": 25,
+      "heroTypeId": 0,
       "skillId": 17,
       "frequency": 8
     },
     {
       "id": 26,
+      "heroTypeId": 0,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 27,
+      "heroTypeId": 0,
       "skillId": 15,
       "frequency": 4
     },
     {
       "id": 28,
+      "heroTypeId": 0,
       "skillId": 16,
       "frequency": 4
     },
     {
       "id": 29,
+      "heroTypeId": 1,
       "skillId": 0,
       "frequency": 3
     },
     {
       "id": 30,
+      "heroTypeId": 1,
       "skillId": 2,
       "frequency": 3
     },
     {
       "id": 31,
+      "heroTypeId": 1,
       "skillId": 7,
       "frequency": 2
     },
     {
       "id": 32,
+      "heroTypeId": 1,
       "skillId": 8,
       "frequency": 4
     },
     {
       "id": 33,
+      "heroTypeId": 1,
       "skillId": 9,
       "frequency": 10
     },
     {
       "id": 34,
+      "heroTypeId": 1,
       "skillId": 4,
       "frequency": 2
     },
     {
       "id": 35,
+      "heroTypeId": 1,
       "skillId": 5,
       "frequency": 5
     },
     {
       "id": 36,
+      "heroTypeId": 1,
       "skillId": 1,
       "frequency": 4
     },
     {
       "id": 37,
+      "heroTypeId": 1,
       "skillId": 3,
       "frequency": 2
     },
     {
       "id": 38,
+      "heroTypeId": 1,
       "skillId": 6,
       "frequency": 2
     },
     {
       "id": 39,
+      "heroTypeId": 1,
       "skillId": 19,
       "frequency": 6
     },
     {
       "id": 40,
+      "heroTypeId": 1,
       "skillId": 20,
       "frequency": 4
     },
     {
       "id": 41,
+      "heroTypeId": 1,
       "skillId": 21,
       "frequency": 6
     },
     {
       "id": 42,
+      "heroTypeId": 1,
       "skillId": 22,
       "frequency": 5
     },
     {
       "id": 43,
+      "heroTypeId": 1,
       "skillId": 23,
       "frequency": 7
     },
     {
       "id": 44,
+      "heroTypeId": 1,
       "skillId": 24,
       "frequency": 4
     },
     {
       "id": 45,
+      "heroTypeId": 1,
       "skillId": 25,
       "frequency": 3
     },
     {
       "id": 46,
+      "heroTypeId": 1,
       "skillId": 26,
       "frequency": 2
     },
     {
       "id": 47,
+      "heroTypeId": 1,
       "skillId": 27,
       "frequency": 4
     },
     {
       "id": 48,
+      "heroTypeId": 1,
       "skillId": 11,
       "frequency": 7
     },
     {
       "id": 49,
+      "heroTypeId": 1,
       "skillId": 18,
       "frequency": 6
     },
     {
       "id": 50,
+      "heroTypeId": 1,
       "skillId": 12,
       "frequency": 3
     },
     {
       "id": 51,
+      "heroTypeId": 1,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 52,
+      "heroTypeId": 1,
       "skillId": 14,
       "frequency": 4
     },
     {
       "id": 53,
+      "heroTypeId": 1,
       "skillId": 17,
       "frequency": 5
     },
     {
       "id": 54,
+      "heroTypeId": 1,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 55,
+      "heroTypeId": 1,
       "skillId": 15,
       "frequency": 2
     },
     {
       "id": 56,
+      "heroTypeId": 1,
       "skillId": 16,
       "frequency": 3
     },
     {
       "id": 57,
+      "heroTypeId": 2,
       "skillId": 0,
       "frequency": 8
     },
     {
       "id": 58,
+      "heroTypeId": 2,
       "skillId": 2,
       "frequency": 8
     },
     {
       "id": 59,
+      "heroTypeId": 2,
       "skillId": 7,
       "frequency": 6
     },
     {
       "id": 60,
+      "heroTypeId": 2,
       "skillId": 8,
       "frequency": 4
     },
     {
       "id": 61,
+      "heroTypeId": 2,
       "skillId": 9,
       "frequency": 3
     },
     {
       "id": 62,
+      "heroTypeId": 2,
       "skillId": 4,
       "frequency": 6
     },
     {
       "id": 63,
+      "heroTypeId": 2,
       "skillId": 5,
       "frequency": 6
     },
     {
       "id": 64,
+      "heroTypeId": 2,
       "skillId": 1,
       "frequency": 5
     },
     {
       "id": 65,
+      "heroTypeId": 2,
       "skillId": 3,
       "frequency": 9
     },
     {
       "id": 66,
+      "heroTypeId": 2,
       "skillId": 6,
       "frequency": 5
     },
     {
       "id": 67,
+      "heroTypeId": 2,
       "skillId": 19,
       "frequency": 2
     },
     {
       "id": 68,
+      "heroTypeId": 2,
       "skillId": 20,
       "frequency": 3
     },
     {
       "id": 69,
+      "heroTypeId": 2,
       "skillId": 21,
       "frequency": 1
     },
     {
       "id": 70,
+      "heroTypeId": 2,
       "skillId": 22,
       "frequency": 2
     },
     {
       "id": 71,
+      "heroTypeId": 2,
       "skillId": 23,
       "frequency": 3
     },
     {
       "id": 72,
+      "heroTypeId": 2,
       "skillId": 24,
       "frequency": 1
     },
     {
       "id": 73,
+      "heroTypeId": 2,
       "skillId": 25,
       "frequency": 3
     },
     {
       "id": 74,
+      "heroTypeId": 2,
       "skillId": 26,
       "frequency": 0
     },
     {
       "id": 75,
+      "heroTypeId": 2,
       "skillId": 27,
       "frequency": 3
     },
     {
       "id": 76,
+      "heroTypeId": 2,
       "skillId": 11,
       "frequency": 4
     },
     {
       "id": 77,
+      "heroTypeId": 2,
       "skillId": 18,
       "frequency": 2
     },
     {
       "id": 78,
+      "heroTypeId": 2,
       "skillId": 12,
       "frequency": 2
     },
     {
       "id": 79,
+      "heroTypeId": 2,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 80,
+      "heroTypeId": 2,
       "skillId": 14,
       "frequency": 5
     },
     {
       "id": 81,
+      "heroTypeId": 2,
       "skillId": 17,
       "frequency": 3
     },
     {
       "id": 82,
+      "heroTypeId": 2,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 83,
+      "heroTypeId": 2,
       "skillId": 15,
       "frequency": 7
     },
     {
       "id": 84,
+      "heroTypeId": 2,
       "skillId": 16,
       "frequency": 7
     },
     {
       "id": 85,
+      "heroTypeId": 3,
       "skillId": 0,
       "frequency": 5
     },
     {
       "id": 86,
+      "heroTypeId": 3,
       "skillId": 2,
       "frequency": 3
     },
     {
       "id": 87,
+      "heroTypeId": 3,
       "skillId": 7,
       "frequency": 1
     },
     {
       "id": 88,
+      "heroTypeId": 3,
       "skillId": 8,
       "frequency": 4
     },
     {
       "id": 89,
+      "heroTypeId": 3,
       "skillId": 9,
       "frequency": 7
     },
     {
       "id": 90,
+      "heroTypeId": 3,
       "skillId": 4,
       "frequency": 2
     },
     {
       "id": 91,
+      "heroTypeId": 3,
       "skillId": 5,
       "frequency": 9
     },
     {
       "id": 92,
+      "heroTypeId": 3,
       "skillId": 1,
       "frequency": 1
     },
     {
       "id": 93,
+      "heroTypeId": 3,
       "skillId": 3,
       "frequency": 1
     },
     {
       "id": 94,
+      "heroTypeId": 3,
       "skillId": 6,
       "frequency": 1
     },
     {
       "id": 95,
+      "heroTypeId": 3,
       "skillId": 19,
       "frequency": 7
     },
     {
       "id": 96,
+      "heroTypeId": 3,
       "skillId": 20,
       "frequency": 6
     },
     {
       "id": 97,
+      "heroTypeId": 3,
       "skillId": 21,
       "frequency": 8
     },
     {
       "id": 98,
+      "heroTypeId": 3,
       "skillId": 22,
       "frequency": 6
     },
     {
       "id": 99,
+      "heroTypeId": 3,
       "skillId": 23,
       "frequency": 8
     },
     {
       "id": 100,
+      "heroTypeId": 3,
       "skillId": 24,
       "frequency": 2
     },
     {
       "id": 101,
+      "heroTypeId": 3,
       "skillId": 25,
       "frequency": 4
     },
     {
       "id": 102,
+      "heroTypeId": 3,
       "skillId": 26,
       "frequency": 1
     },
     {
       "id": 103,
+      "heroTypeId": 3,
       "skillId": 27,
       "frequency": 4
     },
     {
       "id": 104,
+      "heroTypeId": 3,
       "skillId": 11,
       "frequency": 4
     },
     {
       "id": 105,
+      "heroTypeId": 3,
       "skillId": 18,
       "frequency": 7
     },
     {
       "id": 106,
+      "heroTypeId": 3,
       "skillId": 12,
       "frequency": 3
     },
     {
       "id": 107,
+      "heroTypeId": 3,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 108,
+      "heroTypeId": 3,
       "skillId": 14,
       "frequency": 5
     },
     {
       "id": 109,
+      "heroTypeId": 3,
       "skillId": 17,
       "frequency": 2
     },
     {
       "id": 110,
+      "heroTypeId": 3,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 111,
+      "heroTypeId": 3,
       "skillId": 15,
       "frequency": 5
     },
     {
       "id": 112,
+      "heroTypeId": 3,
       "skillId": 16,
       "frequency": 2
     },
     {
       "id": 113,
+      "heroTypeId": 4,
       "skillId": 0,
       "frequency": 5
     },
     {
       "id": 114,
+      "heroTypeId": 4,
       "skillId": 2,
       "frequency": 8
     },
     {
       "id": 115,
+      "heroTypeId": 4,
       "skillId": 7,
       "frequency": 4
     },
     {
       "id": 116,
+      "heroTypeId": 4,
       "skillId": 8,
       "frequency": 6
     },
     {
       "id": 117,
+      "heroTypeId": 4,
       "skillId": 9,
       "frequency": 2
     },
     {
       "id": 118,
+      "heroTypeId": 4,
       "skillId": 4,
       "frequency": 3
     },
     {
       "id": 119,
+      "heroTypeId": 4,
       "skillId": 5,
       "frequency": 2
     },
     {
       "id": 120,
+      "heroTypeId": 4,
       "skillId": 1,
       "frequency": 6
     },
     {
       "id": 121,
+      "heroTypeId": 4,
       "skillId": 3,
       "frequency": 5
     },
     {
       "id": 122,
+      "heroTypeId": 4,
       "skillId": 6,
       "frequency": 4
     },
     {
       "id": 123,
+      "heroTypeId": 4,
       "skillId": 19,
       "frequency": 4
     },
     {
       "id": 124,
+      "heroTypeId": 4,
       "skillId": 20,
       "frequency": 4
     },
     {
       "id": 125,
+      "heroTypeId": 4,
       "skillId": 21,
       "frequency": 3
     },
     {
       "id": 126,
+      "heroTypeId": 4,
       "skillId": 22,
       "frequency": 3
     },
     {
       "id": 127,
+      "heroTypeId": 4,
       "skillId": 23,
       "frequency": 6
     },
     {
       "id": 128,
+      "heroTypeId": 4,
       "skillId": 24,
       "frequency": 4
     },
     {
       "id": 129,
+      "heroTypeId": 4,
       "skillId": 25,
       "frequency": 3
     },
     {
       "id": 130,
+      "heroTypeId": 4,
       "skillId": 26,
       "frequency": 1
     },
     {
       "id": 131,
+      "heroTypeId": 4,
       "skillId": 27,
       "frequency": 2
     },
     {
       "id": 132,
+      "heroTypeId": 4,
       "skillId": 11,
       "frequency": 3
     },
     {
       "id": 133,
+      "heroTypeId": 4,
       "skillId": 18,
       "frequency": 3
     },
     {
       "id": 134,
+      "heroTypeId": 4,
       "skillId": 12,
       "frequency": 4
     },
     {
       "id": 135,
+      "heroTypeId": 4,
       "skillId": 13,
       "frequency": 10
     },
     {
       "id": 136,
+      "heroTypeId": 4,
       "skillId": 14,
       "frequency": 6
     },
     {
       "id": 137,
+      "heroTypeId": 4,
       "skillId": 17,
       "frequency": 3
     },
     {
       "id": 138,
+      "heroTypeId": 4,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 139,
+      "heroTypeId": 4,
       "skillId": 15,
       "frequency": 4
     },
     {
       "id": 140,
+      "heroTypeId": 4,
       "skillId": 16,
       "frequency": 4
     },
     {
       "id": 141,
+      "heroTypeId": 5,
       "skillId": 0,
       "frequency": 2
     },
     {
       "id": 142,
+      "heroTypeId": 5,
       "skillId": 2,
       "frequency": 1
     },
     {
       "id": 143,
+      "heroTypeId": 5,
       "skillId": 7,
       "frequency": 1
     },
     {
       "id": 144,
+      "heroTypeId": 5,
       "skillId": 8,
       "frequency": 4
     },
     {
       "id": 145,
+      "heroTypeId": 5,
       "skillId": 9,
       "frequency": 7
     },
     {
       "id": 146,
+      "heroTypeId": 5,
       "skillId": 4,
       "frequency": 4
     },
     {
       "id": 147,
+      "heroTypeId": 5,
       "skillId": 5,
       "frequency": 4
     },
     {
       "id": 148,
+      "heroTypeId": 5,
       "skillId": 1,
       "frequency": 1
     },
     {
       "id": 149,
+      "heroTypeId": 5,
       "skillId": 3,
       "frequency": 0
     },
     {
       "id": 150,
+      "heroTypeId": 5,
       "skillId": 6,
       "frequency": 1
     },
     {
       "id": 151,
+      "heroTypeId": 5,
       "skillId": 19,
       "frequency": 10
     },
     {
       "id": 152,
+      "heroTypeId": 5,
       "skillId": 20,
       "frequency": 8
     },
     {
       "id": 153,
+      "heroTypeId": 5,
       "skillId": 21,
       "frequency": 9
     },
     {
       "id": 154,
+      "heroTypeId": 5,
       "skillId": 22,
       "frequency": 8
     },
     {
       "id": 155,
+      "heroTypeId": 5,
       "skillId": 23,
       "frequency": 10
     },
     {
       "id": 156,
+      "heroTypeId": 5,
       "skillId": 24,
       "frequency": 6
     },
     {
       "id": 157,
+      "heroTypeId": 5,
       "skillId": 25,
       "frequency": 3
     },
     {
       "id": 158,
+      "heroTypeId": 5,
       "skillId": 26,
       "frequency": 2
     },
     {
       "id": 159,
+      "heroTypeId": 5,
       "skillId": 27,
       "frequency": 3
     },
     {
       "id": 160,
+      "heroTypeId": 5,
       "skillId": 11,
       "frequency": 4
     },
     {
       "id": 161,
+      "heroTypeId": 5,
       "skillId": 18,
       "frequency": 8
     },
     {
       "id": 162,
+      "heroTypeId": 5,
       "skillId": 12,
       "frequency": 5
     },
     {
       "id": 163,
+      "heroTypeId": 5,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 164,
+      "heroTypeId": 5,
       "skillId": 14,
       "frequency": 2
     },
     {
       "id": 165,
+      "heroTypeId": 5,
       "skillId": 17,
       "frequency": 1
     },
     {
       "id": 166,
+      "heroTypeId": 5,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 167,
+      "heroTypeId": 5,
       "skillId": 15,
       "frequency": 2
     },
     {
       "id": 168,
+      "heroTypeId": 5,
       "skillId": 16,
       "frequency": 2
     },
     {
       "id": 169,
+      "heroTypeId": 6,
       "skillId": 0,
       "frequency": 6
     },
     {
       "id": 170,
+      "heroTypeId": 6,
       "skillId": 2,
       "frequency": 7
     },
     {
       "id": 171,
+      "heroTypeId": 6,
       "skillId": 7,
       "frequency": 5
     },
     {
       "id": 172,
+      "heroTypeId": 6,
       "skillId": 8,
       "frequency": 7
     },
     {
       "id": 173,
+      "heroTypeId": 6,
       "skillId": 9,
       "frequency": 2
     },
     {
       "id": 174,
+      "heroTypeId": 6,
       "skillId": 4,
       "frequency": 3
     },
     {
       "id": 175,
+      "heroTypeId": 6,
       "skillId": 5,
       "frequency": 2
     },
     {
       "id": 176,
+      "heroTypeId": 6,
       "skillId": 1,
       "frequency": 8
     },
     {
       "id": 177,
+      "heroTypeId": 6,
       "skillId": 3,
       "frequency": 6
     },
     {
       "id": 178,
+      "heroTypeId": 6,
       "skillId": 6,
       "frequency": 6
     },
     {
       "id": 179,
+      "heroTypeId": 6,
       "skillId": 19,
       "frequency": 2
     },
     {
       "id": 180,
+      "heroTypeId": 6,
       "skillId": 20,
       "frequency": 2
     },
     {
       "id": 181,
+      "heroTypeId": 6,
       "skillId": 21,
       "frequency": 2
     },
     {
       "id": 182,
+      "heroTypeId": 6,
       "skillId": 22,
       "frequency": 3
     },
     {
       "id": 183,
+      "heroTypeId": 6,
       "skillId": 23,
       "frequency": 4
     },
     {
       "id": 184,
+      "heroTypeId": 6,
       "skillId": 24,
       "frequency": 2
     },
     {
       "id": 185,
+      "heroTypeId": 6,
       "skillId": 25,
       "frequency": 3
     },
     {
       "id": 186,
+      "heroTypeId": 6,
       "skillId": 26,
       "frequency": 4
     },
     {
       "id": 187,
+      "heroTypeId": 6,
       "skillId": 27,
       "frequency": 1
     },
     {
       "id": 188,
+      "heroTypeId": 6,
       "skillId": 11,
       "frequency": 4
     },
     {
       "id": 189,
+      "heroTypeId": 6,
       "skillId": 18,
       "frequency": 3
     },
     {
       "id": 190,
+      "heroTypeId": 6,
       "skillId": 12,
       "frequency": 3
     },
     {
       "id": 191,
+      "heroTypeId": 6,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 192,
+      "heroTypeId": 6,
       "skillId": 14,
       "frequency": 10
     },
     {
       "id": 193,
+      "heroTypeId": 6,
       "skillId": 17,
       "frequency": 4
     },
     {
       "id": 194,
+      "heroTypeId": 6,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 195,
+      "heroTypeId": 6,
       "skillId": 15,
       "frequency": 4
     },
     {
       "id": 196,
+      "heroTypeId": 6,
       "skillId": 16,
       "frequency": 5
     },
     {
       "id": 197,
+      "heroTypeId": 7,
       "skillId": 0,
       "frequency": 4
     },
     {
       "id": 198,
+      "heroTypeId": 7,
       "skillId": 2,
       "frequency": 4
     },
     {
       "id": 199,
+      "heroTypeId": 7,
       "skillId": 7,
       "frequency": 4
     },
     {
       "id": 200,
+      "heroTypeId": 7,
       "skillId": 8,
       "frequency": 6
     },
     {
       "id": 201,
+      "heroTypeId": 7,
       "skillId": 9,
       "frequency": 5
     },
     {
       "id": 202,
+      "heroTypeId": 7,
       "skillId": 4,
       "frequency": 2
     },
     {
       "id": 203,
+      "heroTypeId": 7,
       "skillId": 5,
       "frequency": 2
     },
     {
       "id": 204,
+      "heroTypeId": 7,
       "skillId": 1,
       "frequency": 4
     },
     {
       "id": 205,
+      "heroTypeId": 7,
       "skillId": 3,
       "frequency": 3
     },
     {
       "id": 206,
+      "heroTypeId": 7,
       "skillId": 6,
       "frequency": 4
     },
     {
       "id": 207,
+      "heroTypeId": 7,
       "skillId": 19,
       "frequency": 6
     },
     {
       "id": 208,
+      "heroTypeId": 7,
       "skillId": 20,
       "frequency": 10
     },
     {
       "id": 209,
+      "heroTypeId": 7,
       "skillId": 21,
       "frequency": 5
     },
     {
       "id": 210,
+      "heroTypeId": 7,
       "skillId": 22,
       "frequency": 6
     },
     {
       "id": 211,
+      "heroTypeId": 7,
       "skillId": 23,
       "frequency": 8
     },
     {
       "id": 212,
+      "heroTypeId": 7,
       "skillId": 24,
       "frequency": 3
     },
     {
       "id": 213,
+      "heroTypeId": 7,
       "skillId": 25,
       "frequency": 4
     },
     {
       "id": 214,
+      "heroTypeId": 7,
       "skillId": 26,
       "frequency": 5
     },
     {
       "id": 215,
+      "heroTypeId": 7,
       "skillId": 27,
       "frequency": 2
     },
     {
       "id": 216,
+      "heroTypeId": 7,
       "skillId": 11,
       "frequency": 3
     },
     {
       "id": 217,
+      "heroTypeId": 7,
       "skillId": 18,
       "frequency": 4
     },
     {
       "id": 218,
+      "heroTypeId": 7,
       "skillId": 12,
       "frequency": 2
     },
     {
       "id": 219,
+      "heroTypeId": 7,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 220,
+      "heroTypeId": 7,
       "skillId": 14,
       "frequency": 3
     },
     {
       "id": 221,
+      "heroTypeId": 7,
       "skillId": 17,
       "frequency": 2
     },
     {
       "id": 222,
+      "heroTypeId": 7,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 223,
+      "heroTypeId": 7,
       "skillId": 15,
       "frequency": 4
     },
     {
       "id": 224,
+      "heroTypeId": 7,
       "skillId": 16,
       "frequency": 3
     },
     {
       "id": 225,
+      "heroTypeId": 8,
       "skillId": 0,
       "frequency": 5
     },
     {
       "id": 226,
+      "heroTypeId": 8,
       "skillId": 2,
       "frequency": 5
     },
     {
       "id": 227,
+      "heroTypeId": 8,
       "skillId": 7,
       "frequency": 5
     },
     {
       "id": 228,
+      "heroTypeId": 8,
       "skillId": 8,
       "frequency": 7
     },
     {
       "id": 229,
+      "heroTypeId": 8,
       "skillId": 9,
       "frequency": 0
     },
     {
       "id": 230,
+      "heroTypeId": 8,
       "skillId": 4,
       "frequency": 0
     },
     {
       "id": 231,
+      "heroTypeId": 8,
       "skillId": 5,
       "frequency": 1
     },
     {
       "id": 232,
+      "heroTypeId": 8,
       "skillId": 1,
       "frequency": 7
     },
     {
       "id": 233,
+      "heroTypeId": 8,
       "skillId": 3,
       "frequency": 5
     },
     {
       "id": 234,
+      "heroTypeId": 8,
       "skillId": 6,
       "frequency": 5
     },
     {
       "id": 235,
+      "heroTypeId": 8,
       "skillId": 19,
       "frequency": 5
     },
     {
       "id": 236,
+      "heroTypeId": 8,
       "skillId": 20,
       "frequency": 4
     },
     {
       "id": 237,
+      "heroTypeId": 8,
       "skillId": 21,
       "frequency": 2
     },
     {
       "id": 238,
+      "heroTypeId": 8,
       "skillId": 22,
       "frequency": 4
     },
     {
       "id": 239,
+      "heroTypeId": 8,
       "skillId": 23,
       "frequency": 6
     },
     {
       "id": 240,
+      "heroTypeId": 8,
       "skillId": 24,
       "frequency": 2
     },
     {
       "id": 241,
+      "heroTypeId": 8,
       "skillId": 25,
       "frequency": 4
     },
     {
       "id": 242,
+      "heroTypeId": 8,
       "skillId": 26,
       "frequency": 1
     },
     {
       "id": 243,
+      "heroTypeId": 8,
       "skillId": 27,
       "frequency": 3
     },
     {
       "id": 244,
+      "heroTypeId": 8,
       "skillId": 11,
       "frequency": 2
     },
     {
       "id": 245,
+      "heroTypeId": 8,
       "skillId": 18,
       "frequency": 4
     },
     {
       "id": 246,
+      "heroTypeId": 8,
       "skillId": 12,
       "frequency": 0
     },
     {
       "id": 247,
+      "heroTypeId": 8,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 248,
+      "heroTypeId": 8,
       "skillId": 14,
       "frequency": 5
     },
     {
       "id": 249,
+      "heroTypeId": 8,
       "skillId": 17,
       "frequency": 8
     },
     {
       "id": 250,
+      "heroTypeId": 8,
       "skillId": 10,
       "frequency": 10
     },
     {
       "id": 251,
+      "heroTypeId": 8,
       "skillId": 15,
       "frequency": 4
     },
     {
       "id": 252,
+      "heroTypeId": 8,
       "skillId": 16,
       "frequency": 4
     },
     {
       "id": 253,
+      "heroTypeId": 9,
       "skillId": 0,
       "frequency": 2
     },
     {
       "id": 254,
+      "heroTypeId": 9,
       "skillId": 2,
       "frequency": 2
     },
     {
       "id": 255,
+      "heroTypeId": 9,
       "skillId": 7,
       "frequency": 3
     },
     {
       "id": 256,
+      "heroTypeId": 9,
       "skillId": 8,
       "frequency": 5
     },
     {
       "id": 257,
+      "heroTypeId": 9,
       "skillId": 9,
       "frequency": 0
     },
     {
       "id": 258,
+      "heroTypeId": 9,
       "skillId": 4,
       "frequency": 0
     },
     {
       "id": 259,
+      "heroTypeId": 9,
       "skillId": 5,
       "frequency": 1
     },
     {
       "id": 260,
+      "heroTypeId": 9,
       "skillId": 1,
       "frequency": 3
     },
     {
       "id": 261,
+      "heroTypeId": 9,
       "skillId": 3,
       "frequency": 1
     },
     {
       "id": 262,
+      "heroTypeId": 9,
       "skillId": 6,
       "frequency": 2
     },
     {
       "id": 263,
+      "heroTypeId": 9,
       "skillId": 19,
       "frequency": 6
     },
     {
       "id": 264,
+      "heroTypeId": 9,
       "skillId": 20,
       "frequency": 6
     },
     {
       "id": 265,
+      "heroTypeId": 9,
       "skillId": 21,
       "frequency": 6
     },
     {
       "id": 266,
+      "heroTypeId": 9,
       "skillId": 22,
       "frequency": 6
     },
     {
       "id": 267,
+      "heroTypeId": 9,
       "skillId": 23,
       "frequency": 8
     },
     {
       "id": 268,
+      "heroTypeId": 9,
       "skillId": 24,
       "frequency": 3
     },
     {
       "id": 269,
+      "heroTypeId": 9,
       "skillId": 25,
       "frequency": 8
     },
     {
       "id": 270,
+      "heroTypeId": 9,
       "skillId": 26,
       "frequency": 2
     },
     {
       "id": 271,
+      "heroTypeId": 9,
       "skillId": 27,
       "frequency": 3
     },
     {
       "id": 272,
+      "heroTypeId": 9,
       "skillId": 11,
       "frequency": 4
     },
     {
       "id": 273,
+      "heroTypeId": 9,
       "skillId": 18,
       "frequency": 7
     },
     {
       "id": 274,
+      "heroTypeId": 9,
       "skillId": 12,
       "frequency": 3
     },
     {
       "id": 275,
+      "heroTypeId": 9,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 276,
+      "heroTypeId": 9,
       "skillId": 14,
       "frequency": 4
     },
     {
       "id": 277,
+      "heroTypeId": 9,
       "skillId": 17,
       "frequency": 5
     },
     {
       "id": 278,
+      "heroTypeId": 9,
       "skillId": 10,
       "frequency": 10
     },
     {
       "id": 279,
+      "heroTypeId": 9,
       "skillId": 15,
       "frequency": 6
     },
     {
       "id": 280,
+      "heroTypeId": 9,
       "skillId": 16,
       "frequency": 2
     },
     {
       "id": 281,
+      "heroTypeId": 10,
       "skillId": 0,
       "frequency": 6
     },
     {
       "id": 282,
+      "heroTypeId": 10,
       "skillId": 2,
       "frequency": 6
     },
     {
       "id": 283,
+      "heroTypeId": 10,
       "skillId": 7,
       "frequency": 8
     },
     {
       "id": 284,
+      "heroTypeId": 10,
       "skillId": 8,
       "frequency": 7
     },
     {
       "id": 285,
+      "heroTypeId": 10,
       "skillId": 9,
       "frequency": 1
     },
     {
       "id": 286,
+      "heroTypeId": 10,
       "skillId": 4,
       "frequency": 8
     },
     {
       "id": 287,
+      "heroTypeId": 10,
       "skillId": 5,
       "frequency": 1
     },
     {
       "id": 288,
+      "heroTypeId": 10,
       "skillId": 1,
       "frequency": 8
     },
     {
       "id": 289,
+      "heroTypeId": 10,
       "skillId": 3,
       "frequency": 6
     },
     {
       "id": 290,
+      "heroTypeId": 10,
       "skillId": 6,
       "frequency": 10
     },
     {
       "id": 291,
+      "heroTypeId": 10,
       "skillId": 19,
       "frequency": 1
     },
     {
       "id": 292,
+      "heroTypeId": 10,
       "skillId": 20,
       "frequency": 3
     },
     {
       "id": 293,
+      "heroTypeId": 10,
       "skillId": 21,
       "frequency": 1
     },
     {
       "id": 294,
+      "heroTypeId": 10,
       "skillId": 22,
       "frequency": 2
     },
     {
       "id": 295,
+      "heroTypeId": 10,
       "skillId": 23,
       "frequency": 3
     },
     {
       "id": 296,
+      "heroTypeId": 10,
       "skillId": 24,
       "frequency": 1
     },
     {
       "id": 297,
+      "heroTypeId": 10,
       "skillId": 25,
       "frequency": 3
     },
     {
       "id": 298,
+      "heroTypeId": 10,
       "skillId": 26,
       "frequency": 2
     },
     {
       "id": 299,
+      "heroTypeId": 10,
       "skillId": 27,
       "frequency": 0
     },
     {
       "id": 300,
+      "heroTypeId": 10,
       "skillId": 11,
       "frequency": 3
     },
     {
       "id": 301,
+      "heroTypeId": 10,
       "skillId": 18,
       "frequency": 2
     },
     {
       "id": 302,
+      "heroTypeId": 10,
       "skillId": 12,
       "frequency": 4
     },
     {
       "id": 303,
+      "heroTypeId": 10,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 304,
+      "heroTypeId": 10,
       "skillId": 14,
       "frequency": 8
     },
     {
       "id": 305,
+      "heroTypeId": 10,
       "skillId": 17,
       "frequency": 4
     },
     {
       "id": 306,
+      "heroTypeId": 10,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 307,
+      "heroTypeId": 10,
       "skillId": 15,
       "frequency": 5
     },
     {
       "id": 308,
+      "heroTypeId": 10,
       "skillId": 16,
       "frequency": 5
     },
     {
       "id": 309,
+      "heroTypeId": 11,
       "skillId": 0,
       "frequency": 2
     },
     {
       "id": 310,
+      "heroTypeId": 11,
       "skillId": 2,
       "frequency": 1
     },
     {
       "id": 311,
+      "heroTypeId": 11,
       "skillId": 7,
       "frequency": 1
     },
     {
       "id": 312,
+      "heroTypeId": 11,
       "skillId": 8,
       "frequency": 6
     },
     {
       "id": 313,
+      "heroTypeId": 11,
       "skillId": 9,
       "frequency": 6
     },
     {
       "id": 314,
+      "heroTypeId": 11,
       "skillId": 4,
       "frequency": 3
     },
     {
       "id": 315,
+      "heroTypeId": 11,
       "skillId": 5,
       "frequency": 2
     },
     {
       "id": 316,
+      "heroTypeId": 11,
       "skillId": 1,
       "frequency": 1
     },
     {
       "id": 317,
+      "heroTypeId": 11,
       "skillId": 3,
       "frequency": 0
     },
     {
       "id": 318,
+      "heroTypeId": 11,
       "skillId": 6,
       "frequency": 1
     },
     {
       "id": 319,
+      "heroTypeId": 11,
       "skillId": 19,
       "frequency": 8
     },
     {
       "id": 320,
+      "heroTypeId": 11,
       "skillId": 20,
       "frequency": 8
     },
     {
       "id": 321,
+      "heroTypeId": 11,
       "skillId": 21,
       "frequency": 8
     },
     {
       "id": 322,
+      "heroTypeId": 11,
       "skillId": 22,
       "frequency": 10
     },
     {
       "id": 323,
+      "heroTypeId": 11,
       "skillId": 23,
       "frequency": 10
     },
     {
       "id": 324,
+      "heroTypeId": 11,
       "skillId": 24,
       "frequency": 2
     },
     {
       "id": 325,
+      "heroTypeId": 11,
       "skillId": 25,
       "frequency": 5
     },
     {
       "id": 326,
+      "heroTypeId": 11,
       "skillId": 26,
       "frequency": 5
     },
     {
       "id": 327,
+      "heroTypeId": 11,
       "skillId": 27,
       "frequency": 2
     },
     {
       "id": 328,
+      "heroTypeId": 11,
       "skillId": 11,
       "frequency": 4
     },
     {
       "id": 329,
+      "heroTypeId": 11,
       "skillId": 18,
       "frequency": 8
     },
     {
       "id": 330,
+      "heroTypeId": 11,
       "skillId": 12,
       "frequency": 5
     },
     {
       "id": 331,
+      "heroTypeId": 11,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 332,
+      "heroTypeId": 11,
       "skillId": 14,
       "frequency": 2
     },
     {
       "id": 333,
+      "heroTypeId": 11,
       "skillId": 17,
       "frequency": 4
     },
     {
       "id": 334,
+      "heroTypeId": 11,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 335,
+      "heroTypeId": 11,
       "skillId": 15,
       "frequency": 2
     },
     {
       "id": 336,
+      "heroTypeId": 11,
       "skillId": 16,
       "frequency": 2
     },
     {
       "id": 337,
+      "heroTypeId": 12,
       "skillId": 0,
       "frequency": 7
     },
     {
       "id": 338,
+      "heroTypeId": 12,
       "skillId": 2,
       "frequency": 6
     },
     {
       "id": 339,
+      "heroTypeId": 12,
       "skillId": 7,
       "frequency": 8
     },
     {
       "id": 340,
+      "heroTypeId": 12,
       "skillId": 8,
       "frequency": 8
     },
     {
       "id": 341,
+      "heroTypeId": 12,
       "skillId": 9,
       "frequency": 1
     },
     {
       "id": 342,
+      "heroTypeId": 12,
       "skillId": 4,
       "frequency": 5
     },
     {
       "id": 343,
+      "heroTypeId": 12,
       "skillId": 5,
       "frequency": 3
     },
     {
       "id": 344,
+      "heroTypeId": 12,
       "skillId": 1,
       "frequency": 10
     },
     {
       "id": 345,
+      "heroTypeId": 12,
       "skillId": 3,
       "frequency": 6
     },
     {
       "id": 346,
+      "heroTypeId": 12,
       "skillId": 6,
       "frequency": 8
     },
     {
       "id": 347,
+      "heroTypeId": 12,
       "skillId": 19,
       "frequency": 1
     },
     {
       "id": 348,
+      "heroTypeId": 12,
       "skillId": 20,
       "frequency": 3
     },
     {
       "id": 349,
+      "heroTypeId": 12,
       "skillId": 21,
       "frequency": 1
     },
     {
       "id": 350,
+      "heroTypeId": 12,
       "skillId": 22,
       "frequency": 1
     },
     {
       "id": 351,
+      "heroTypeId": 12,
       "skillId": 23,
       "frequency": 2
     },
     {
       "id": 352,
+      "heroTypeId": 12,
       "skillId": 24,
       "frequency": 3
     },
     {
       "id": 353,
+      "heroTypeId": 12,
       "skillId": 25,
       "frequency": 3
     },
     {
       "id": 354,
+      "heroTypeId": 12,
       "skillId": 26,
       "frequency": 2
     },
     {
       "id": 355,
+      "heroTypeId": 12,
       "skillId": 27,
       "frequency": 0
     },
     {
       "id": 356,
+      "heroTypeId": 12,
       "skillId": 11,
       "frequency": 1
     },
     {
       "id": 357,
+      "heroTypeId": 12,
       "skillId": 18,
       "frequency": 2
     },
     {
       "id": 358,
+      "heroTypeId": 12,
       "skillId": 12,
       "frequency": 2
     },
     {
       "id": 359,
+      "heroTypeId": 12,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 360,
+      "heroTypeId": 12,
       "skillId": 14,
       "frequency": 7
     },
     {
       "id": 361,
+      "heroTypeId": 12,
       "skillId": 17,
       "frequency": 2
     },
     {
       "id": 362,
+      "heroTypeId": 12,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 363,
+      "heroTypeId": 12,
       "skillId": 15,
       "frequency": 8
     },
     {
       "id": 364,
+      "heroTypeId": 12,
       "skillId": 16,
       "frequency": 8
     },
     {
       "id": 365,
+      "heroTypeId": 13,
       "skillId": 0,
       "frequency": 4
     },
     {
       "id": 366,
+      "heroTypeId": 13,
       "skillId": 2,
       "frequency": 4
     },
     {
       "id": 367,
+      "heroTypeId": 13,
       "skillId": 7,
       "frequency": 4
     },
     {
       "id": 368,
+      "heroTypeId": 13,
       "skillId": 8,
       "frequency": 6
     },
     {
       "id": 369,
+      "heroTypeId": 13,
       "skillId": 9,
       "frequency": 4
     },
     {
       "id": 370,
+      "heroTypeId": 13,
       "skillId": 4,
       "frequency": 4
     },
     {
       "id": 371,
+      "heroTypeId": 13,
       "skillId": 5,
       "frequency": 2
     },
     {
       "id": 372,
+      "heroTypeId": 13,
       "skillId": 1,
       "frequency": 8
     },
     {
       "id": 373,
+      "heroTypeId": 13,
       "skillId": 3,
       "frequency": 4
     },
     {
       "id": 374,
+      "heroTypeId": 13,
       "skillId": 6,
       "frequency": 5
     },
     {
       "id": 375,
+      "heroTypeId": 13,
       "skillId": 19,
       "frequency": 5
     },
     {
       "id": 376,
+      "heroTypeId": 13,
       "skillId": 20,
       "frequency": 4
     },
     {
       "id": 377,
+      "heroTypeId": 13,
       "skillId": 21,
       "frequency": 4
     },
     {
       "id": 378,
+      "heroTypeId": 13,
       "skillId": 22,
       "frequency": 6
     },
     {
       "id": 379,
+      "heroTypeId": 13,
       "skillId": 23,
       "frequency": 6
     },
     {
       "id": 380,
+      "heroTypeId": 13,
       "skillId": 24,
       "frequency": 3
     },
     {
       "id": 381,
+      "heroTypeId": 13,
       "skillId": 25,
       "frequency": 3
     },
     {
       "id": 382,
+      "heroTypeId": 13,
       "skillId": 26,
       "frequency": 3
     },
     {
       "id": 383,
+      "heroTypeId": 13,
       "skillId": 27,
       "frequency": 3
     },
     {
       "id": 384,
+      "heroTypeId": 13,
       "skillId": 11,
       "frequency": 3
     },
     {
       "id": 385,
+      "heroTypeId": 13,
       "skillId": 18,
       "frequency": 5
     },
     {
       "id": 386,
+      "heroTypeId": 13,
       "skillId": 12,
       "frequency": 1
     },
     {
       "id": 387,
+      "heroTypeId": 13,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 388,
+      "heroTypeId": 13,
       "skillId": 14,
       "frequency": 9
     },
     {
       "id": 389,
+      "heroTypeId": 13,
       "skillId": 17,
       "frequency": 0
     },
     {
       "id": 390,
+      "heroTypeId": 13,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 391,
+      "heroTypeId": 13,
       "skillId": 15,
       "frequency": 4
     },
     {
       "id": 392,
+      "heroTypeId": 13,
       "skillId": 16,
       "frequency": 4
     },
     {
       "id": 393,
+      "heroTypeId": 14,
       "skillId": 0,
       "frequency": 7
     },
     {
       "id": 394,
+      "heroTypeId": 14,
       "skillId": 2,
       "frequency": 10
     },
     {
       "id": 395,
+      "heroTypeId": 14,
       "skillId": 7,
       "frequency": 8
     },
     {
       "id": 396,
+      "heroTypeId": 14,
       "skillId": 8,
       "frequency": 7
     },
     {
       "id": 397,
+      "heroTypeId": 14,
       "skillId": 9,
       "frequency": 6
     },
     {
       "id": 398,
+      "heroTypeId": 14,
       "skillId": 4,
       "frequency": 5
     },
     {
       "id": 399,
+      "heroTypeId": 14,
       "skillId": 5,
       "frequency": 2
     },
     {
       "id": 400,
+      "heroTypeId": 14,
       "skillId": 1,
       "frequency": 5
     },
     {
       "id": 401,
+      "heroTypeId": 14,
       "skillId": 3,
       "frequency": 5
     },
     {
       "id": 402,
+      "heroTypeId": 14,
       "skillId": 6,
       "frequency": 6
     },
     {
       "id": 403,
+      "heroTypeId": 14,
       "skillId": 19,
       "frequency": 1
     },
     {
       "id": 404,
+      "heroTypeId": 14,
       "skillId": 20,
       "frequency": 2
     },
     {
       "id": 405,
+      "heroTypeId": 14,
       "skillId": 21,
       "frequency": 1
     },
     {
       "id": 406,
+      "heroTypeId": 14,
       "skillId": 22,
       "frequency": 1
     },
     {
       "id": 407,
+      "heroTypeId": 14,
       "skillId": 23,
       "frequency": 2
     },
     {
       "id": 408,
+      "heroTypeId": 14,
       "skillId": 24,
       "frequency": 1
     },
     {
       "id": 409,
+      "heroTypeId": 14,
       "skillId": 25,
       "frequency": 3
     },
     {
       "id": 410,
+      "heroTypeId": 14,
       "skillId": 26,
       "frequency": 0
     },
     {
       "id": 411,
+      "heroTypeId": 14,
       "skillId": 27,
       "frequency": 2
     },
     {
       "id": 412,
+      "heroTypeId": 14,
       "skillId": 11,
       "frequency": 1
     },
     {
       "id": 413,
+      "heroTypeId": 14,
       "skillId": 18,
       "frequency": 1
     },
     {
       "id": 414,
+      "heroTypeId": 14,
       "skillId": 12,
       "frequency": 1
     },
     {
       "id": 415,
+      "heroTypeId": 14,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 416,
+      "heroTypeId": 14,
       "skillId": 14,
       "frequency": 8
     },
     {
       "id": 417,
+      "heroTypeId": 14,
       "skillId": 17,
       "frequency": 8
     },
     {
       "id": 418,
+      "heroTypeId": 14,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 419,
+      "heroTypeId": 14,
       "skillId": 15,
       "frequency": 8
     },
     {
       "id": 420,
+      "heroTypeId": 14,
       "skillId": 16,
       "frequency": 7
     },
     {
       "id": 421,
+      "heroTypeId": 15,
       "skillId": 0,
       "frequency": 3
     },
     {
       "id": 422,
+      "heroTypeId": 15,
       "skillId": 2,
       "frequency": 4
     },
     {
       "id": 423,
+      "heroTypeId": 15,
       "skillId": 7,
       "frequency": 1
     },
     {
       "id": 424,
+      "heroTypeId": 15,
       "skillId": 8,
       "frequency": 8
     },
     {
       "id": 425,
+      "heroTypeId": 15,
       "skillId": 9,
       "frequency": 8
     },
     {
       "id": 426,
+      "heroTypeId": 15,
       "skillId": 4,
       "frequency": 1
     },
     {
       "id": 427,
+      "heroTypeId": 15,
       "skillId": 5,
       "frequency": 4
     },
     {
       "id": 428,
+      "heroTypeId": 15,
       "skillId": 1,
       "frequency": 2
     },
     {
       "id": 429,
+      "heroTypeId": 15,
       "skillId": 3,
       "frequency": 0
     },
     {
       "id": 430,
+      "heroTypeId": 15,
       "skillId": 6,
       "frequency": 1
     },
     {
       "id": 431,
+      "heroTypeId": 15,
       "skillId": 19,
       "frequency": 7
     },
     {
       "id": 432,
+      "heroTypeId": 15,
       "skillId": 20,
       "frequency": 8
     },
     {
       "id": 433,
+      "heroTypeId": 15,
       "skillId": 21,
       "frequency": 7
     },
     {
       "id": 434,
+      "heroTypeId": 15,
       "skillId": 22,
       "frequency": 8
     },
     {
       "id": 435,
+      "heroTypeId": 15,
       "skillId": 23,
       "frequency": 8
     },
     {
       "id": 436,
+      "heroTypeId": 15,
       "skillId": 24,
       "frequency": 3
     },
     {
       "id": 437,
+      "heroTypeId": 15,
       "skillId": 25,
       "frequency": 3
     },
     {
       "id": 438,
+      "heroTypeId": 15,
       "skillId": 26,
       "frequency": 3
     },
     {
       "id": 439,
+      "heroTypeId": 15,
       "skillId": 27,
       "frequency": 3
     },
     {
       "id": 440,
+      "heroTypeId": 15,
       "skillId": 11,
       "frequency": 2
     },
     {
       "id": 441,
+      "heroTypeId": 15,
       "skillId": 18,
       "frequency": 10
     },
     {
       "id": 442,
+      "heroTypeId": 15,
       "skillId": 12,
       "frequency": 1
     },
     {
       "id": 443,
+      "heroTypeId": 15,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 444,
+      "heroTypeId": 15,
       "skillId": 14,
       "frequency": 3
     },
     {
       "id": 445,
+      "heroTypeId": 15,
       "skillId": 17,
       "frequency": 6
     },
     {
       "id": 446,
+      "heroTypeId": 15,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 447,
+      "heroTypeId": 15,
       "skillId": 15,
       "frequency": 2
     },
     {
       "id": 448,
+      "heroTypeId": 15,
       "skillId": 16,
       "frequency": 2
     },
     {
       "id": 449,
+      "heroTypeId": 16,
       "skillId": 0,
       "frequency": 8
     },
     {
       "id": 450,
+      "heroTypeId": 16,
       "skillId": 2,
       "frequency": 5
     },
     {
       "id": 451,
+      "heroTypeId": 16,
       "skillId": 7,
       "frequency": 8
     },
     {
       "id": 452,
+      "heroTypeId": 16,
       "skillId": 8,
       "frequency": 8
     },
     {
       "id": 453,
+      "heroTypeId": 16,
       "skillId": 9,
       "frequency": 1
     },
     {
       "id": 454,
+      "heroTypeId": 16,
       "skillId": 4,
       "frequency": 3
     },
     {
       "id": 455,
+      "heroTypeId": 16,
       "skillId": 5,
       "frequency": 2
     },
     {
       "id": 456,
+      "heroTypeId": 16,
       "skillId": 1,
       "frequency": 9
     },
     {
       "id": 457,
+      "heroTypeId": 16,
       "skillId": 3,
       "frequency": 2
     },
     {
       "id": 458,
+      "heroTypeId": 16,
       "skillId": 6,
       "frequency": 8
     },
     {
       "id": 459,
+      "heroTypeId": 16,
       "skillId": 19,
       "frequency": 1
     },
     {
       "id": 460,
+      "heroTypeId": 16,
       "skillId": 20,
       "frequency": 3
     },
     {
       "id": 461,
+      "heroTypeId": 16,
       "skillId": 21,
       "frequency": 1
     },
     {
       "id": 462,
+      "heroTypeId": 16,
       "skillId": 22,
       "frequency": 1
     },
     {
       "id": 463,
+      "heroTypeId": 16,
       "skillId": 23,
       "frequency": 2
     },
     {
       "id": 464,
+      "heroTypeId": 16,
       "skillId": 24,
       "frequency": 2
     },
     {
       "id": 465,
+      "heroTypeId": 16,
       "skillId": 25,
       "frequency": 3
     },
     {
       "id": 466,
+      "heroTypeId": 16,
       "skillId": 26,
       "frequency": 3
     },
     {
       "id": 467,
+      "heroTypeId": 16,
       "skillId": 27,
       "frequency": 2
     },
     {
       "id": 468,
+      "heroTypeId": 16,
       "skillId": 11,
       "frequency": 2
     },
     {
       "id": 469,
+      "heroTypeId": 16,
       "skillId": 18,
       "frequency": 2
     },
     {
       "id": 470,
+      "heroTypeId": 16,
       "skillId": 12,
       "frequency": 3
     },
     {
       "id": 471,
+      "heroTypeId": 16,
       "skillId": 13,
       "frequency": 8
     },
     {
       "id": 472,
+      "heroTypeId": 16,
       "skillId": 14,
       "frequency": 8
     },
     {
       "id": 473,
+      "heroTypeId": 16,
       "skillId": 17,
       "frequency": 5
     },
     {
       "id": 474,
+      "heroTypeId": 16,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 475,
+      "heroTypeId": 16,
       "skillId": 15,
       "frequency": 6
     },
     {
       "id": 476,
+      "heroTypeId": 16,
       "skillId": 16,
       "frequency": 6
     },
     {
       "id": 477,
+      "heroTypeId": 17,
       "skillId": 0,
       "frequency": 2
     },
     {
       "id": 478,
+      "heroTypeId": 17,
       "skillId": 2,
       "frequency": 1
     },
     {
       "id": 479,
+      "heroTypeId": 17,
       "skillId": 7,
       "frequency": 1
     },
     {
       "id": 480,
+      "heroTypeId": 17,
       "skillId": 8,
       "frequency": 4
     },
     {
       "id": 481,
+      "heroTypeId": 17,
       "skillId": 9,
       "frequency": 4
     },
     {
       "id": 482,
+      "heroTypeId": 17,
       "skillId": 4,
       "frequency": 3
     },
     {
       "id": 483,
+      "heroTypeId": 17,
       "skillId": 5,
       "frequency": 2
     },
     {
       "id": 484,
+      "heroTypeId": 17,
       "skillId": 1,
       "frequency": 1
     },
     {
       "id": 485,
+      "heroTypeId": 17,
       "skillId": 3,
       "frequency": 0
     },
     {
       "id": 486,
+      "heroTypeId": 17,
       "skillId": 6,
       "frequency": 1
     },
     {
       "id": 487,
+      "heroTypeId": 17,
       "skillId": 19,
       "frequency": 8
     },
     {
       "id": 488,
+      "heroTypeId": 17,
       "skillId": 20,
       "frequency": 8
     },
     {
       "id": 489,
+      "heroTypeId": 17,
       "skillId": 21,
       "frequency": 8
     },
     {
       "id": 490,
+      "heroTypeId": 17,
       "skillId": 22,
       "frequency": 8
     },
     {
       "id": 491,
+      "heroTypeId": 17,
       "skillId": 23,
       "frequency": 8
     },
     {
       "id": 492,
+      "heroTypeId": 17,
       "skillId": 24,
       "frequency": 6
     },
     {
       "id": 493,
+      "heroTypeId": 17,
       "skillId": 25,
       "frequency": 6
     },
     {
       "id": 494,
+      "heroTypeId": 17,
       "skillId": 26,
       "frequency": 6
     },
     {
       "id": 495,
+      "heroTypeId": 17,
       "skillId": 27,
       "frequency": 6
     },
     {
       "id": 496,
+      "heroTypeId": 17,
       "skillId": 11,
       "frequency": 4
     },
     {
       "id": 497,
+      "heroTypeId": 17,
       "skillId": 18,
       "frequency": 8
     },
     {
       "id": 498,
+      "heroTypeId": 17,
       "skillId": 12,
       "frequency": 3
     },
     {
       "id": 499,
+      "heroTypeId": 17,
       "skillId": 13,
       "frequency": 4
     },
     {
       "id": 500,
+      "heroTypeId": 17,
       "skillId": 14,
       "frequency": 2
     },
     {
       "id": 501,
+      "heroTypeId": 17,
       "skillId": 17,
       "frequency": 4
     },
     {
       "id": 502,
+      "heroTypeId": 17,
       "skillId": 10,
       "frequency": 0
     },
     {
       "id": 503,
+      "heroTypeId": 17,
       "skillId": 15,
       "frequency": 2
     },
     {
       "id": 504,
+      "heroTypeId": 17,
       "skillId": 16,
       "frequency": 2
     }
@@ -16309,99 +17093,123 @@
   "creatureToSpecifics": [
     {
       "id": 1,
-      "creatureId": 66
+      "creatureId": 66,
+      "specialtyId": 0
     },
     {
       "id": 2,
-      "creatureId": 67
+      "creatureId": 67,
+      "specialtyId": 0
     },
     {
       "id": 3,
-      "creatureId": 96
+      "creatureId": 96,
+      "specialtyId": 4
     },
     {
       "id": 4,
-      "creatureId": 97
+      "creatureId": 97,
+      "specialtyId": 4
     },
     {
       "id": 5,
-      "creatureId": 120
+      "creatureId": 120,
+      "specialtyId": 5
     },
     {
       "id": 6,
-      "creatureId": 121
+      "creatureId": 121,
+      "specialtyId": 5
     },
     {
       "id": 7,
-      "creatureId": 118
+      "creatureId": 118,
+      "specialtyId": 6
     },
     {
       "id": 8,
-      "creatureId": 119
+      "creatureId": 119,
+      "specialtyId": 6
     },
     {
       "id": 9,
-      "creatureId": 116
+      "creatureId": 116,
+      "specialtyId": 7
     },
     {
       "id": 10,
-      "creatureId": 117
+      "creatureId": 117,
+      "specialtyId": 7
     },
     {
       "id": 11,
-      "creatureId": 122
+      "creatureId": 122,
+      "specialtyId": 8
     },
     {
       "id": 12,
-      "creatureId": 123
+      "creatureId": 123,
+      "specialtyId": 8
     },
     {
       "id": 13,
-      "creatureId": 54
+      "creatureId": 54,
+      "specialtyId": 9
     },
     {
       "id": 14,
-      "creatureId": 55
+      "creatureId": 55,
+      "specialtyId": 9
     },
     {
       "id": 15,
-      "creatureId": 26
+      "creatureId": 26,
+      "specialtyId": 3
     },
     {
       "id": 16,
-      "creatureId": 27
+      "creatureId": 27,
+      "specialtyId": 3
     },
     {
       "id": 17,
-      "creatureId": 82
+      "creatureId": 82,
+      "specialtyId": 3
     },
     {
       "id": 18,
-      "creatureId": 83
+      "creatureId": 83,
+      "specialtyId": 3
     },
     {
       "id": 19,
-      "creatureId": 68
+      "creatureId": 68,
+      "specialtyId": 3
     },
     {
       "id": 20,
-      "creatureId": 69
+      "creatureId": 69,
+      "specialtyId": 3
     },
     {
       "id": 21,
-      "creatureId": 140
+      "creatureId": 140,
+      "specialtyId": 3
     },
     {
       "id": 22,
-      "creatureId": 139
+      "creatureId": 139,
+      "specialtyId": 3
     },
     {
       "id": 23,
-      "creatureId": 138
+      "creatureId": 138,
+      "specialtyId": 3
     },
     {
       "id": 24,
-      "creatureId": 137
+      "creatureId": 137,
+      "specialtyId": 3
     }
   ],
   "creatureCasts": [
