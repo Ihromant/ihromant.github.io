@@ -178,6 +178,16 @@
                     <td></td>
                 </tr>
             </table>
+            <table id="o-bank" style="display:none;border:1px solid yellow;height:80px;background:url(https://ihromant.github.io/img/background/blue.jpg);">
+                <tr>
+                    <td>
+                        <select id="o-bank-name"></select>
+                    </td>
+                    <td>
+                        <select id="o-bank-option"></select>
+                    </td>
+                </tr>
+            </table>
         </td>
     </tr>
     </tbody>
@@ -584,7 +594,11 @@
                                                                     <img src="https://ihromant.github.io/img/icons/44x44/default/mana.png">
                                                                     <div>
                                                                         <div style="color:yellow;">Mana points</div>
-                                                                        <div style="color:white;">30/30</div>
+                                                                        <div style="display:flex;flex-direction:row;">
+                                                                            <input id="hero-modal-mana-input" type="number" style="width:40px;" min="0" max="9999" value="30">
+                                                                            <span style="color:white">/</span>
+                                                                            <span id="hero-modal-max-mana" style="color:white">30</span>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </td>
