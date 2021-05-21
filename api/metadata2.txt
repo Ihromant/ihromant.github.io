@@ -2345,6 +2345,30 @@
       "hitPoints": 75,
       "aiValue": 300,
       "goldCost": 750
+    },
+    {
+      "id": 145,
+      "fullName": "PRIMARY_ARROW_TOWER",
+      "upgrade": false,
+      "attack": 10,
+      "defense": 0,
+      "damageLow": 10,
+      "damageHigh": 15,
+      "hitPoints": 2,
+      "aiValue": 400,
+      "goldCost": 0
+    },
+    {
+      "id": 146,
+      "fullName": "SECONDARY_ARROW_TOWER",
+      "upgrade": false,
+      "attack": 10,
+      "defense": 0,
+      "damageLow": 6,
+      "damageHigh": 9,
+      "hitPoints": 2,
+      "aiValue": 400,
+      "goldCost": 0
     }
   ],
   "features": [
@@ -4365,6 +4389,28 @@
       "id": 372,
       "creatureId": 144,
       "fullName": "TWO_HEX"
+    },
+    {
+      "id": 373,
+      "creatureId": 145,
+      "fullName": "RANGED",
+      "effect": 9999
+    },
+    {
+      "id": 374,
+      "creatureId": 145,
+      "fullName": "ARROW_TOWER"
+    },
+    {
+      "id": 375,
+      "creatureId": 146,
+      "fullName": "RANGED",
+      "effect": 9999
+    },
+    {
+      "id": 376,
+      "creatureId": 146,
+      "fullName": "ARROW_TOWER"
     }
   ],
   "animationMetadata": [
