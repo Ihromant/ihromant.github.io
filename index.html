@@ -11,21 +11,13 @@
 </head>
 <body onload="main()">
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
-<table style="border:1px solid yellow;background:url(https://ihromant.github.io/img/background/brown.jpg);">
+<table id="basic-table" style="border:1px solid yellow;background:url(https://ihromant.github.io/img/background/brown.jpg);">
     <tbody>
     <tr>
         <td>
+            <div style="color:white;">Controlled? <input id="x-controlled" type="checkbox" checked></div>
             <div style="color:white;">Choose background</div>
-            <select id="choose-background">
-                <option value="sand">Sand</option>
-                <option value="grass">Grass</option>
-                <option value="dirt">Dirt</option>
-                <option value="lava">Lava</option>
-                <option value="subterranean">Subterranean</option>
-                <option value="rough">Rough</option>
-                <option value="snow">Snow</option>
-                <option value="swamp">Swamp</option>
-            </select>
+            <select id="choose-background"></select>
         </td>
         <td>
             <table id="x-hero" style="border:1px solid yellow;height:80px;background:url(https://ihromant.github.io/img/background/blue.jpg);">
@@ -90,6 +82,7 @@
     </tr>
     <tr>
         <td>
+            <div style="color:white;">Controlled? <input id="o-controlled" type="checkbox" checked></div>
             <div style="color:white;">Choose opp type</div>
             <select id="choose-opponent-type">
                 <option value="hero">Hero</option>
@@ -308,14 +301,16 @@
                 </td>
                 <td>
                     <div class="battle-field">
-                        <img id="background" style="width:800px;height: 556px" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
-                        <img id="x-hero-canvas" width="150" height="175" style="top:-30px;left:-30px;" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
-                        <img id="o-hero-canvas" width="150" height="175" style="top:-30px;left:680px;" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+                        <img id="background" style="width:800px;height:556px" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+                        <div id="under-grid" style="position:relative"></div>
                         <svg id="hexagons" width="800" height="600"></svg>
-                        <div id="units" style="position:relative;"></div>
+                        <div id="numbers" style="position:relative"></div>
                         <div id="objects" style="position:relative;"></div>
+                        <div id="animations" style="position:relative;"></div>
                         <div id="controls" style="width:800px;height:600px;background-color:#ffffff00"></div>
-                        <div id="bottom-controls" style="top:528px;left:0px;width:800px;height:72px;"></div>
+                        <div id="controls-left" style="bottom:0px;left:0px;width:96px;height:72px;"></div>
+                        <div id="move-line"></div>
+                        <div id="controls-right" style="bottom:0px;right:0px;width:96px;height:72px;"></div>
                         <div id="tooltip" style="display:none;"></div>
                     </div>
                 </td>
@@ -442,12 +437,7 @@
         </tr>
         </tbody>
     </table>
-    <table id="settings-modal" class="modal-brown"></table>
-    <table id="log-modal" class="modal-brown scroll-list">
-        <tbody id="log-content">
-        </tbody>
-    </table>
-    <table id="select-unit-modal" class="select-unit">
+    <table id="select-unit-modal" class="modal-blue">
         <tbody>
         <tr>
             <td>
@@ -895,12 +885,6 @@
             </td>
         </tr>
         </tbody>
-    </table>
-    <table id="selection-modal" class="select-unit">
-        <tbody id="selection-content"></tbody>
-    </table>
-    <table id="magic-book" style="background-color:ivory;">
-        <tbody id="magic-book-content"></tbody>
     </table>
 </div>
 </body>

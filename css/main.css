@@ -26,9 +26,17 @@
 }
 
 .modal-brown {
-  background-image:url(https://ihromant.github.io/img/background/brown.jpg);
-  border:1px solid yellow;
-  color:white;
+  background-image: url(https://ihromant.github.io/img/background/brown.jpg);
+  border: 1px solid yellow;
+  color: white;
+}
+
+.modal-ivory {
+  background-color:ivory;
+}
+
+.vertical {
+  display: block;
 }
 
 .scroll-list {
@@ -49,7 +57,7 @@
   color: yellow;
 }
 
-#tooltip {
+.tooltip {
   position: absolute;
   padding: 6px;
   background: #ffd;
@@ -57,7 +65,17 @@
   border-radius: 5px;
 }
 
-.select-unit {
+.left-sided {
+  position: absolute;
+  right: 100%
+}
+
+.right-sided {
+  position: absolute;
+  left: 100%
+}
+
+.modal-blue {
   background-image: url(https://ihromant.github.io/img/background/blue.jpg);
 }
 
@@ -136,6 +154,48 @@
   background: url(https://ihromant.github.io/img/icons/44x44/sec_skill/empty.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+#move-line {
+  bottom: 0px;
+  left: 96px;
+  width: 608px;
+  height: 44px;
+  line-height: 0;
+}
+
+.line-item-wrapper {
+  width: 29px;
+  height: 42px;
+  border: 1px solid yellow;
+  margin-right: 1px;
+  float: left;
+}
+
+.line-item-background {
+  background-image: url(https://ihromant.github.io/img/background/brown.jpg);
+}
+
+.line-image-icon {
+  width: 29px;
+  height: 32px;
+  border-bottom: 1px solid yellow;
+}
+
+.line-number-box {
+  width: 29px;
+  height: 9px;
+  background-color: blue;
+  font-size: 9px;
+  color: white;
+  text-align: center;
+  line-height: normal;
+}
+
+.line-round-text {
+  color: white;
+  text-align: center;
+  line-height: 1.5em;
 }
 
 .cursor-cancel {
