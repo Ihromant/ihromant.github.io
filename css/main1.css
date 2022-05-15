@@ -6,9 +6,8 @@ html, body, .ui-wrapper {
   border: 0px;
   overflow: hidden;
 }
-
 .ui-wrapper {
-  background-image: url(https://ihromant.github.io/img/background/blue.jpg);
+  background-image: url(../img/background/blue.jpg);
   box-sizing: border-box;
   user-select: none;
 }
@@ -25,6 +24,9 @@ html, body, .ui-wrapper {
 }
 .stretch {
   flex: 1 1 auto;
+}
+.no-stretch {
+  flex: 0 0 auto;
 }
 .vertical {
   display: flex;
@@ -43,12 +45,10 @@ html, body, .ui-wrapper {
   padding-top: 2px;
 }
 .status-bar {
-  color: white;
   align-items: center;
   border-left: 1px solid rgb(247,222,123);
   border-bottom: 1px solid rgb(247,222,123);
   border-right: 1px solid rgb(247,222,123);
-  background-image: url(https://ihromant.github.io/img/background/brown.jpg);
 }
 .status-field {
   height: 21px;
@@ -85,4 +85,34 @@ html, body, .ui-wrapper {
 .menu-bar {
   border-left: 1px solid rgb(247,222,123);
   border-bottom: 1px solid rgb(247,222,123);
+}
+.brown-back {
+  color: white;
+  background-image: url(../img/background/brown.jpg);
+}
+.with-frame {
+  border: 1px solid rgb(247,222,123);
+  padding: 5px;
+  background:
+      url(../img/adventure/edge_top_left.png) left 0px top 0px no-repeat,
+      url(../img/adventure/edge_top_right.png) right 0px top 0px no-repeat,
+      url(../img/adventure/edge_bottom_left.png) left 0px bottom 0px no-repeat,
+      url(../img/adventure/edge_bottom_right.png) right 0px bottom 0px no-repeat,
+      transparent;
+}
+img.resize-75 {
+  max-width: 75%;
+  height: auto;
+}
+.with-border {
+  border: 1px solid rgb(247,222,123);
+}
+.bordered-brown {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid rgb(128, 128, 128);
+  border-left: 1px solid rgb(128, 128, 128);
+}
+.unit-place-small {
+
 }
