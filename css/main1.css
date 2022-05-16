@@ -100,9 +100,9 @@ html, body, .ui-wrapper {
       url(../img/adventure/edge_bottom_right.png) right 0px bottom 0px no-repeat,
       transparent;
 }
-img.resize-75 {
-  max-width: 75%;
-  height: auto;
+img.icon-24 {
+  width: 24px;
+  height: 24px;
 }
 .with-border {
   border: 1px solid rgb(247,222,123);
@@ -114,5 +114,5 @@ img.resize-75 {
   border-left: 1px solid rgb(128, 128, 128);
 }
 .unit-place-small {
-
+  background: url(../img/icons/32x32/creature/empty.png);
 }
