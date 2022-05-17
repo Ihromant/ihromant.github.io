@@ -78,9 +78,36 @@ html, body, .ui-wrapper {
   padding-left: 3px;
 }
 .adv-map {
-  display:flex;
+  display: flex;
   border: 1px solid rgb(247,222,123);
   flex: 1 1 auto;
+  position: relative;
+  overflow: hidden;
+}
+.top-left-map-corner {
+  position:absolute;
+  top: 0px;
+  left: 0px;
+}
+.top-right-map-corner {
+  position:absolute;
+  top: 0px;
+  right: 0px;
+}
+.bottom-left-map-corner {
+  position:absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.bottom-right-map-corner {
+  position:absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.adv-map-content {
+  left: -100px;
+  top: -150px;
+  position: absolute;
 }
 .menu-bar {
   border-left: 1px solid rgb(247,222,123);
