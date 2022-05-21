@@ -86,8 +86,7 @@ html, body, .ui-wrapper {
 }
 .adv-map-content {
   position: absolute;
-  left: -100px;
-  top: -150px;
+  left: -1400px;
   padding: 128px;
   background: url(../img/background/mapborder.png);
 }
