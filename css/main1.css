@@ -77,12 +77,18 @@ html, body, .ui-wrapper {
   min-width: 0px;
   padding-left: 3px;
 }
-.adv-map {
+.adv-map-border {
   display: flex;
   border: 1px solid rgb(247,222,123);
   flex: 1 1 auto;
   position: relative;
   overflow: hidden;
+}
+.adv-map-content {
+  position: absolute;
+  left: -100px;
+  top: -150px;
+  padding: 128px;
   background: url(../img/background/mapborder.png);
 }
 .top-left-map-corner {
@@ -104,11 +110,6 @@ html, body, .ui-wrapper {
   position:absolute;
   bottom: 0px;
   right: 0px;
-}
-.adv-map-content {
-  left: -100px;
-  top: -150px;
-  position: absolute;
 }
 .menu-bar {
   border-left: 1px solid rgb(247,222,123);
