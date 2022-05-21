@@ -144,3 +144,9 @@ img.icon-24 {
 .unit-place-small {
   background: url(../img/icons/32x32/creature/empty.png);
 }
+.grid {
+  background-image:
+      repeating-linear-gradient(black 0 1px, transparent 1px 100%),
+      repeating-linear-gradient(90deg, black 0 1px, transparent 1px 100%);
+      background-size: 32px 32px;
+}
