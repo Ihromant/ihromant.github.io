@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Inerta; src: url('../fonts/Inerta-Light.otf');
+}
+
+* {
+  font-family: 'Inerta', Arial, sans-serif;
+}
+
 /* The Modal (background) */
 .modal-window {
   display: none; /* Hidden by default */
