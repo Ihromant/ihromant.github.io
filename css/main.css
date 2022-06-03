@@ -1,11 +1,3 @@
-@font-face {
-  font-family: Inerta; src: url('../fonts/Inerta-Light.otf');
-}
-
-* {
-  font-family: 'Inerta', Arial, sans-serif;
-}
-
 /* The Modal (background) */
 .modal-window {
   display: none; /* Hidden by default */
@@ -19,10 +11,6 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.no-spacing table, .no-spacing tr, .no-spacing td {
-  border-spacing: 0px;
-}
-
 .battle-field {
   position: relative;
   width: 800px;
@@ -34,17 +22,13 @@
 }
 
 .modal-brown {
-  background-image: url(https://ihromant.github.io/img/background/brown.jpg);
+  background-image: url(../img/background/brown.jpg);
   border: 1px solid yellow;
   color: white;
 }
 
 .modal-ivory {
   background-color:ivory;
-}
-
-.vertical {
-  display: block;
 }
 
 .scroll-list {
@@ -73,20 +57,6 @@
   border-radius: 5px;
 }
 
-.left-sided {
-  position: absolute;
-  right: 100%
-}
-
-.right-sided {
-  position: absolute;
-  left: 100%
-}
-
-.modal-blue {
-  background-image: url(https://ihromant.github.io/img/background/blue.jpg);
-}
-
 .town-img {
   width: 48px;
   height: 32px;
@@ -113,53 +83,11 @@
   border: 1px solid orange;
 }
 
-.hero-screen {
-  position: relative;
-}
-
-.hero-screen:before, .hero-screen:after, .hero-screen > *:before, .hero-screen > *:after {
-  display: block;
-  content: "";
-  width: 46px;
-  height: 46px;
-  position: absolute;
-}
-
-.hero-screen:before {
-  background-image: url(https://ihromant.github.io/img/parts/left_top.png);
-  top: 0px;
-  left: 0px;
-}
-
-.hero-screen:after {
-  background-image: url(https://ihromant.github.io/img/parts/right_top.png);
-  top: 0px;
-  right: 0px;
-}
-
-.hero-screen > *:before {
-  background-image: url(https://ihromant.github.io/img/parts/left_bot.png);
-  bottom: 0px;
-  left: 0px;
-}
-
-.hero-screen > *:after {
-  background-image: url(https://ihromant.github.io/img/parts/right_bot.png);
-  bottom: 0px;
-  right: 0px;
-}
-
-.unit-portrait {
-  width: 58px;
-  height: 64px;
-  border: 1px solid #80808036;
-}
-
 .artifact-slot {
   width: 44px;
   height: 44px;
   padding: 0px;
-  background: url(https://ihromant.github.io/img/icons/44x44/sec_skill/empty.png);
+  background: url(../img/icons/44x44/sec_skill/empty.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -181,7 +109,7 @@
 }
 
 .line-item-background {
-  background-image: url(https://ihromant.github.io/img/background/brown.jpg);
+  background-image: url(../img/background/brown.jpg);
 }
 
 .line-image-icon {
@@ -207,45 +135,45 @@
 }
 
 .cursor-cancel {
-  cursor: url(https://ihromant.github.io/cursors/Cursor47.cur), auto;
+  cursor: url(../cursors/Cursor47.cur), auto;
 }
 
 .cursor-north-east {
-  cursor: url(https://ihromant.github.io/cursors/Cursor54.cur), auto;
+  cursor: url(../cursors/Cursor54.cur), auto;
 }
 
 .cursor-east {
-  cursor: url(https://ihromant.github.io/cursors/Cursor55.cur), auto;
+  cursor: url(../cursors/Cursor55.cur), auto;
 }
 
 .cursor-south-east {
-  cursor: url(https://ihromant.github.io/cursors/Cursor56.cur), auto;
+  cursor: url(../cursors/Cursor56.cur), auto;
 }
 
 .cursor-south-west {
-  cursor: url(https://ihromant.github.io/cursors/Cursor57.cur), auto;
+  cursor: url(../cursors/Cursor57.cur), auto;
 }
 
 .cursor-west {
-  cursor: url(https://ihromant.github.io/cursors/Cursor58.cur), auto;
+  cursor: url(../cursors/Cursor58.cur), auto;
 }
 
 .cursor-north-west {
-  cursor: url(https://ihromant.github.io/cursors/Cursor59.cur), auto;
+  cursor: url(../cursors/Cursor59.cur), auto;
 }
 
 .cursor-north {
-  cursor: url(https://ihromant.github.io/cursors/Cursor60.cur), auto;
+  cursor: url(../cursors/Cursor60.cur), auto;
 }
 
 .cursor-south {
-  cursor: url(https://ihromant.github.io/cursors/Cursor61.cur), auto;
+  cursor: url(../cursors/Cursor61.cur), auto;
 }
 
 .cursor-arrow {
-  cursor: url(https://ihromant.github.io/cursors/Cursor50.cur), auto;
+  cursor: url(../cursors/Cursor50.cur), auto;
 }
 
 .cursor-broken-arrow {
-  cursor: url(https://ihromant.github.io/cursors/Cursor62.cur), auto;
+  cursor: url(../cursors/Cursor62.cur), auto;
 }

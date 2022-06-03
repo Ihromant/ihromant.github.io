@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Inerta; src: url('../fonts/Inerta-Light.otf');
+}
+
+* {
+  font-family: 'Inerta', Arial, sans-serif;
+}
+
 html, body, .ui-wrapper {
   width: 100%;
   height: 100%;
@@ -5,6 +13,9 @@ html, body, .ui-wrapper {
   padding: 0px;
   border: 0px;
   overflow: hidden;
+}
+.wrapper {
+  box-sizing: border-box;
 }
 .ui-wrapper {
   background-image: url(../img/background/blue.jpg);
@@ -23,7 +34,7 @@ html, body, .ui-wrapper {
   flex-flow: row;
 }
 .stretch {
-  flex: 1 1 auto;
+  flex: 1;
 }
 .no-stretch {
   flex: 0 0 auto;
@@ -118,8 +129,10 @@ html, body, .ui-wrapper {
   color: white;
   background-image: url(../img/background/brown.jpg);
 }
+.blue-back {
+  background-image: url(../img/background/blue.jpg);
+}
 .with-frame {
-  border: 1px solid rgb(247,222,123);
   padding: 5px;
   background:
       url(../img/adventure/edge_top_left.png) left 0px top 0px no-repeat,
@@ -135,6 +148,12 @@ img.icon-24 {
 .with-border {
   border: 1px solid rgb(247,222,123);
 }
+.with-border-top {
+  border-top: 1px solid rgb(247,222,123);
+}
+.with-border-left {
+  border-left: 1px solid rgb(247,222,123);
+}
 .bordered-brown {
   border-bottom: 1px solid rgb(255, 255, 255);
   border-right: 1px solid rgb(255, 255, 255);
@@ -149,4 +168,38 @@ img.icon-24 {
       repeating-linear-gradient(black 0 1px, transparent 1px 100%),
       repeating-linear-gradient(90deg, black 0 1px, transparent 1px 100%);
       background-size: 32px 32px;
+}
+.margined-2 {
+  display: flex;
+  margin: 2px;
+}
+.margined-4 {
+  display: flex;
+  margin: 4px;
+}
+.margined-6 {
+  display: flex;
+  margin: 6px;
+}
+.portrait {
+  border: 1px solid #80808036;
+}
+.side-widget {
+  width: 80px;
+  font-size: 8px;
+}
+.gap-2 {
+  gap: 2px;
+}
+.flex {
+  display: flex;
+}
+.gray-border {
+  border: 1px solid #80808036;
+}
+.yellow-text {
+  color: yellow;
+}
+.font-10 {
+  font-size: 10px;
 }
