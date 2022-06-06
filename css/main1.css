@@ -18,16 +18,8 @@ html, body, .ui-wrapper {
   box-sizing: border-box;
 }
 .ui-wrapper {
-  background-image: url(../img/background/blue.jpg);
   box-sizing: border-box;
   user-select: none;
-}
-.ui-wrapper {
-  border: 1px solid rgb(247,222,123);
-  display: flex;
-  display: flex;
-  flex-flow: column;
-  flex: 1 1 0%;
 }
 .horizontal {
   display: flex;
@@ -94,12 +86,10 @@ html, body, .ui-wrapper {
   flex: 1 1 auto;
   position: relative;
   overflow: hidden;
+  background: url(../img/background/mapborder.png);
 }
 .adv-map-content {
   position: absolute;
-  left: -1400px;
-  padding: 128px;
-  background: url(../img/background/mapborder.png);
 }
 .top-left-map-corner {
   position:absolute;
@@ -202,4 +192,9 @@ img.icon-24 {
 }
 .font-10 {
   font-size: 10px;
+}
+.controls {
+  width: inherit;
+  height: inherit;
+  position: absolute;
 }
