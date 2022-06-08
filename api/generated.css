@@ -1,0 +1,230 @@
+.mi-6-5 {
+  width: 192px;
+  height: 160px;
+  object-fit: cover;
+}
+.mi-5-1 {
+  width: 160px;
+  height: 32px;
+  object-fit: cover;
+}
+.mi-5-2 {
+  width: 160px;
+  height: 64px;
+  object-fit: cover;
+}
+.mi-5-3 {
+  width: 160px;
+  height: 96px;
+  object-fit: cover;
+}
+.mi-5-4 {
+  width: 160px;
+  height: 128px;
+  object-fit: cover;
+}
+.mi-5-5 {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+.mi-4-1 {
+  width: 128px;
+  height: 32px;
+  object-fit: cover;
+}
+.mi-4-2 {
+  width: 128px;
+  height: 64px;
+  object-fit: cover;
+}
+.mi-4-3 {
+  width: 128px;
+  height: 96px;
+  object-fit: cover;
+}
+.mi-4-4 {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+}
+.mi-3-1 {
+  width: 96px;
+  height: 32px;
+  object-fit: cover;
+}
+.mi-3-2 {
+  width: 96px;
+  height: 64px;
+  object-fit: cover;
+}
+.mi-3-3 {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+.mi-2-1 {
+  width: 64px;
+  height: 32px;
+  object-fit: cover;
+}
+.mi-2-2 {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+.mi-2-3 {
+  width: 64px;
+  height: 96px;
+  object-fit: cover;
+}
+.mi-2-4 {
+  width: 64px;
+  height: 128px;
+  object-fit: cover;
+}
+.mi-1-1 {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+.mi-1-2 {
+  width: 32px;
+  height: 64px;
+  object-fit: cover;
+}
+.mi-7-3 {
+  width: 224px;
+  height: 96px;
+  object-fit: cover;
+}
+.mi-6-2 {
+  width: 192px;
+  height: 64px;
+  object-fit: cover;
+}
+.mi-6-3 {
+  width: 192px;
+  height: 96px;
+  object-fit: cover;
+}
+.mi-6-4 {
+  width: 192px;
+  height: 128px;
+  object-fit: cover;
+}
+.ami-1-12 {
+  animation: kf-1-12 2400ms steps(12) infinite;
+}
+@keyframes kf-1-12 {
+  from {
+    object-position: 0px 0px;
+  }
+  to {
+    object-position: 0px -384px;
+  }
+}
+.ami-3-8 {
+  animation: kf-3-8 1600ms steps(8) infinite;
+}
+@keyframes kf-3-8 {
+  from {
+    object-position: 0px 0px;
+  }
+  to {
+    object-position: 0px -768px;
+  }
+}
+.ami-3-12 {
+  animation: kf-3-12 2400ms steps(12) infinite;
+}
+@keyframes kf-3-12 {
+  from {
+    object-position: 0px 0px;
+  }
+  to {
+    object-position: 0px -1152px;
+  }
+}
+.ami-2-9 {
+  animation: kf-2-9 1800ms steps(9) infinite;
+}
+@keyframes kf-2-9 {
+  from {
+    object-position: 0px 0px;
+  }
+  to {
+    object-position: 0px -576px;
+  }
+}
+.ami-2-12 {
+  animation: kf-2-12 2400ms steps(12) infinite;
+}
+@keyframes kf-2-12 {
+  from {
+    object-position: 0px 0px;
+  }
+  to {
+    object-position: 0px -768px;
+  }
+}
+.ami-1-9 {
+  animation: kf-1-9 1800ms steps(9) infinite;
+}
+@keyframes kf-1-9 {
+  from {
+    object-position: 0px 0px;
+  }
+  to {
+    object-position: 0px -288px;
+  }
+}
+.ami-5-14 {
+  animation: kf-5-14 2800ms steps(14) infinite;
+}
+@keyframes kf-5-14 {
+  from {
+    object-position: 0px 0px;
+  }
+  to {
+    object-position: 0px -2240px;
+  }
+}
+.image-button {
+  object-fit: cover;
+  object-position: 0px 0px;
+}
+.ib-32-32 {
+  width: 32px;
+  height: 32px;
+}
+.ib-32-32:active {
+  object-position: 0px -32px;
+}
+.ib-32-32:disabled {
+  object-position: 0px -64px;
+}
+input.image-radio[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+input.image-radio[type=radio] + img {
+  object-fit: cover;
+  object-position: 0px 0px;
+  cursor: pointer;
+}
+.rb-62-32[type=radio] + img {
+  width: 62px;
+  height: 32px;
+}
+.rb-62-32[type=radio]:active + img {
+  object-position: 0px -32px;
+}
+.rb-62-32[type=radio]:disabled + img {
+  object-position: 0px -64px;
+}
+.rb-62-32[type=radio]:checked + img {
+  object-position: 0px -96px;
+}

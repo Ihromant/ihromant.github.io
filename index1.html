@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/main1.css" type="text/css">
+    <link rel="stylesheet" href="api/generated.css" type="text/css">
     <script type="text/javascript" charset="utf-8" src="js/classes.js"></script>
 </head>
 <body onload="main()">
@@ -27,6 +28,7 @@
         <div class="vertical menu-bar">
             <div class="minimap">
                 <img src="img/adventure/minimap.png">
+                <canvas id="minimap"></canvas>
             </div>
             <div class="all-lists horizontal">
                 <div class="all-heroes vertical">
@@ -74,7 +76,7 @@
                 <div class="all-controls vertical">
                     <div class="horizontal">
                         <img src="img/adventure/small_blue_undericon.png">
-                        <img src="img/adventure/small_blue_undericon.png">
+                        <input id="change-z" type="image" class="image-button ib-32-32" src="img/adventure/small_blue_undericon.png">
                     </div>
                     <div class="horizontal">
                         <img src="img/adventure/small_blue_undericon.png">
@@ -258,7 +260,6 @@
         </div>
         <div class="status-messages centered">Messages</div>
     </div>
-    <div id="map-controls" class="controls"></div>
 </div>
 <div id="modals" style="display:none;">
     <div id="wrapper">

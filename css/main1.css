@@ -90,6 +90,7 @@ html, body, .ui-wrapper {
 }
 .adv-map-content {
   position: absolute;
+  overflow: hidden;
 }
 .top-left-map-corner {
   position:absolute;
@@ -193,8 +194,13 @@ img.icon-24 {
 .font-10 {
   font-size: 10px;
 }
-.controls {
-  width: inherit;
-  height: inherit;
+.minimap {
+  position: relative;
+}
+.minimap > canvas {
+  width: 144px;
+  height: 144px;
   position: absolute;
+  left: 24px;
+  top: 25px;
 }
