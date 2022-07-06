@@ -21,7 +21,7 @@
                 <img class="bottom-left-map-corner" src="img/parts/left_bot.png">
                 <img class="bottom-right-map-corner" src="img/parts/right_bot.png">
             </div>
-            <div class="status-bar vertical brown-back centered">
+            <div class="with-border vertical brown-back centered">
                 <span>Daremyth Mage (Move points: 1560 / 1560)</span>
             </div>
         </div>
@@ -29,6 +29,7 @@
             <div class="minimap">
                 <img src="img/adventure/minimap.png">
                 <canvas id="minimap"></canvas>
+                <canvas id="minimap-rect"></canvas>
             </div>
             <div class="all-lists horizontal">
                 <div class="all-heroes vertical">
@@ -105,30 +106,16 @@
                         <img src="img/adventure/clepsidra.png">
                     </div>
                 </div>
-                <div class="all-castles vertical">
-                    <div></div>
-                    <div class="horizontal">
-                        <img src="img/icons/48x32/castle/castle.png">
-                    </div>
-                    <div class="horizontal">
-                        <img src="img/icons/48x32/castle/castle.png">
-                    </div>
-                    <div class="horizontal">
-                        <img src="img/icons/48x32/castle/castle.png">
-                    </div>
-                    <div class="horizontal">
-                        <img src="img/icons/48x32/castle/castle.png">
-                    </div>
-                    <div class="horizontal">
-                        <img src="img/icons/48x32/castle/castle.png">
-                    </div>
-                    <div class="horizontal">
-                        <img src="img/icons/48x32/castle/castle.png">
-                    </div>
-                    <div class="horizontal">
-                        <img src="img/icons/48x32/castle/castle.png">
-                    </div>
-                    <div></div>
+                <div id="all-castles" class="vertical centered">
+                    <input type="image" class="image-button ib-48-16" src="img/buttons/48x16/scroll_towns_up.png">
+                    <img class="black-border" src="img/icons/46x30/castle/empty.png">
+                    <img class="black-border" src="img/icons/46x30/castle/empty.png">
+                    <img class="black-border" src="img/icons/46x30/castle/empty.png">
+                    <img class="black-border" src="img/icons/46x30/castle/empty.png">
+                    <img class="black-border" src="img/icons/46x30/castle/empty.png">
+                    <img class="black-border" src="img/icons/46x30/castle/empty.png">
+                    <img class="black-border" src="img/icons/46x30/castle/empty.png">
+                    <input type="image" class="image-button ib-48-16" src="img/buttons/48x16/scroll_towns_down.png">
                 </div>
             </div>
             <div class="with-frame">
@@ -224,44 +211,176 @@
             <div class="stretch brown-back bordered-brown"></div>
         </div>
     </div>
-    <div class="horizontal status-area">
-        <div class="status-field centered">
-            <div class="status-resources horizontal">
+    <div class="horizontal gap-2">
+        <div class="vertical stretch">
+            <div class="horizontal">
                 <div class="resource-box horizontal">
                     <img src="img/icons/20x18/lumber.png">
-                    <div class="status-text">10</div>
+                    <span>10</span>
                 </div>
                 <div class="resource-box horizontal">
                     <img src="img/icons/20x18/mercury.png">
-                    <div class="status-text">4</div>
+                    <span>4</span>
                 </div>
                 <div class="resource-box horizontal">
                     <img src="img/icons/20x18/ore.png">
-                    <div class="status-text">10</div>
+                    <span>10</span>
                 </div>
                 <div class="resource-box horizontal">
                     <img src="img/icons/20x18/sulfur.png">
-                    <div class="status-text">4</div>
+                    <span>4</span>
                 </div>
                 <div class="resource-box horizontal">
                     <img src="img/icons/20x18/crystal.png">
-                    <div class="status-text">4</div>
+                    <span>4</span>
                 </div>
                 <div class="resource-box horizontal">
                     <img src="img/icons/20x18/gems.png">
-                    <div class="status-text">4</div>
+                    <span>4</span>
                 </div>
                 <div class="resource-box horizontal">
                     <img src="img/icons/20x18/gold.png">
-                    <div class="status-text">10500</div>
+                    <span>10500</span>
+                </div>
+                <div class="horizontal centered stretch">
+                    <span class="vertical stretch to-end">Month: 1, Week: 1, Day: 1</span>
                 </div>
             </div>
-            <div class="status-text">Month: 1, Week: 1, Day: 1</div>
         </div>
-        <div class="status-messages centered">Messages</div>
+        <span class="centered">Messages</span>
     </div>
 </div>
 <div id="modals" style="display:none;">
+    <div id="town-view" class="vertical no-stretch with-border">
+        <div id="town-background" style="position: relative;"></div>
+        <div class="vertical stretch with-border brown-back margined-2">
+            <div class="horizontal with-border blue-back margined-2">
+                <div class="vertical stretch">
+                    <div class="horizontal stretch">
+                        <div class="vertical with-border">
+                            <div class="horizontal">
+                                <div class="vertical">
+                                    <img src="img/icons/58x64/castle/castle_fort.png">
+                                </div>
+                                <div class="vertical stretch">
+                                    <div class="horizontal bordered-brown">Castellatus</div>
+                                    <div class="horizontal">
+                                        <img src="img/icons/38x38/hall/00_00.png">
+                                        <img src="img/icons/38x38/fort/00_00.png">
+                                        <div class="vertical stretch to-end">
+                                            <span>500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="horizontal">
+                                <div class="vertical centered">
+                                    <img src="img/icons/48x32/default/empty.png">
+                                    <span>12</span>
+                                </div>
+                                <div class="vertical centered">
+                                    <img src="img/icons/48x32/default/empty.png">
+                                    <span>12</span>
+                                </div>
+                                <div class="vertical centered">
+                                    <img src="img/icons/48x32/default/empty.png">
+                                    <span>12</span>
+                                </div>
+                                <div class="vertical centered">
+                                    <img src="img/icons/48x32/default/empty.png">
+                                    <span>12</span>
+                                </div>
+                            </div>
+                            <div class="horizontal">
+                                <div class="vertical centered">
+                                    <img src="img/icons/48x32/default/empty.png">
+                                    <span>12</span>
+                                </div>
+                                <div class="vertical centered">
+                                    <img src="img/icons/48x32/default/empty.png">
+                                    <span>12</span>
+                                </div>
+                                <div class="vertical centered">
+                                    <img src="img/icons/48x32/default/empty.png">
+                                    <span>12</span>
+                                </div>
+                                <div class="vertical centered">
+                                    <img src="img/icons/48x32/default/empty.png">
+                                    <span>12</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical with-border">
+                            <div class="horizontal margined-4 gap-2">
+                                <img src="img/icons/58x64/default/empty.png">
+                                <img src="img/icons/58x64/default/empty.png">
+                                <img src="img/icons/58x64/default/empty.png">
+                                <img src="img/icons/58x64/default/empty.png">
+                                <img src="img/icons/58x64/default/empty.png">
+                                <img src="img/icons/58x64/default/empty.png">
+                                <img src="img/icons/58x64/default/empty.png">
+                                <img src="img/icons/58x64/default/empty.png">
+                            </div>
+                            <div class="horizontal margined-4 gap-2">
+                                <img src="img/icons/58x64/default/empty.png">
+                                <img src="img/icons/58x64/default/empty.png">
+                                <img src="img/icons/58x64/default/empty.png">
+                                <img src="img/icons/58x64/default/empty.png">
+                                <img src="img/icons/58x64/default/empty.png">
+                                <img src="img/icons/58x64/default/empty.png">
+                                <img src="img/icons/58x64/default/empty.png">
+                                <img src="img/icons/58x64/default/empty.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal with-border">
+                        <div class="horizontal stretch">
+                            <img src="img/icons/20x18/lumber.png">
+                            <span>10</span>
+                        </div>
+                        <div class="horizontal stretch">
+                            <img src="img/icons/20x18/mercury.png">
+                            <span>4</span>
+                        </div>
+                        <div class="horizontal stretch">
+                            <img src="img/icons/20x18/ore.png">
+                            <span>10</span>
+                        </div>
+                        <div class="horizontal stretch">
+                            <img src="img/icons/20x18/sulfur.png">
+                            <span>4</span>
+                        </div>
+                        <div class="horizontal stretch">
+                            <img src="img/icons/20x18/crystal.png">
+                            <span>4</span>
+                        </div>
+                        <div class="horizontal stretch">
+                            <img src="img/icons/20x18/gems.png">
+                            <span>4</span>
+                        </div>
+                        <div class="horizontal stretch">
+                            <img src="img/icons/20x18/gold.png">
+                            <span>10500</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical centered with-border">
+                    <input type="image" class="image-button ib-54-32" src="img/buttons/54x32/split_troops.png">
+                    <div class="vertical no-stretch">
+                        <input type="image" class="image-button ib-48-16" src="img/buttons/48x16/scroll_towns_up.png">
+                        <img class="black-border" src="img/icons/46x30/castle/empty.png">
+                        <img class="black-border" src="img/icons/46x30/castle/empty.png">
+                        <img class="black-border" src="img/icons/46x30/castle/empty.png">
+                        <input type="image" class="image-button ib-48-16" src="img/buttons/48x16/scroll_towns_down.png">
+                    </div>
+                    <input type="image" class="image-button ib-52-36" src="img/buttons/52x36/ok.png">
+                </div>
+            </div>
+            <div class="vertical centered">
+                <span>Tavern</span>
+            </div>
+        </div>
+    </div>
     <div id="wrapper">
         <div class="horizontal">
             <div class="vertical side-widget">

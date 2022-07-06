@@ -29,40 +29,15 @@ html, body, .ui-wrapper {
   flex: 1;
 }
 .no-stretch {
-  flex: 0 0 auto;
+  width: fit-content;
+  height: fit-content;
 }
 .vertical {
   display: flex;
   flex-flow: column;
 }
-.status-area {
-  display: flex;
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: default;
-}
-.status-area {
-  gap: 2px;
-  font-size: 12px;
-  color: white;
-  padding-top: 2px;
-}
-.status-bar {
-  align-items: center;
-  border-left: 1px solid rgb(247,222,123);
-  border-bottom: 1px solid rgb(247,222,123);
-  border-right: 1px solid rgb(247,222,123);
-}
-.status-field {
-  height: 21px;
-  box-sizing: border-box;
-  display: flex;
-  flex: 1 0 auto;
-  align-items: center;
-}
-.status-resources {
-  flex: 1 0 auto;
-  overflow: hidden;
+.to-end {
+  align-items: end;
 }
 .centered {
   align-items: center;
@@ -74,11 +49,6 @@ html, body, .ui-wrapper {
   border-right: 1px solid rgb(255, 255, 255);
   border-top: 1px solid rgb(0, 0, 128);
   border-left: 1px solid rgb(0, 0, 128);
-}
-.status-messages {
-  flex: 0 0 114px;
-  min-width: 0px;
-  padding-left: 3px;
 }
 .adv-map-border {
   display: flex;
@@ -122,6 +92,7 @@ html, body, .ui-wrapper {
 }
 .blue-back {
   background-image: url(../img/background/blue.jpg);
+  color: white;
 }
 .with-frame {
   padding: 5px;
@@ -188,6 +159,12 @@ img.icon-24 {
 .gray-border {
   border: 1px solid #80808036;
 }
+.black-border {
+  border: 1px solid black;
+}
+.selection-border {
+  border-color: #e9cd91;
+}
 .yellow-text {
   color: yellow;
 }
@@ -203,4 +180,9 @@ img.icon-24 {
   position: absolute;
   left: 24px;
   top: 25px;
+}
+.adv-map-controls {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff00;
 }
