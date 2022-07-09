@@ -192,3 +192,63 @@ img.icon-24 {
 #building-rows {
   margin: 10px 20px;
 }
+.cant-build {
+  background: rgb(217,105,105);
+  background: linear-gradient(180deg, rgba(217,105,105,1) 0%, rgba(181,16,16,1) 100%);
+}
+.cant-build::after {
+  content: "";
+  background: url(../img/townbuildings/pictures/cant.png) no-repeat;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -18px;
+  right: 0px;
+}
+.can-build {
+  background: rgb(115,181,123);
+  background: linear-gradient(180deg, rgba(115,181,123,1) 0%, rgba(16,82,24,1) 100%);
+}
+.alr-build {
+  position: relative;
+  background: rgb(231,189,99);
+  background: linear-gradient(180deg, rgba(231,189,99,1) 0%, rgba(123,82,0,1) 100%);
+}
+.alr-build::after {
+  content: "";
+  background: url(../img/townbuildings/pictures/built.png) no-repeat;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -18px;
+  right: 0px;
+}
+.imp-build {
+  background: rgb(189,189,189);
+  background: linear-gradient(180deg, rgba(189,189,189,1) 0%, rgba(82,82,82,1) 100%);
+}
+.imp-build::after {
+  content: "";
+  background: url(../img/townbuildings/pictures/cant.png) no-repeat;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -18px;
+  right: 0px;
+}
+.not-affordable {
+  background: rgb(217,105,105);
+  background: linear-gradient(180deg, rgba(217,105,105,1) 0%, rgba(181,16,16,1) 100%);
+}
+.not-affordable::after {
+  content: "";
+  background: url(../img/townbuildings/pictures/not_affordable.png) no-repeat;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -18px;
+  right: 0px;
+}
+.building-info {
+  font-size: 8px;
+}
