@@ -14,9 +14,6 @@ html, body, .ui-wrapper {
   border: 0px;
   overflow: hidden;
 }
-.wrapper {
-  box-sizing: border-box;
-}
 .ui-wrapper {
   box-sizing: border-box;
   user-select: none;
@@ -132,19 +129,10 @@ img.icon-24 {
       background-size: 32px 32px;
 }
 .margined-2 {
-  display: flex;
   margin: 2px;
 }
 .margined-4 {
-  display: flex;
   margin: 4px;
-}
-.margined-6 {
-  display: flex;
-  margin: 6px;
-}
-.portrait {
-  border: 1px solid #80808036;
 }
 .side-widget {
   width: 80px;
@@ -159,8 +147,11 @@ img.icon-24 {
 .gap-40 {
   gap: 40px;
 }
+.yellow-border {
+  border: 1px solid rgb(247,222,123);
+}
 .gray-border {
-  border: 1px solid #80808036;
+  border: 1px solid #80808080;
 }
 .black-border {
   border: 1px solid black;
