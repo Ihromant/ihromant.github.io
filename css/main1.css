@@ -213,3 +213,10 @@ img.icon-24 {
   background: rgb(115,181,123);
   background: linear-gradient(180deg, rgba(115,181,123,1) 0%, rgba(16,82,24,1) 100%);
 }
+.board {
+  position: relative;
+  line-height: 0;
+}
+.positioned {
+  position: absolute;
+}
