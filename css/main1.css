@@ -220,3 +220,6 @@ img.icon-24 {
 .positioned {
   position: absolute;
 }
+.event-transparent {
+  pointer-events: none;
+}
