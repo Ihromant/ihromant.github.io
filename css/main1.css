@@ -102,6 +102,9 @@ img.icon-24 {
 .black-border {
   border: 1px solid black;
 }
+.transparent-border {
+  border: 1px solid transparent;
+}
 .selection-border {
   border-color: #e9cd91;
 }
