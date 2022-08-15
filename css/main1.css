@@ -129,7 +129,9 @@ img.icon-24 {
 }
 .board {
   position: relative;
-  line-height: 0;
+}
+.board img {
+  vertical-align: bottom;
 }
 .positioned {
   position: absolute;
