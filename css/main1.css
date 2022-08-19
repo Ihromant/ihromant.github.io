@@ -71,7 +71,7 @@ html, body, .ui-wrapper {
       url(../img/adventure/edge_top_right.png) right 0px top 0px no-repeat,
       url(../img/adventure/edge_bottom_left.png) left 0px bottom 0px no-repeat,
       url(../img/adventure/edge_bottom_right.png) right 0px bottom 0px no-repeat,
-      transparent;
+      url(../img/background/blue.jpg);
 }
 img.icon-24 {
   width: 24px;
