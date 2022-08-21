@@ -129,6 +129,8 @@ img.icon-24 {
 }
 .board {
   position: relative;
+  width: fit-content;
+  height: fit-content;
 }
 .board img {
   vertical-align: bottom;
