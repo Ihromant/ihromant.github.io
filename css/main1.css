@@ -85,24 +85,6 @@ html, body, .ui-wrapper {
   width: 80px;
   font-size: 8px;
 }
-.yellow-border {
-  border: 1px solid rgb(247,222,123);
-}
-.gray-border {
-  border: 1px solid #80808080;
-}
-.black-border {
-  border: 1px solid black;
-}
-.transparent-border {
-  border: 1px solid transparent;
-}
-.selection-border {
-  border-color: #e9cd91;
-}
-.yellow-text {
-  color: yellow;
-}
 .orange-gradient-back {
   background: rgb(231,189,99);
   background: linear-gradient(180deg, rgba(231,189,99,1) 0%, rgba(123,82,0,1) 100%);
