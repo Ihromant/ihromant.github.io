@@ -43,11 +43,14 @@ html, body, .ui-wrapper {
   display: flex;
   flex-flow: column;
 }
-.to-end {
-  align-items: end;
+.align-end {
+  align-items: start;
 }
 .centered {
   align-items: center;
+}
+.align-end {
+  align-items: end;
 }
 .brown-back {
   background-image: url(../img/background/brown.jpg);
