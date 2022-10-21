@@ -44,13 +44,13 @@ html, body, .ui-wrapper {
   flex-flow: column;
 }
 .align-start {
-  align-items: start;
+  align-items: flex-start;
 }
 .centered {
   align-items: center;
 }
 .align-end {
-  align-items: end;
+  align-items: flex-end;
 }
 .brown-back {
   background-image: url(../img/background/brown.jpg);
