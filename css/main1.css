@@ -43,7 +43,7 @@ html, body, .ui-wrapper {
   display: flex;
   flex-flow: column;
 }
-.align-end {
+.align-start {
   align-items: start;
 }
 .centered {
