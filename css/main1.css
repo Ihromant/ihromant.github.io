@@ -53,15 +53,23 @@ html, body, .ui-wrapper {
   align-items: flex-end;
 }
 .brown-back {
-  background-image: url(../img/background/brown.jpg);
+  background-image: url('../img/background/brown.jpg');
   color: white;
 }
 .blue-back {
-  background-image: url(../img/background/blue.jpg);
+  background-image: url('../img/background/blue.png');
+  color: white;
+}
+.green-back {
+  background-image: url('../img/background/green.png');
+  color: white;
+}
+.purple-back {
+  background-image: url('../img/background/purple.png');
   color: white;
 }
 .map-border-back {
-  background-image: url(../img/background/map_border.png);
+  background-image: url('../img/background/map_border.png');
 }
 .with-frame {
   padding: 5px;
@@ -70,7 +78,7 @@ html, body, .ui-wrapper {
       url(../img/adventure/edge_top_right.png) right 0px top 0px no-repeat,
       url(../img/adventure/edge_bottom_left.png) left 0px bottom 0px no-repeat,
       url(../img/adventure/edge_bottom_right.png) right 0px bottom 0px no-repeat,
-      url(../img/background/blue.jpg);
+      url(../img/background/blue.png);
 }
 .with-border {
   border: 1px solid rgb(247,222,123);
