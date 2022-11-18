@@ -225,7 +225,11 @@ input[type="range"]:focus::-webkit-slider-thumb {
 .ver-scroll::-webkit-scrollbar-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  background-image: url('../img/buttons/16x16/verthumb.png');
+  background-image: url('../img/background/bluethumb.png');
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-left: 1px solid rgba(128, 128, 128, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .ver-scroll::-webkit-scrollbar-button:vertical {
