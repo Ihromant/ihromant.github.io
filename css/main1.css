@@ -52,20 +52,40 @@ html, body, .ui-wrapper {
 .align-end {
   align-items: flex-end;
 }
-.brown-back {
-  background-image: url('../img/background/brown.jpg');
+.red-back {
+  background-color: rgb(203,24,24);
   color: white;
 }
 .blue-back {
   background-image: url('../img/background/blue.png');
   color: white;
 }
+.tan-back {
+  background-color: rgb(222,181,148);
+  color: white;
+}
 .green-back {
   background-image: url('../img/background/green.png');
   color: white;
 }
+.orange-back {
+  background-color: rgb(214,99,0);
+  color: white;
+}
 .purple-back {
   background-image: url('../img/background/purple.png');
+  color: white;
+}
+.teal-back {
+  background-color: rgb(79,145,153);
+  color: white;
+}
+.pink-back {
+  background-color: rgb(178,107,123);
+  color: white;
+}
+.brown-back {
+  background-image: url('../img/background/brown.jpg');
   color: white;
 }
 .map-border-back {
