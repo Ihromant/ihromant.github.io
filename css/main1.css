@@ -4,11 +4,11 @@
 }
 @font-face {
   font-family: CenturySchoolBook;
-  src: url('../fonts/CenturySchoolBook.ttf');
+  src: url('../fonts/CenturySchoolBook.otf');
 }
 @font-face {
   font-family: CenturySchoolBook;
-  src: url('../fonts/CenturySchoolBook-Bold.ttf');
+  src: url('../fonts/CenturySchoolBook-Bold.otf');
   font-weight: bold;
 }
 
@@ -98,6 +98,10 @@ html, body, .ui-wrapper {
   background-image: url('../img/background/brown.jpg');
   color: white;
 }
+.light-blue-back {
+  background-image: url('../img/background/blue1.png');
+  color: white;
+}
 .map-border-back {
   background-image: url('../img/background/map_border.png');
 }
@@ -185,6 +189,10 @@ html, body, .ui-wrapper {
 }
 .text-button:disabled {
   opacity: 0.5;
+}
+.text-input {
+  background-image: url('../img/background/blue.png');
+  color: rgb(247, 222, 123);
 }
 
 /* vertical scroll */
