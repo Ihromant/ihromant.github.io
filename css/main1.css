@@ -165,6 +165,16 @@ html, body, .ui-wrapper {
 .split-distance > * {
   flex: 1;
 }
+.text-button {
+  background-image: url('../img/background/gold_button.png');
+  border: 4px outset rgba(232,220,184,0.5);
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+.text-button:disabled {
+  opacity: 0.5;
+}
 
 /* vertical scroll */
 .ver-scroll {
