@@ -195,19 +195,16 @@ html, body, .ui-wrapper {
   color: rgb(247, 222, 123);
 }
 input.image-checkbox[type=checkbox] {
-  position: absolute;
-  opacity: 0;
-  top: 0px;
-  left: 0px;
-}
-input.image-checkbox[type=checkbox] + img {
+  appearance: none;
+  background-color: transparent;
+  background-image: url('../img/icons/26x18/checkbox.png');
+  background-position: 0px 0px;
+  margin: 0;
   width: 26px;
   height: 18px;
-  object-fit: cover;
-  object-position: 0px 0px;
 }
-input.image-radio[type=checkbox]:checked + img {
-  object-position: 0px -18px;
+input.image-checkbox[type=checkbox]:checked {
+  background-position: 0px -18px;
 }
 
 /* vertical scroll */
