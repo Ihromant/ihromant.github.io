@@ -1,5 +1,15 @@
 @font-face {
-  font-family: Inerta; src: url('../fonts/Inerta-Light.otf');
+  font-family: Inerta;
+  src: url('../fonts/Inerta-Light.otf');
+}
+@font-face {
+  font-family: CenturySchoolBook;
+  src: url('../fonts/CenturySchoolBook.ttf');
+}
+@font-face {
+  font-family: CenturySchoolBook;
+  src: url('../fonts/CenturySchoolBook-Bold.ttf');
+  font-weight: bold;
 }
 
 * {
@@ -166,6 +176,7 @@ html, body, .ui-wrapper {
   flex: 1;
 }
 .text-button {
+  font-family: 'CenturySchoolBook', Arial, sans-serif;
   background-image: url('../img/background/gold_button.png');
   border: 4px outset rgba(232,220,184,0.5);
   color: black;
