@@ -196,12 +196,12 @@ html, body, .ui-wrapper {
 }
 input.image-checkbox[type=checkbox] {
   appearance: none;
-  background-color: transparent;
   background-image: url('../img/icons/26x18/checkbox.png');
   background-position: 0px 0px;
   margin: 0;
   width: 26px;
   height: 18px;
+  vertical-align: bottom;
 }
 input.image-checkbox[type=checkbox]:checked {
   background-position: 0px -18px;
