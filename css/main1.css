@@ -62,49 +62,6 @@ html, body, .ui-wrapper {
 .align-end {
   align-items: flex-end;
 }
-.red-back {
-  background-color: rgb(203,24,24);
-  color: white;
-}
-.blue-back {
-  background-image: url('../img/background/blue.png');
-  color: white;
-}
-.tan-back {
-  background-color: rgb(222,181,148);
-  color: white;
-}
-.green-back {
-  background-image: url('../img/background/green.png');
-  color: white;
-}
-.orange-back {
-  background-color: rgb(214,99,0);
-  color: white;
-}
-.purple-back {
-  background-image: url('../img/background/purple.png');
-  color: white;
-}
-.teal-back {
-  background-color: rgb(79,145,153);
-  color: white;
-}
-.pink-back {
-  background-color: rgb(178,107,123);
-  color: white;
-}
-.brown-back {
-  background-image: url('../img/background/brown.jpg');
-  color: white;
-}
-.light-blue-back {
-  background-image: url('../img/background/blue1.png');
-  color: white;
-}
-.map-border-back {
-  background-image: url('../img/background/map_border.png');
-}
 .with-frame {
   padding: 5px;
   background:
@@ -129,22 +86,6 @@ html, body, .ui-wrapper {
 .side-widget {
   width: 80px;
   font-size: 8px;
-}
-.orange-gradient-back {
-  background: rgb(231,189,99);
-  background: linear-gradient(180deg, rgba(231,189,99,1) 0%, rgba(123,82,0,1) 100%);
-}
-.gray-gradient-back {
-  background: rgb(189,189,189);
-  background: linear-gradient(180deg, rgba(189,189,189,1) 0%, rgba(82,82,82,1) 100%);
-}
-.red-gradient-back {
-  background: rgb(217,105,105);
-  background: linear-gradient(180deg, rgba(217,105,105,1) 0%, rgba(181,16,16,1) 100%);
-}
-.green-gradient-back {
-  background: rgb(115,181,123);
-  background: linear-gradient(180deg, rgba(115,181,123,1) 0%, rgba(16,82,24,1) 100%);
 }
 .board {
   position: relative;
