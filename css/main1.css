@@ -193,6 +193,11 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 
 /* vertical scroll */
+.ver-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: blue black;
+}
+
 .ver-scroll::-webkit-scrollbar {
   width: 16px;
   height: 16px;
