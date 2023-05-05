@@ -1,166 +1,266 @@
-.battle-field {
-  position: relative;
-  width: 800px;
-  height: 600px;
+@font-face {
+  font-family: Inerta;
+  src: url('../fonts/Inerta-Light.otf');
+}
+@font-face {
+  font-family: CenturySchoolBook;
+  src: url('../fonts/CenturySchoolBook.otf');
+}
+@font-face {
+  font-family: CenturySchoolBook;
+  src: url('../fonts/CenturySchoolBook-Bold.otf');
+  font-weight: bold;
 }
 
-.battle-field > * {
+* {
+  font-family: 'Inerta', Arial, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  overflow: hidden;
+}
+.modal-window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-window > * {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.horizontal {
+  display: flex;
+  flex-flow: row;
+}
+.stretch {
+  flex: 1;
+}
+.vertical {
+  display: flex;
+  flex-flow: column;
+}
+.align-start {
+  align-items: flex-start;
+}
+.centered {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+.with-frame {
+  padding: 5px;
+  background:
+      url(../img/adventure/edge_top_left.png) left 0px top 0px no-repeat,
+      url(../img/adventure/edge_top_right.png) right 0px top 0px no-repeat,
+      url(../img/adventure/edge_bottom_left.png) left 0px bottom 0px no-repeat,
+      url(../img/adventure/edge_bottom_right.png) right 0px bottom 0px no-repeat,
+      url(../img/background/blue.png);
+}
+.with-border {
+  border: 1px solid rgb(247,222,123);
+}
+.unit-place-small {
+  background: url(../img/icons/32x32/creature/empty.png);
+}
+.grid {
+  background-image:
+      repeating-linear-gradient(black 0 1px, transparent 1px 100%),
+      repeating-linear-gradient(90deg, black 0 1px, transparent 1px 100%);
+      background-size: 32px 32px;
+}
+.board {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+.board img {
+  vertical-align: bottom;
+}
+.positioned {
   position: absolute;
 }
-
-.modal-brown {
-  background-image: url(../img/background/brown.jpg);
-  border: 1px solid yellow;
-  color: white;
+.event-transparent {
+  pointer-events: none;
+}
+.text-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scene {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.cut-ledges {
+  overflow: hidden;
+}
+.max-distance {
+  justify-content: space-between;
+}
+.split-distance > * {
+  flex: 1;
+}
+.text-button {
+  font-family: 'CenturySchoolBook', Arial, sans-serif;
+  background-image: url('../img/background/gold_button.png');
+  border: 4px outset rgba(232,220,184,0.5);
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+.text-button:disabled {
+  opacity: 0.5;
+}
+.text-input {
+  background-image: url('../img/background/blue.png');
+  color: rgb(247, 222, 123);
+}
+input.image-checkbox[type=checkbox] {
+  appearance: none;
+  background-image: url('../img/icons/26x18/checkbox.png');
+  background-position: 0px 0px;
+  margin: 0;
+  width: 26px;
+  height: 18px;
+  vertical-align: bottom;
+}
+input.image-checkbox[type=checkbox]:checked {
+  background-position: 0px -18px;
 }
 
-.modal-ivory {
-  background-color:ivory;
-}
-
-.scroll-list {
-  display: block;
-  width: 480px;
-  height: 360px;
+/* vertical scroll */
+.ver-scroll {
   overflow-y: auto;
 }
 
-.number-box {
-  position: absolute;
-  border: 1px solid yellow;
-  background-color: blue;
-  text-align: center;
-  width: 32px;
-  height: 12px;
-  font-size: 12px;
-  color: yellow;
+/********** Range Input Styles **********/
+/*Range Reset*/
+input[type="range"] {
+   -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15rem;
+    margin: 0;
 }
 
-.tooltip {
-  position: absolute;
-  padding: 6px;
-  background: #ffd;
-  border: 1px #886 solid;
-  border-radius: 5px;
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
 }
 
-.town-img {
-  width: 48px;
-  height: 32px;
-  border: 2px solid transparent;
-  cursor: pointer;
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: black;
+  border-radius: 0;
+  height: 16px;
 }
 
-.final-select-img {
-  width: 58px;
-  height: 64px;
-  border: 1px solid black;
-  cursor: pointer;
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  background-image: url('../img/buttons/16x16/thumb.png');
+  width: 16px;
+  height: 16px;
 }
 
-.town-img.active {
-  border: 2px solid yellow;
+input[type="range"]:focus::-webkit-slider-thumb {
+  border: none;
+  border-radius: 0;
+  outline: none;
 }
 
-.town-img:not(.active):hover {
-  border: 2px solid orange;
+/* vertical scroll */
+.ver-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: blue black;
 }
 
-.final-select-img:hover {
-  border: 1px solid orange;
+.ver-scroll::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
 }
 
-.artifact-slot {
-  width: 44px;
-  height: 44px;
-  padding: 0px;
-  background: url(../img/icons/44x44/sec_skill/empty.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+.ver-scroll::-webkit-scrollbar-track {
+  background-color: black;
+  border-radius: 0;
+  width: 16px;
 }
 
-#move-line {
-  bottom: 0px;
-  left: 96px;
-  width: 608px;
-  height: 44px;
-  line-height: 0;
+.ver-scroll::-webkit-scrollbar-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  background-image: url('../img/background/bluethumb.png');
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-left: 1px solid rgba(128, 128, 128, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.line-item-wrapper {
-  width: 29px;
-  height: 42px;
-  border: 1px solid yellow;
-  margin-right: 1px;
-  float: left;
+.ver-scroll::-webkit-scrollbar-button:vertical {
+  width: 16px;
+  height: 16px;
+  background-position: 0px 0px;
 }
 
-.line-item-background {
-  background-image: url(../img/background/brown.jpg);
+.ver-scroll::-webkit-scrollbar-button:vertical:increment {
+  background-image: url('../img/buttons/16x16/verincr.png');
 }
 
-.line-image-icon {
-  width: 29px;
-  height: 32px;
-  border-bottom: 1px solid yellow;
+.ver-scroll::-webkit-scrollbar-button:vertical:increment:active {
+  background-position: 0px -16px;
 }
 
-.line-number-box {
-  width: 29px;
-  height: 9px;
-  background-color: blue;
-  font-size: 9px;
-  color: white;
-  text-align: center;
-  line-height: normal;
+.ver-scroll::-webkit-scrollbar-button:vertical:increment:disabled {
+  background-position: 0px -32px;
 }
 
-.line-round-text {
-  color: white;
-  text-align: center;
-  line-height: 1.5em;
+.ver-scroll::-webkit-scrollbar-button:vertical:decrement {
+  background-image: url('../img/buttons/16x16/verdecr.png');
 }
 
-.cursor-cancel {
-  cursor: url(../cursors/Cursor47.cur), auto;
+.ver-scroll::-webkit-scrollbar-button:vertical:decrement:active {
+  background-position: 0px -16px;
 }
 
-.cursor-north-east {
-  cursor: url(../cursors/Cursor54.cur), auto;
+.ver-scroll::-webkit-scrollbar-button:vertical:decrement:disabled {
+  background-position: 0px -32px;
 }
 
-.cursor-east {
-  cursor: url(../cursors/Cursor55.cur), auto;
+/******** Firefox styles ********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: black;
+  border-radius: 0;
+  height: 16px;
 }
 
-.cursor-south-east {
-  cursor: url(../cursors/Cursor56.cur), auto;
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0; /*Removes default border-radius that FF applies*/
+
+  background-image: url('../img/buttons/16x16/thumb.png');
+  width: 16px;
+  height: 16px;
 }
 
-.cursor-south-west {
-  cursor: url(../cursors/Cursor57.cur), auto;
-}
-
-.cursor-west {
-  cursor: url(../cursors/Cursor58.cur), auto;
-}
-
-.cursor-north-west {
-  cursor: url(../cursors/Cursor59.cur), auto;
-}
-
-.cursor-north {
-  cursor: url(../cursors/Cursor60.cur), auto;
-}
-
-.cursor-south {
-  cursor: url(../cursors/Cursor61.cur), auto;
-}
-
-.cursor-arrow {
-  cursor: url(../cursors/Cursor50.cur), auto;
-}
-
-.cursor-broken-arrow {
-  cursor: url(../cursors/Cursor62.cur), auto;
+input[type="range"]:focus::-moz-range-thumb {
+  border: none;
+  border-radius: 0;
+  outline: none;
 }
