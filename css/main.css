@@ -152,7 +152,6 @@ input[type="range"] {
     appearance: none;
     background: transparent;
     cursor: pointer;
-    width: 15rem;
     margin: 0;
 }
 
