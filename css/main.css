@@ -127,7 +127,7 @@ html, body {
   background-image: url('../img/background/blue.png');
   color: rgb(247, 222, 123);
 }
-input.image-checkbox[type=checkbox] {
+input.image-checkbox[type="checkbox"] {
   appearance: none;
   background-image: url('../img/icons/26x18/checkbox.png');
   background-position: 0px 0px;
@@ -136,51 +136,13 @@ input.image-checkbox[type=checkbox] {
   height: 18px;
   vertical-align: bottom;
 }
-input.image-checkbox[type=checkbox]:checked {
+input.image-checkbox[type="checkbox"]:checked {
   background-position: 0px -18px;
 }
 
 /* vertical scroll */
 .ver-scroll {
   overflow-y: auto;
-}
-
-/********** Range Input Styles **********/
-/*Range Reset*/
-input[type="range"] {
-   -webkit-appearance: none;
-    appearance: none;
-    background: transparent;
-    cursor: pointer;
-    margin: 0;
-}
-
-/* Removes default focus */
-input[type="range"]:focus {
-  outline: none;
-}
-
-/***** Chrome, Safari, Opera and Edge Chromium styles *****/
-/* slider track */
-input[type="range"]::-webkit-slider-runnable-track {
-  background-color: black;
-  border-radius: 0;
-  height: 16px;
-}
-
-/* slider thumb */
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
-  appearance: none;
-  background-image: url('../img/buttons/16x16/thumb.png');
-  width: 16px;
-  height: 16px;
-}
-
-input[type="range"]:focus::-webkit-slider-thumb {
-  border: none;
-  border-radius: 0;
-  outline: none;
 }
 
 /* vertical scroll */
@@ -240,16 +202,53 @@ input[type="range"]:focus::-webkit-slider-thumb {
   background-position: 0px -32px;
 }
 
-/******** Firefox styles ********/
+/********** Range Input Styles **********/
+/*Range Reset*/
+input.ui-range[type="range"] {
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Removes default focus */
+input.ui-range[type="range"]:focus {
+  outline: none;
+}
+
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
 /* slider track */
-input[type="range"]::-moz-range-track {
+input.ui-range[type="range"]::-webkit-slider-runnable-track {
   background-color: black;
   border-radius: 0;
   height: 16px;
 }
 
 /* slider thumb */
-input[type="range"]::-moz-range-thumb {
+input.ui-range[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  background-image: url('../img/buttons/16x16/thumb.png');
+  width: 16px;
+  height: 16px;
+}
+
+input.ui-range[type="range"]:focus::-webkit-slider-thumb {
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+
+/******** Firefox styles ********/
+/* slider track */
+input.ui-range[type="range"]::-moz-range-track {
+  background-color: black;
+  border-radius: 0;
+  height: 16px;
+}
+
+/* slider thumb */
+input.ui-range[type="range"]::-moz-range-thumb {
   border: none; /*Removes extra border that FF applies*/
   border-radius: 0; /*Removes default border-radius that FF applies*/
 
@@ -258,7 +257,7 @@ input[type="range"]::-moz-range-thumb {
   height: 16px;
 }
 
-input[type="range"]:focus::-moz-range-thumb {
+input.ui-range[type="range"]:focus::-moz-range-thumb {
   border: none;
   border-radius: 0;
   outline: none;
