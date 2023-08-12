@@ -24,7 +24,7 @@ html, body {
   border: 0px;
   overflow: hidden;
 }
-.modal-window {
+.x-ui-modal-window {
   position: fixed;
   left: 0;
   top: 0;
@@ -32,33 +32,33 @@ html, body {
   height: 100%;
   background-color: rgba(0,0,0,0.4);
 }
-.modal-window > * {
+.x-ui-modal-window > * {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.horizontal {
+.x-ui-horizontal {
   display: flex;
   flex-flow: row;
 }
-.stretch {
+.x-ui-stretch {
   flex: 1;
 }
-.vertical {
+.x-ui-vertical {
   display: flex;
   flex-flow: column;
 }
-.align-start {
+.x-ui-align-start {
   align-items: flex-start;
 }
-.centered {
+.x-ui-centered {
   align-items: center;
 }
-.align-end {
+.x-ui-align-end {
   align-items: flex-end;
 }
-.with-frame {
+.x-ui-with-frame {
   padding: 5px;
   background:
       url(../img/adventure/edge_top_left.png) left 0px top 0px no-repeat,
@@ -67,52 +67,46 @@ html, body {
       url(../img/adventure/edge_bottom_right.png) right 0px bottom 0px no-repeat,
       url(../img/background/blue.png);
 }
-.with-border {
-  border: 1px solid rgb(247,222,123);
-}
-.unit-place-small {
-  background: url(../img/icons/32x32/creature/empty.png);
-}
-.grid {
+.x-ui-grid {
   background-image:
       repeating-linear-gradient(black 0 1px, transparent 1px 100%),
       repeating-linear-gradient(90deg, black 0 1px, transparent 1px 100%);
       background-size: 32px 32px;
 }
-.board {
+.x-ui-board {
   position: relative;
   width: fit-content;
   height: fit-content;
 }
-.board img {
+.x-ui-board img {
   vertical-align: bottom;
 }
-.positioned {
+.x-ui-positioned {
   position: absolute;
 }
-.event-transparent {
+.x-ui-evt-transparent {
   pointer-events: none;
 }
-.text-center {
+.x-ui-text-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.scene {
+.x-ui-scene {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
 }
-.cut-ledges {
+.x-ui-cut-ledges {
   overflow: hidden;
 }
-.max-distance {
+.x-ui-max-distance {
   justify-content: space-between;
 }
-.split-distance > * {
+.x-ui-split-distance > * {
   flex: 1;
 }
-.text-button {
+.x-ui-text-button {
   font-family: 'CenturySchoolBook', Arial, sans-serif;
   background-image: url('../img/background/gold_button.png');
   border: 4px outset rgba(232,220,184,0.5);
@@ -120,14 +114,16 @@ html, body {
   font-weight: bold;
   font-size: 15px;
 }
-.text-button:disabled {
+.x-ui-text-button:disabled {
   opacity: 0.5;
 }
-.text-input {
+.x-ui-text-input {
   background-image: url('../img/background/blue.png');
   color: rgb(247, 222, 123);
 }
-input.image-checkbox[type="checkbox"] {
+
+/* checkbox input */
+.x-ui-img-checkbox {
   appearance: none;
   background-image: url('../img/icons/26x18/checkbox.png');
   background-position: 0px 0px;
@@ -136,33 +132,33 @@ input.image-checkbox[type="checkbox"] {
   height: 18px;
   vertical-align: bottom;
 }
-input.image-checkbox[type="checkbox"]:checked {
+
+.x-ui-img-checkbox:checked {
   background-position: 0px -18px;
 }
 
 /* vertical scroll */
-.ver-scroll {
+.x-ui-ver-scroll {
   overflow-y: auto;
 }
 
-/* vertical scroll */
-.ver-scroll {
+.x-ui-ver-scroll {
   scrollbar-width: thin;
   scrollbar-color: blue black;
 }
 
-.ver-scroll::-webkit-scrollbar {
+.x-ui-ver-scroll::-webkit-scrollbar {
   width: 16px;
   height: 16px;
 }
 
-.ver-scroll::-webkit-scrollbar-track {
+.x-ui-ver-scroll::-webkit-scrollbar-track {
   background-color: black;
   border-radius: 0;
   width: 16px;
 }
 
-.ver-scroll::-webkit-scrollbar-thumb {
+.x-ui-ver-scroll::-webkit-scrollbar-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
   background-image: url('../img/background/bluethumb.png');
@@ -172,39 +168,39 @@ input.image-checkbox[type="checkbox"]:checked {
   border-right: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.ver-scroll::-webkit-scrollbar-button:vertical {
+.x-ui-ver-scroll::-webkit-scrollbar-button:vertical {
   width: 16px;
   height: 16px;
   background-position: 0px 0px;
 }
 
-.ver-scroll::-webkit-scrollbar-button:vertical:increment {
+.x-ui-ver-scroll::-webkit-scrollbar-button:vertical:increment {
   background-image: url('../img/buttons/16x16/verincr.png');
 }
 
-.ver-scroll::-webkit-scrollbar-button:vertical:increment:active {
+.x-ui-ver-scroll::-webkit-scrollbar-button:vertical:increment:active {
   background-position: 0px -16px;
 }
 
-.ver-scroll::-webkit-scrollbar-button:vertical:increment:disabled {
+.x-ui-ver-scroll::-webkit-scrollbar-button:vertical:increment:disabled {
   background-position: 0px -32px;
 }
 
-.ver-scroll::-webkit-scrollbar-button:vertical:decrement {
+.x-ui-ver-scroll::-webkit-scrollbar-button:vertical:decrement {
   background-image: url('../img/buttons/16x16/verdecr.png');
 }
 
-.ver-scroll::-webkit-scrollbar-button:vertical:decrement:active {
+.x-ui-ver-scroll::-webkit-scrollbar-button:vertical:decrement:active {
   background-position: 0px -16px;
 }
 
-.ver-scroll::-webkit-scrollbar-button:vertical:decrement:disabled {
+.x-ui-ver-scroll::-webkit-scrollbar-button:vertical:decrement:disabled {
   background-position: 0px -32px;
 }
 
 /********** Range Input Styles **********/
 /*Range Reset*/
-input.ui-range[type="range"] {
+.x-ui-range {
     appearance: none;
     background: transparent;
     cursor: pointer;
@@ -212,20 +208,20 @@ input.ui-range[type="range"] {
 }
 
 /* Removes default focus */
-input.ui-range[type="range"]:focus {
+.x-ui-range:focus {
   outline: none;
 }
 
 /***** Chrome, Safari, Opera and Edge Chromium styles *****/
 /* slider track */
-input.ui-range[type="range"]::-webkit-slider-runnable-track {
+.x-ui-range::-webkit-slider-runnable-track {
   background-color: black;
   border-radius: 0;
   height: 16px;
 }
 
 /* slider thumb */
-input.ui-range[type="range"]::-webkit-slider-thumb {
+.x-ui-range::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
   background-image: url('../img/buttons/16x16/thumb.png');
@@ -233,7 +229,7 @@ input.ui-range[type="range"]::-webkit-slider-thumb {
   height: 16px;
 }
 
-input.ui-range[type="range"]:focus::-webkit-slider-thumb {
+.x-ui-range:focus::-webkit-slider-thumb {
   border: none;
   border-radius: 0;
   outline: none;
@@ -241,14 +237,14 @@ input.ui-range[type="range"]:focus::-webkit-slider-thumb {
 
 /******** Firefox styles ********/
 /* slider track */
-input.ui-range[type="range"]::-moz-range-track {
+.x-ui-range::-moz-range-track {
   background-color: black;
   border-radius: 0;
   height: 16px;
 }
 
 /* slider thumb */
-input.ui-range[type="range"]::-moz-range-thumb {
+.x-ui-range::-moz-range-thumb {
   border: none; /*Removes extra border that FF applies*/
   border-radius: 0; /*Removes default border-radius that FF applies*/
 
@@ -257,7 +253,7 @@ input.ui-range[type="range"]::-moz-range-thumb {
   height: 16px;
 }
 
-input.ui-range[type="range"]:focus::-moz-range-thumb {
+.x-ui-range:focus::-moz-range-thumb {
   border: none;
   border-radius: 0;
   outline: none;
