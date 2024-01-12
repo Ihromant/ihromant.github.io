@@ -847,12 +847,13 @@ let ui_Client_$callClinit = () => {
 let ui_Client_main = $args => {
     let $cont, $controls, var$4, var$5, var$6, var$7, var$8, var$9, var$10, var$11;
     jl_String__clinit_();
-    jl_Character__clinit_();
+    uid_DennistonArcVisualizer__clinit_();
     jl_Integer__clinit_();
-    jl_Double__clinit_();
     uid_TextColor__clinit_();
     juc_ThreadLocalRandom__clinit_();
     uiu_Color__clinit_();
+    jl_Character__clinit_();
+    jl_Double__clinit_();
     jl_AbstractStringBuilder$Constants__clinit_();
     jl_Long__clinit_();
     otcit_DoubleAnalyzer__clinit_();
@@ -929,103 +930,105 @@ ui_Client_repaint = () => {
     jusi_SimpleIntStreamImpl_forEachOrdered(var$2, var$3);
 },
 ui_Client__clinit_ = () => {
-    let var$1, var$2, var$3, var$4, var$5, var$6, var$7, var$8, var$9, var$10, var$11, var$12, var$13;
+    let var$1, var$2, var$3, var$4, var$5, var$6, var$7, var$8, var$9, var$10, var$11, var$12, var$13, var$14;
     var$1 = new uid_UnitalVisualizer;
     uid_STS13Visualizer_$callClinit();
     var$2 = uid_STS13Visualizer_first;
     var$3 = uid_STS13Visualizer_second;
-    var$4 = new ju_TemplateCollections$NEtriesMap;
-    var$5 = $rt_createArray(ju_Map$Entry, 3).data;
-    var$5[0] = ju_Map_entry($rt_s(3), var$1);
-    var$5[1] = ju_Map_entry($rt_s(4), var$2);
-    var$5[2] = ju_Map_entry($rt_s(5), var$3);
-    var$6 = var$5.length;
-    var$7 = $rt_createArray(ju_Map$Entry, var$6);
-    var$8 = var$7.data;
-    var$9 = null;
-    var$10 = 0;
-    var$11 = var$8.length;
-    if (var$10 > var$11) {
-        var$9 = new jl_IllegalArgumentException;
-        jl_Exception__init_(var$9);
-        $rt_throw(var$9);
+    var$4 = new uid_DennistonArcVisualizer;
+    var$5 = new ju_TemplateCollections$NEtriesMap;
+    var$6 = $rt_createArray(ju_Map$Entry, 4).data;
+    var$6[0] = ju_Map_entry($rt_s(3), var$1);
+    var$6[1] = ju_Map_entry($rt_s(4), var$2);
+    var$6[2] = ju_Map_entry($rt_s(5), var$3);
+    var$6[3] = ju_Map_entry($rt_s(6), var$4);
+    var$7 = var$6.length;
+    var$8 = $rt_createArray(ju_Map$Entry, var$7);
+    var$9 = var$8.data;
+    var$10 = null;
+    var$11 = 0;
+    var$12 = var$9.length;
+    if (var$11 > var$12) {
+        var$10 = new jl_IllegalArgumentException;
+        jl_Exception__init_(var$10);
+        $rt_throw(var$10);
     }
-    while (var$10 < var$11) {
-        var$12 = var$10 + 1 | 0;
-        var$8[var$10] = var$9;
-        var$10 = var$12;
+    while (var$11 < var$12) {
+        var$13 = var$11 + 1 | 0;
+        var$9[var$11] = var$10;
+        var$11 = var$13;
     }
-    var$10 = 0;
+    var$11 = 0;
     a: while (true) {
-        if (var$10 >= var$6) {
-            var$4.$data = var$7;
-            ui_Client_visualizers = var$4;
-            var$9 = new uiu_HTMLUIFactory;
+        if (var$11 >= var$7) {
+            var$5.$data = var$8;
+            ui_Client_visualizers = var$5;
+            var$10 = new uiu_HTMLUIFactory;
             uiu_HTMLUIFactory_$callClinit();
-            ui_Client_ui = var$9;
-            var$9 = (otjdh_HTMLDocument_current()).createElement("canvas");
+            ui_Client_ui = var$10;
+            var$10 = (otjdh_HTMLDocument_current()).createElement("canvas");
             var$1 = new uiuci_HTMLCanvas;
-            uiuci_HTMLComponent__init_(var$1, var$9);
-            var$9 = var$1.$elem;
+            uiuci_HTMLComponent__init_(var$1, var$10);
+            var$10 = var$1.$elem;
             var$2 = 1000;
-            var$9.width = var$2;
-            var$9 = var$1.$elem;
+            var$10.width = var$2;
+            var$10 = var$1.$elem;
             var$2 = 800;
-            var$9.height = var$2;
+            var$10.height = var$2;
             ui_Client_canvas = var$1;
             var$1 = (otjdh_HTMLDocument_current()).createElement("select");
-            var$9 = new uiuci_HTMLSelect;
-            uiuci_HTMLComponent__init_(var$9, var$1);
-            ui_Client_select = var$9;
-            var$9 = ui_Client_canvas;
+            var$10 = new uiuci_HTMLSelect;
+            uiuci_HTMLComponent__init_(var$10, var$1);
+            ui_Client_select = var$10;
+            var$10 = ui_Client_canvas;
             var$1 = new uiuci_HTMLGraphicsContext;
-            var$1.$context = var$9.$elem.getContext("2d");
+            var$1.$context = var$10.$elem.getContext("2d");
             ui_Client_context = var$1;
-            var$9 = new uid_UnitalVisualizer;
-            ui_Client_visualizer = var$9;
-            ui_Client_model = uid_Visualizer_model(var$9);
+            var$10 = new uid_UnitalVisualizer;
+            ui_Client_visualizer = var$10;
+            ui_Client_model = uid_Visualizer_model(var$10);
             return;
         }
-        var$1 = var$5[var$10];
+        var$1 = var$6[var$11];
         ju_Objects_requireNonNull(var$1.$key);
         ju_Objects_requireNonNull(var$1.$value0);
-        var$11 = jl_Math_abs(var$1.$key.$hashCode()) % var$6 | 0;
-        var$12 = 0;
-        var$13 = var$11;
+        var$12 = jl_Math_abs(var$1.$key.$hashCode()) % var$7 | 0;
+        var$13 = 0;
+        var$14 = var$12;
         b: {
-            while (var$13 < var$6) {
-                var$9 = var$8[var$13];
-                if (var$9 === null) {
-                    var$12 = 1;
+            while (var$14 < var$7) {
+                var$10 = var$9[var$14];
+                if (var$10 === null) {
+                    var$13 = 1;
                     break b;
                 }
-                if (var$9.$key.$equals(var$1.$key)) {
-                    var$9 = new jl_IllegalArgumentException;
-                    jl_Exception__init_(var$9);
-                    $rt_throw(var$9);
+                if (var$10.$key.$equals(var$1.$key)) {
+                    var$10 = new jl_IllegalArgumentException;
+                    jl_Exception__init_(var$10);
+                    $rt_throw(var$10);
                 }
-                var$13 = var$13 + 1 | 0;
+                var$14 = var$14 + 1 | 0;
             }
         }
         c: {
-            if (!var$12) {
-                var$13 = 0;
-                while (var$13 < var$11) {
-                    var$9 = var$8[var$13];
-                    if (var$9 === null)
+            if (!var$13) {
+                var$14 = 0;
+                while (var$14 < var$12) {
+                    var$10 = var$9[var$14];
+                    if (var$10 === null)
                         break c;
-                    if (var$9.$key.$equals(var$1.$key))
+                    if (var$10.$key.$equals(var$1.$key))
                         break a;
-                    var$13 = var$13 + 1 | 0;
+                    var$14 = var$14 + 1 | 0;
                 }
             }
         }
-        var$8[var$13] = ju_TemplateCollections$ImmutableEntry__init_(var$1.$key, var$1.$value0);
-        var$10 = var$10 + 1 | 0;
+        var$9[var$14] = ju_TemplateCollections$ImmutableEntry__init_(var$1.$key, var$1.$value0);
+        var$11 = var$11 + 1 | 0;
     }
-    var$9 = new jl_IllegalArgumentException;
-    jl_Exception__init_(var$9);
-    $rt_throw(var$9);
+    var$10 = new jl_IllegalArgumentException;
+    jl_Exception__init_(var$10);
+    $rt_throw(var$10);
 };
 let jlr_AnnotatedElement = $rt_classWithoutFields(0);
 let jlr_Type = $rt_classWithoutFields(0);
@@ -1648,7 +1651,7 @@ jl_StringBuilder__init_2 = var_0 => {
     return var_1;
 },
 jl_StringBuilder_append = ($this, $obj) => {
-    jl_StringBuilder_insert($this, $this.$length, $obj === null ? $rt_s(6) : $obj.$toString());
+    jl_StringBuilder_insert($this, $this.$length, $obj === null ? $rt_s(7) : $obj.$toString());
     return $this;
 },
 jl_StringBuilder_append1 = ($this, $string) => {
@@ -1684,7 +1687,7 @@ jl_StringBuilder_insert = ($this, var$1, var$2) => {
     if (var$1 >= 0 && var$1 <= $this.$length) {
         a: {
             if (var$2 === null)
-                var$2 = $rt_s(6);
+                var$2 = $rt_s(7);
             else if (var$2.$nativeString.length ? 0 : 1)
                 break a;
             jl_AbstractStringBuilder_ensureCapacity($this, $this.$length + var$2.$nativeString.length | 0);
@@ -2010,8 +2013,68 @@ uid_STS13Visualizer_points = $this => {
     return $result;
 },
 uid_STS13Visualizer__clinit_ = () => {
-    uid_STS13Visualizer_first = uid_STS13Visualizer__init_0($rt_wrapArray(jl_String, [$rt_s(7), $rt_s(8), $rt_s(9)]));
-    uid_STS13Visualizer_second = uid_STS13Visualizer__init_0($rt_wrapArray(jl_String, [$rt_s(7), $rt_s(8), $rt_s(10)]));
+    uid_STS13Visualizer_first = uid_STS13Visualizer__init_0($rt_wrapArray(jl_String, [$rt_s(8), $rt_s(9), $rt_s(10)]));
+    uid_STS13Visualizer_second = uid_STS13Visualizer__init_0($rt_wrapArray(jl_String, [$rt_s(8), $rt_s(9), $rt_s(11)]));
+};
+let uid_DennistonArcVisualizer = $rt_classWithoutFields();
+let uid_DennistonArcVisualizer_points = null, uid_DennistonArcVisualizer_lines = null;
+let uid_DennistonArcVisualizer_coordinate = ($this, $p) => {
+    return uid_Point__init_(20 + (($p / 16 | 0) * 40 | 0) | 0, 20 + (($p % 16 | 0) * 40 | 0) | 0);
+},
+uid_DennistonArcVisualizer_lines0 = $this => {
+    return uid_DennistonArcVisualizer_lines;
+},
+uid_DennistonArcVisualizer_points0 = $this => {
+    return uid_DennistonArcVisualizer_points;
+},
+uid_DennistonArcVisualizer_of = $vals => {
+    let $result, var$3, var$4;
+    $vals = $vals.data;
+    $result = ju_BitSet__init_();
+    var$3 = $vals.length;
+    var$4 = 0;
+    while (var$4 < var$3) {
+        ju_BitSet_set($result, $vals[var$4]);
+        var$4 = var$4 + 1 | 0;
+    }
+    return $result;
+},
+uid_DennistonArcVisualizer__clinit_ = () => {
+    uid_DennistonArcVisualizer_points = uid_DennistonArcVisualizer_of($rt_createIntArrayFromData([0, 1, 2, 3, 4, 5, 6, 7, 16, 17, 18, 19, 28, 29, 30, 31, 32, 33, 36, 37, 42, 43, 46, 47, 48, 49, 54, 55, 58, 59, 60, 61, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 85, 87, 88, 90, 93, 95, 96, 99, 100, 103, 104, 107, 108, 111, 112, 115, 117, 118, 120, 123, 125, 126, 132, 133, 134, 135, 140, 141, 142, 143, 162, 163, 164, 165, 170, 171, 172, 173, 178, 179, 182, 183, 186, 187, 190, 191, 193, 195, 196, 198, 200, 202, 205,
+    207, 209, 211, 213, 215, 216, 218, 220, 222, 225, 226, 228, 231, 232, 235, 237, 238, 241, 242, 245, 246, 248, 251, 252, 255]));
+    uid_DennistonArcVisualizer_lines = jusi_SimpleStreamImpl_toArray(jusi_SimpleStreamImpl_map(ju_Arrays_stream($rt_wrapArray($rt_arraycls($rt_intcls), [$rt_createIntArrayFromData([0, 16, 32, 48, 64, 80, 96, 112]), $rt_createIntArrayFromData([0, 17, 68, 85, 170, 187, 238, 255]), $rt_createIntArrayFromData([0, 18, 36, 54, 72, 90, 108, 126]), $rt_createIntArrayFromData([0, 19, 76, 95, 173, 190, 225, 242]), $rt_createIntArrayFromData([0, 60, 87, 107, 134, 186, 209, 237]), $rt_createIntArrayFromData([0, 42, 82,
+    120, 142, 164, 220, 246]), $rt_createIntArrayFromData([0, 58, 93, 103, 133, 191, 216, 226]), $rt_createIntArrayFromData([0, 46, 88, 118, 141, 163, 213, 251]), $rt_createIntArrayFromData([0, 59, 70, 125, 140, 183, 202, 241]), $rt_createIntArrayFromData([0, 33, 66, 99, 132, 165, 198, 231]), $rt_createIntArrayFromData([0, 61, 78, 115, 143, 178, 193, 252]), $rt_createIntArrayFromData([0, 37, 74, 111, 135, 162, 205, 232]), $rt_createIntArrayFromData([0, 28, 43, 55, 207, 211, 228, 248]), $rt_createIntArrayFromData([0,
+    29, 104, 117, 171, 182, 195, 222]), $rt_createIntArrayFromData([0, 30, 47, 49, 196, 218, 235, 245]), $rt_createIntArrayFromData([0, 31, 100, 123, 172, 179, 200, 215]), $rt_createIntArrayFromData([1, 17, 33, 49, 193, 209, 225, 241]), $rt_createIntArrayFromData([1, 16, 103, 118, 171, 186, 205, 220]), $rt_createIntArrayFromData([1, 19, 37, 55, 202, 216, 238, 252]), $rt_createIntArrayFromData([1, 18, 107, 120, 172, 191, 198, 213]), $rt_createIntArrayFromData([1, 61, 66, 126, 135, 187, 196, 248]), $rt_createIntArrayFromData([1,
+    43, 70, 108, 143, 165, 200, 226]), $rt_createIntArrayFromData([1, 59, 74, 112, 132, 190, 207, 245]), $rt_createIntArrayFromData([1, 47, 78, 96, 140, 162, 195, 237]), $rt_createIntArrayFromData([1, 58, 95, 100, 141, 182, 211, 232]), $rt_createIntArrayFromData([1, 32, 90, 123, 133, 164, 222, 255]), $rt_createIntArrayFromData([1, 60, 85, 104, 142, 179, 218, 231]), $rt_createIntArrayFromData([1, 36, 80, 117, 134, 163, 215, 242]), $rt_createIntArrayFromData([1, 29, 42, 54, 68, 88, 111, 115]), $rt_createIntArrayFromData([1,
+    28, 64, 93, 170, 183, 235, 246]), $rt_createIntArrayFromData([1, 31, 46, 48, 76, 82, 99, 125]), $rt_createIntArrayFromData([1, 30, 72, 87, 173, 178, 228, 251]), $rt_createIntArrayFromData([2, 18, 66, 82, 162, 178, 226, 242]), $rt_createIntArrayFromData([2, 19, 32, 49, 70, 87, 100, 117]), $rt_createIntArrayFromData([2, 16, 74, 88, 165, 183, 237, 255]), $rt_createIntArrayFromData([2, 17, 36, 55, 78, 93, 104, 123]), $rt_createIntArrayFromData([2, 42, 85, 125, 132, 172, 211, 251]), $rt_createIntArrayFromData([2,
+    61, 80, 111, 140, 179, 222, 225]), $rt_createIntArrayFromData([2, 46, 95, 115, 135, 171, 218, 246]), $rt_createIntArrayFromData([2, 59, 90, 99, 143, 182, 215, 238]), $rt_createIntArrayFromData([2, 33, 68, 103, 142, 173, 200, 235]), $rt_createIntArrayFromData([2, 58, 64, 120, 134, 190, 196, 252]), $rt_createIntArrayFromData([2, 37, 76, 107, 141, 170, 195, 228]), $rt_createIntArrayFromData([2, 60, 72, 118, 133, 187, 207, 241]), $rt_createIntArrayFromData([2, 30, 108, 112, 163, 191, 205, 209]), $rt_createIntArrayFromData([2,
+    31, 43, 54, 193, 220, 232, 245]), $rt_createIntArrayFromData([2, 28, 96, 126, 164, 186, 198, 216]), $rt_createIntArrayFromData([2, 29, 47, 48, 202, 213, 231, 248]), $rt_createIntArrayFromData([3, 19, 99, 115, 163, 179, 195, 211]), $rt_createIntArrayFromData([3, 18, 33, 48, 207, 222, 237, 252]), $rt_createIntArrayFromData([3, 17, 111, 125, 164, 182, 200, 218]), $rt_createIntArrayFromData([3, 16, 37, 54, 196, 215, 226, 241]), $rt_createIntArrayFromData([3, 43, 64, 104, 133, 173, 198, 238]), $rt_createIntArrayFromData([3,
+    60, 68, 123, 141, 178, 202, 245]), $rt_createIntArrayFromData([3, 47, 72, 100, 134, 170, 205, 225]), $rt_createIntArrayFromData([3, 58, 76, 117, 142, 183, 193, 248]), $rt_createIntArrayFromData([3, 32, 93, 126, 143, 172, 209, 242]), $rt_createIntArrayFromData([3, 59, 88, 96, 135, 191, 220, 228]), $rt_createIntArrayFromData([3, 36, 87, 112, 140, 171, 216, 255]), $rt_createIntArrayFromData([3, 61, 82, 108, 132, 186, 213, 235]), $rt_createIntArrayFromData([3, 31, 70, 90, 162, 190, 231, 251]), $rt_createIntArrayFromData([3,
+    30, 42, 55, 66, 95, 107, 118]), $rt_createIntArrayFromData([3, 29, 78, 80, 165, 187, 232, 246]), $rt_createIntArrayFromData([3, 28, 46, 49, 74, 85, 103, 120]), $rt_createIntArrayFromData([4, 36, 68, 100, 132, 164, 196, 228]), $rt_createIntArrayFromData([4, 55, 64, 115, 140, 191, 200, 251]), $rt_createIntArrayFromData([4, 32, 76, 104, 135, 163, 207, 235]), $rt_createIntArrayFromData([4, 49, 72, 125, 143, 186, 195, 246]), $rt_createIntArrayFromData([4, 16, 111, 123, 170, 190, 193, 213]), $rt_createIntArrayFromData([4,
+    17, 46, 59, 205, 216, 231, 242]), $rt_createIntArrayFromData([4, 18, 99, 117, 173, 187, 202, 220]), $rt_createIntArrayFromData([4, 19, 42, 61, 198, 209, 232, 255]), $rt_createIntArrayFromData([4, 28, 66, 90, 171, 179, 237, 245]), $rt_createIntArrayFromData([4, 29, 37, 60, 70, 95, 103, 126]), $rt_createIntArrayFromData([4, 30, 74, 80, 172, 182, 226, 248]), $rt_createIntArrayFromData([4, 31, 33, 58, 78, 85, 107, 112]), $rt_createIntArrayFromData([4, 47, 93, 118, 142, 165, 215, 252]), $rt_createIntArrayFromData([4,
+    48, 88, 108, 134, 178, 218, 238]), $rt_createIntArrayFromData([4, 43, 87, 120, 141, 162, 222, 241]), $rt_createIntArrayFromData([4, 54, 82, 96, 133, 183, 211, 225]), $rt_createIntArrayFromData([5, 37, 85, 117, 133, 165, 213, 245]), $rt_createIntArrayFromData([5, 54, 80, 99, 141, 190, 216, 235]), $rt_createIntArrayFromData([5, 33, 95, 123, 134, 162, 220, 248]), $rt_createIntArrayFromData([5, 48, 90, 111, 142, 187, 209, 228]), $rt_createIntArrayFromData([5, 17, 70, 82, 171, 191, 232, 252]), $rt_createIntArrayFromData([5,
+    16, 47, 58, 66, 87, 104, 125]), $rt_createIntArrayFromData([5, 19, 78, 88, 172, 186, 231, 241]), $rt_createIntArrayFromData([5, 18, 43, 60, 74, 93, 100, 115]), $rt_createIntArrayFromData([5, 29, 96, 120, 170, 178, 207, 215]), $rt_createIntArrayFromData([5, 28, 36, 61, 195, 218, 226, 251]), $rt_createIntArrayFromData([5, 31, 108, 118, 173, 183, 196, 222]), $rt_createIntArrayFromData([5, 30, 32, 59, 200, 211, 237, 246]), $rt_createIntArrayFromData([5, 46, 64, 107, 143, 164, 202, 225]), $rt_createIntArrayFromData([5,
+    49, 68, 112, 135, 179, 198, 242]), $rt_createIntArrayFromData([5, 42, 72, 103, 140, 163, 193, 238]), $rt_createIntArrayFromData([5, 55, 76, 126, 132, 182, 205, 255]), $rt_createIntArrayFromData([6, 54, 70, 118, 134, 182, 198, 246]), $rt_createIntArrayFromData([6, 36, 66, 96, 142, 172, 202, 232]), $rt_createIntArrayFromData([6, 48, 78, 120, 133, 179, 205, 251]), $rt_createIntArrayFromData([6, 32, 74, 108, 141, 171, 193, 231]), $rt_createIntArrayFromData([6, 18, 46, 58, 195, 215, 235, 255]), $rt_createIntArrayFromData([6,
+    19, 107, 126, 162, 183, 207, 218]), $rt_createIntArrayFromData([6, 16, 42, 60, 200, 222, 228, 242]), $rt_createIntArrayFromData([6, 17, 103, 112, 165, 178, 196, 211]), $rt_createIntArrayFromData([6, 30, 37, 61, 64, 88, 99, 123]), $rt_createIntArrayFromData([6, 31, 68, 93, 163, 186, 225, 248]), $rt_createIntArrayFromData([6, 28, 33, 59, 72, 82, 111, 117]), $rt_createIntArrayFromData([6, 29, 76, 87, 164, 191, 238, 245]), $rt_createIntArrayFromData([6, 49, 95, 104, 140, 187, 213, 226]), $rt_createIntArrayFromData([6,
+    47, 90, 115, 132, 173, 216, 241]), $rt_createIntArrayFromData([6, 55, 85, 100, 143, 190, 220, 237]), $rt_createIntArrayFromData([6, 43, 80, 125, 135, 170, 209, 252]), $rt_createIntArrayFromData([7, 55, 87, 103, 135, 183, 215, 231]), $rt_createIntArrayFromData([7, 37, 82, 112, 143, 173, 218, 248]), $rt_createIntArrayFromData([7, 49, 93, 107, 132, 178, 222, 232]), $rt_createIntArrayFromData([7, 33, 88, 126, 140, 170, 211, 245]), $rt_createIntArrayFromData([7, 19, 47, 59, 68, 80, 108, 120]), $rt_createIntArrayFromData([7,
+    18, 64, 85, 163, 182, 228, 241]), $rt_createIntArrayFromData([7, 17, 43, 61, 76, 90, 96, 118]), $rt_createIntArrayFromData([7, 16, 72, 95, 164, 179, 235, 252]), $rt_createIntArrayFromData([7, 31, 36, 60, 205, 213, 238, 246]), $rt_createIntArrayFromData([7, 30, 100, 125, 162, 187, 193, 216]), $rt_createIntArrayFromData([7, 29, 32, 58, 198, 220, 225, 251]), $rt_createIntArrayFromData([7, 28, 104, 115, 165, 190, 202, 209]), $rt_createIntArrayFromData([7, 48, 66, 117, 141, 186, 200, 255]), $rt_createIntArrayFromData([7,
+    46, 70, 111, 133, 172, 196, 237]), $rt_createIntArrayFromData([7, 54, 74, 123, 142, 191, 195, 242]), $rt_createIntArrayFromData([7, 42, 78, 99, 134, 171, 207, 226]), $rt_createIntArrayFromData([72, 88, 104, 120, 200, 216, 232, 248]), $rt_createIntArrayFromData([42, 59, 76, 93, 162, 179, 196, 213]), $rt_createIntArrayFromData([64, 82, 100, 118, 195, 209, 231, 245]), $rt_createIntArrayFromData([46, 61, 68, 87, 165, 182, 207, 220]), $rt_createIntArrayFromData([28, 32, 95, 99, 142, 178, 205, 241]), $rt_createIntArrayFromData([29,
+    55, 90, 112, 134, 172, 193, 235]), $rt_createIntArrayFromData([30, 36, 85, 111, 141, 183, 198, 252]), $rt_createIntArrayFromData([31, 49, 80, 126, 133, 171, 202, 228]), $rt_createIntArrayFromData([16, 43, 78, 117, 132, 191, 218, 225]), $rt_createIntArrayFromData([17, 48, 74, 107, 140, 173, 215, 246]), $rt_createIntArrayFromData([18, 47, 70, 123, 135, 186, 211, 238]), $rt_createIntArrayFromData([19, 54, 66, 103, 143, 170, 222, 251]), $rt_createIntArrayFromData([33, 60, 96, 125, 163, 190, 226, 255]), $rt_createIntArrayFromData([37,
+    58, 108, 115, 164, 187, 237, 242]), $rt_createIntArrayFromData([43, 58, 111, 126, 163, 178, 231, 246]), $rt_createIntArrayFromData([47, 60, 99, 112, 164, 183, 232, 251]), $rt_createIntArrayFromData([29, 33, 74, 118, 143, 179, 216, 228]), $rt_createIntArrayFromData([28, 54, 78, 100, 135, 173, 213, 255]), $rt_createIntArrayFromData([31, 37, 66, 120, 140, 182, 209, 235]), $rt_createIntArrayFromData([30, 48, 70, 104, 132, 170, 220, 242]), $rt_createIntArrayFromData([17, 42, 87, 108, 133, 190, 195, 248]), $rt_createIntArrayFromData([16,
+    49, 82, 115, 141, 172, 207, 238]), $rt_createIntArrayFromData([19, 46, 93, 96, 134, 187, 200, 245]), $rt_createIntArrayFromData([18, 55, 88, 125, 142, 171, 196, 225]), $rt_createIntArrayFromData([76, 80, 103, 123, 198, 218, 237, 241]), $rt_createIntArrayFromData([32, 61, 72, 85, 162, 191, 202, 215]), $rt_createIntArrayFromData([68, 90, 107, 117, 205, 211, 226, 252]), $rt_createIntArrayFromData([36, 59, 64, 95, 165, 186, 193, 222]), $rt_createIntArrayFromData([42, 58, 74, 90, 170, 186, 202, 218]), $rt_createIntArrayFromData([78,
+    95, 108, 125, 198, 215, 228, 245]), $rt_createIntArrayFromData([46, 60, 66, 80, 173, 191, 193, 211]), $rt_createIntArrayFromData([70, 85, 96, 115, 205, 222, 235, 248]), $rt_createIntArrayFromData([30, 54, 93, 117, 140, 164, 207, 231]), $rt_createIntArrayFromData([31, 32, 88, 103, 132, 187, 195, 252]), $rt_createIntArrayFromData([28, 48, 87, 123, 143, 163, 196, 232]), $rt_createIntArrayFromData([29, 36, 82, 107, 135, 190, 200, 241]), $rt_createIntArrayFromData([18, 49, 76, 111, 134, 165, 216, 251]), $rt_createIntArrayFromData([19,
+    43, 72, 112, 142, 182, 213, 237]), $rt_createIntArrayFromData([16, 55, 68, 99, 133, 162, 209, 246]), $rt_createIntArrayFromData([17, 47, 64, 126, 141, 179, 220, 226]), $rt_createIntArrayFromData([33, 61, 100, 120, 171, 183, 238, 242]), $rt_createIntArrayFromData([37, 59, 104, 118, 172, 178, 225, 255]), $rt_createIntArrayFromData([43, 59, 107, 123, 171, 187, 235, 251]), $rt_createIntArrayFromData([47, 61, 103, 117, 172, 190, 228, 246]), $rt_createIntArrayFromData([31, 55, 72, 96, 141, 165, 218, 242]), $rt_createIntArrayFromData([30,
+    33, 76, 115, 133, 186, 215, 232]), $rt_createIntArrayFromData([29, 49, 64, 108, 142, 162, 211, 255]), $rt_createIntArrayFromData([28, 37, 68, 125, 134, 191, 222, 231]), $rt_createIntArrayFromData([19, 48, 85, 118, 135, 164, 193, 226]), $rt_createIntArrayFromData([18, 42, 80, 104, 143, 183, 205, 245]), $rt_createIntArrayFromData([17, 54, 95, 120, 132, 163, 202, 237]), $rt_createIntArrayFromData([16, 46, 90, 100, 140, 178, 198, 248]), $rt_createIntArrayFromData([32, 60, 78, 82, 170, 182, 196, 216]), $rt_createIntArrayFromData([74,
+    87, 99, 126, 200, 213, 225, 252]), $rt_createIntArrayFromData([36, 58, 70, 88, 173, 179, 207, 209]), $rt_createIntArrayFromData([66, 93, 111, 112, 195, 220, 238, 241]), $rt_createIntArrayFromData([28, 60, 76, 108, 140, 172, 220, 252]), $rt_createIntArrayFromData([29, 46, 72, 123, 132, 183, 209, 226]), $rt_createIntArrayFromData([30, 58, 68, 96, 143, 171, 213, 241]), $rt_createIntArrayFromData([31, 42, 64, 117, 135, 178, 216, 237]), $rt_createIntArrayFromData([36, 48, 103, 115, 162, 182, 225, 245]), $rt_createIntArrayFromData([32,
+    54, 107, 125, 165, 179, 238, 248]), $rt_createIntArrayFromData([47, 55, 74, 82, 163, 187, 198, 222]), $rt_createIntArrayFromData([78, 87, 111, 118, 202, 211, 235, 242]), $rt_createIntArrayFromData([43, 49, 66, 88, 164, 190, 205, 215]), $rt_createIntArrayFromData([70, 93, 99, 120, 193, 218, 228, 255]), $rt_createIntArrayFromData([16, 59, 85, 126, 134, 173, 195, 232]), $rt_createIntArrayFromData([17, 37, 80, 100, 142, 186, 207, 251]), $rt_createIntArrayFromData([18, 61, 95, 112, 133, 170, 200, 231]), $rt_createIntArrayFromData([19,
+    33, 90, 104, 141, 191, 196, 246]), $rt_createIntArrayFromData([29, 61, 93, 125, 141, 173, 205, 237]), $rt_createIntArrayFromData([28, 47, 88, 107, 133, 182, 193, 242]), $rt_createIntArrayFromData([31, 59, 87, 115, 142, 170, 198, 226]), $rt_createIntArrayFromData([30, 43, 82, 103, 134, 179, 202, 255]), $rt_createIntArrayFromData([37, 49, 78, 90, 163, 183, 200, 220]), $rt_createIntArrayFromData([74, 95, 96, 117, 196, 209, 238, 251]), $rt_createIntArrayFromData([33, 55, 70, 80, 164, 178, 195, 213]), $rt_createIntArrayFromData([66,
+    85, 108, 123, 207, 216, 225, 246]), $rt_createIntArrayFromData([46, 54, 104, 112, 162, 186, 228, 252]), $rt_createIntArrayFromData([42, 48, 100, 126, 165, 191, 235, 241]), $rt_createIntArrayFromData([17, 58, 72, 99, 135, 172, 222, 245]), $rt_createIntArrayFromData([16, 36, 76, 120, 143, 187, 211, 231]), $rt_createIntArrayFromData([19, 60, 64, 111, 132, 171, 215, 248]), $rt_createIntArrayFromData([18, 32, 68, 118, 140, 190, 218, 232]), $rt_createIntArrayFromData([30, 46, 78, 126, 142, 190, 222, 238]), $rt_createIntArrayFromData([31,
+    61, 74, 104, 134, 164, 211, 241]), $rt_createIntArrayFromData([28, 42, 70, 112, 141, 187, 215, 225]), $rt_createIntArrayFromData([29, 59, 66, 100, 133, 163, 218, 252]), $rt_createIntArrayFromData([36, 49, 99, 118, 170, 191, 237, 248]), $rt_createIntArrayFromData([32, 55, 111, 120, 173, 186, 226, 245]), $rt_createIntArrayFromData([72, 80, 107, 115, 196, 220, 231, 255]), $rt_createIntArrayFromData([47, 54, 76, 85, 171, 178, 200, 209]), $rt_createIntArrayFromData([64, 90, 103, 125, 207, 213, 232, 242]), $rt_createIntArrayFromData([43,
+    48, 68, 95, 172, 183, 195, 216]), $rt_createIntArrayFromData([18, 37, 87, 96, 132, 179, 193, 246]), $rt_createIntArrayFromData([19, 58, 82, 123, 140, 165, 205, 228]), $rt_createIntArrayFromData([16, 33, 93, 108, 135, 182, 202, 251]), $rt_createIntArrayFromData([17, 60, 88, 117, 143, 162, 198, 235]), $rt_createIntArrayFromData([31, 47, 95, 111, 143, 191, 207, 255]), $rt_createIntArrayFromData([30, 60, 90, 120, 135, 165, 195, 225]), $rt_createIntArrayFromData([29, 43, 85, 99, 140, 186, 196, 242]), $rt_createIntArrayFromData([28,
+    58, 80, 118, 132, 162, 200, 238]), $rt_createIntArrayFromData([76, 88, 100, 112, 202, 222, 226, 246]), $rt_createIntArrayFromData([37, 48, 72, 93, 171, 190, 198, 211]), $rt_createIntArrayFromData([68, 82, 104, 126, 193, 215, 237, 251]), $rt_createIntArrayFromData([33, 54, 64, 87, 172, 187, 205, 218]), $rt_createIntArrayFromData([46, 55, 108, 117, 170, 179, 232, 241]), $rt_createIntArrayFromData([42, 49, 96, 123, 173, 182, 231, 252]), $rt_createIntArrayFromData([19, 36, 74, 125, 133, 178, 220, 235]), $rt_createIntArrayFromData([18,
+    59, 78, 103, 141, 164, 209, 248]), $rt_createIntArrayFromData([17, 32, 66, 115, 134, 183, 213, 228]), $rt_createIntArrayFromData([16, 61, 70, 107, 142, 163, 216, 245]), $rt_createIntArrayFromData([0, 1, 2, 3, 4, 5, 6, 7]), $rt_createIntArrayFromData([16, 17, 18, 19, 28, 29, 30, 31]), $rt_createIntArrayFromData([32, 33, 36, 37, 42, 43, 46, 47]), $rt_createIntArrayFromData([48, 49, 54, 55, 58, 59, 60, 61]), $rt_createIntArrayFromData([64, 66, 68, 70, 72, 74, 76, 78]), $rt_createIntArrayFromData([80, 82, 85,
+    87, 88, 90, 93, 95]), $rt_createIntArrayFromData([96, 99, 100, 103, 104, 107, 108, 111]), $rt_createIntArrayFromData([112, 115, 117, 118, 120, 123, 125, 126]), $rt_createIntArrayFromData([132, 133, 134, 135, 140, 141, 142, 143]), $rt_createIntArrayFromData([162, 163, 164, 165, 170, 171, 172, 173]), $rt_createIntArrayFromData([178, 179, 182, 183, 186, 187, 190, 191]), $rt_createIntArrayFromData([193, 195, 196, 198, 200, 202, 205, 207]), $rt_createIntArrayFromData([209, 211, 213, 215, 216, 218, 220, 222]),
+    $rt_createIntArrayFromData([225, 226, 228, 231, 232, 235, 237, 238]), $rt_createIntArrayFromData([241, 242, 245, 246, 248, 251, 252, 255])])), uid_DennistonArcVisualizer$_clinit_$lambda$_6_0__init_()), uid_DennistonArcVisualizer$_clinit_$lambda$_6_1__init_());
 };
 let ju_Map = $rt_classWithoutFields(0);
 let ju_Map_entry = ($k, $v) => {
@@ -2028,7 +2091,7 @@ let uiu_HTMLUIFactory_lineLayout = ($this, $horizontal, $conf) => {
     let $elem, var$4, var$5, var$6, var$7, var$8, var$9, var$10;
     $elem = (otjdh_HTMLDocument_current()).createElement("div");
     var$4 = $elem.classList;
-    var$5 = !$horizontal ? $rt_s(11) : $rt_s(12);
+    var$5 = !$horizontal ? $rt_s(12) : $rt_s(13);
     var$4.add($rt_ustr(var$5));
     if ($conf.$align !== null) {
         var$4 = $elem.classList;
@@ -2056,7 +2119,7 @@ let uiu_HTMLUIFactory_lineLayout = ($this, $horizontal, $conf) => {
         var$5 = $elem.style;
         $horizontal = $conf.$gap0;
         var$10 = jl_StringBuilder__init_();
-        jl_StringBuilder_append(jl_StringBuilder_append2(var$10, $horizontal), $rt_s(13));
+        jl_StringBuilder_append(jl_StringBuilder_append2(var$10, $horizontal), $rt_s(14));
         var$9 = jl_AbstractStringBuilder_toString(var$10);
         var$5.setProperty("gap", $rt_ustr(var$9));
     }
@@ -2217,25 +2280,25 @@ ju_AbstractMap_toString = $this => {
         $e = ju_HashMap$EntryIterator_next($iter);
         var$4 = $e.$key0;
         if (var$4 === $this)
-            var$4 = $rt_s(14);
+            var$4 = $rt_s(15);
         jl_StringBuilder_append($sb, var$4);
         jl_StringBuilder_append0($sb, 61);
         $e = $e.$value4;
         if ($e === $this)
-            $e = $rt_s(14);
+            $e = $rt_s(15);
         jl_StringBuilder_append($sb, $e);
     }
     while (ju_HashMap$AbstractMapIterator_hasNext($iter)) {
-        jl_StringBuilder_append1($sb, $rt_s(15));
+        jl_StringBuilder_append1($sb, $rt_s(16));
         $e = ju_HashMap$EntryIterator_next($iter);
         var$4 = $e.$key0;
         if (var$4 === $this)
-            var$4 = $rt_s(14);
+            var$4 = $rt_s(15);
         jl_StringBuilder_append($sb, var$4);
         jl_StringBuilder_append0($sb, 61);
         $e = $e.$value4;
         if ($e === $this)
-            $e = $rt_s(14);
+            $e = $rt_s(15);
         jl_StringBuilder_append($sb, $e);
     }
     jl_StringBuilder_append0($sb, 125);
@@ -2319,7 +2382,7 @@ function uid_LineData() {
     a.$bezier0 = null;
 }
 let uid_LineData_toString = $this => {
-    return jl_AbstractStringBuilder_toString(jl_StringBuilder_append1(jl_StringBuilder_append(jl_StringBuilder_append1(jl_StringBuilder_append(jl_StringBuilder_append1(jl_StringBuilder_append(jl_StringBuilder_append1(jl_StringBuilder__init_2($rt_s(16)), $rt_s(17)), $this.$points0), $rt_s(18)), $this.$color0), $rt_s(19)), $this.$bezier0), $rt_s(20)));
+    return jl_AbstractStringBuilder_toString(jl_StringBuilder_append1(jl_StringBuilder_append(jl_StringBuilder_append1(jl_StringBuilder_append(jl_StringBuilder_append1(jl_StringBuilder_append(jl_StringBuilder_append1(jl_StringBuilder__init_2($rt_s(17)), $rt_s(18)), $this.$points0), $rt_s(19)), $this.$color0), $rt_s(20)), $this.$bezier0), $rt_s(21)));
 },
 uid_LineData_hashCode = $this => {
     return ((((31 + ju_Objects_hashCode($this.$points0) | 0) * 31 | 0) + ju_Objects_hashCode($this.$color0) | 0) * 31 | 0) + ju_Objects_hashCode($this.$bezier0) | 0;
@@ -2486,7 +2549,7 @@ ju_BitSet_toString = $this => {
                 if ($first)
                     $first = 0;
                 else
-                    jl_StringBuilder_append1($sb, $rt_s(15));
+                    jl_StringBuilder_append1($sb, $rt_s(16));
                 $bit = var$8 + 1 | 0;
                 jl_StringBuilder_append2($sb, var$8);
                 $val = ($val >>> $numZeros | 0) >>> 1 | 0;
@@ -2538,8 +2601,74 @@ ju_Objects_requireNonNull = $obj => {
     if ($obj !== null)
         return $obj;
     $obj = new jl_NullPointerException;
-    jl_RuntimeException__init_2($obj, $rt_s(21));
+    jl_RuntimeException__init_2($obj, $rt_s(22));
     $rt_throw($obj);
+};
+let ju_Arrays = $rt_classWithoutFields();
+let ju_Arrays_copyOf = ($original, $newLength) => {
+    let var$3, $sz, $i;
+    var$3 = jl_Class_getComponentType(jl_Object_getClass($original));
+    if (var$3 === null) {
+        var$3 = new jl_NullPointerException;
+        jl_Exception__init_(var$3);
+        $rt_throw(var$3);
+    }
+    if (var$3 === $rt_cls($rt_voidcls)) {
+        var$3 = new jl_IllegalArgumentException;
+        jl_Exception__init_(var$3);
+        $rt_throw(var$3);
+    }
+    if ($newLength < 0) {
+        var$3 = new jl_NegativeArraySizeException;
+        jl_Exception__init_(var$3);
+        $rt_throw(var$3);
+    }
+    $original = $original.data;
+    var$3 = jlr_Array_newInstanceImpl(var$3.$platformClass, $newLength);
+    $sz = jl_Math_min($newLength, $original.length);
+    $i = 0;
+    while ($i < $sz) {
+        var$3.data[$i] = $original[$i];
+        $i = $i + 1 | 0;
+    }
+    return var$3;
+},
+ju_Arrays_stream = $array => {
+    let var$2, var$3, var$4;
+    var$2 = $array.data;
+    var$3 = new jusi_ArrayStreamImpl;
+    var$4 = var$2.length;
+    var$3.$array0 = $array;
+    var$3.$index0 = 0;
+    var$3.$end0 = var$4;
+    var$3.$size0 = var$4 - 0 | 0;
+    return var$3;
+};
+let juf_Function = $rt_classWithoutFields(0);
+let uid_DennistonArcVisualizer$_clinit_$lambda$_6_0 = $rt_classWithoutFields();
+let uid_DennistonArcVisualizer$_clinit_$lambda$_6_0__init_0 = var$0 => {
+    return;
+},
+uid_DennistonArcVisualizer$_clinit_$lambda$_6_0__init_ = () => {
+    let var_0 = new uid_DennistonArcVisualizer$_clinit_$lambda$_6_0();
+    uid_DennistonArcVisualizer$_clinit_$lambda$_6_0__init_0(var_0);
+    return var_0;
+},
+uid_DennistonArcVisualizer$_clinit_$lambda$_6_0_apply = (var$0, var$1) => {
+    return uid_DennistonArcVisualizer_of(var$1);
+};
+let juf_IntFunction = $rt_classWithoutFields(0);
+let uid_DennistonArcVisualizer$_clinit_$lambda$_6_1 = $rt_classWithoutFields();
+let uid_DennistonArcVisualizer$_clinit_$lambda$_6_1__init_0 = var$0 => {
+    return;
+},
+uid_DennistonArcVisualizer$_clinit_$lambda$_6_1__init_ = () => {
+    let var_0 = new uid_DennistonArcVisualizer$_clinit_$lambda$_6_1();
+    uid_DennistonArcVisualizer$_clinit_$lambda$_6_1__init_0(var_0);
+    return var_0;
+},
+uid_DennistonArcVisualizer$_clinit_$lambda$_6_1_apply = (var$0, var$1) => {
+    return $rt_createArray(ju_BitSet, var$1);
 };
 function ju_TemplateCollections$ImmutableEntry() {
     let a = this; jl_Object.call(a);
@@ -2577,7 +2706,7 @@ uiuci_HTMLComponent_box = ($this, $box) => {
         var$2 = $this.$elem.style;
         var$3 = $box.$margin;
         var$4 = jl_StringBuilder__init_();
-        jl_StringBuilder_append(jl_StringBuilder_append2(var$4, var$3), $rt_s(13));
+        jl_StringBuilder_append(jl_StringBuilder_append2(var$4, var$3), $rt_s(14));
         var$4 = jl_AbstractStringBuilder_toString(var$4);
         var$2.setProperty("margin", $rt_ustr(var$4));
     }
@@ -2589,14 +2718,14 @@ uiuci_HTMLComponent_box = ($this, $box) => {
         var$7 = var$5.$type;
         var$2 = uiu_HTMLUtil_convert(var$5.$color1);
         var$8 = jl_StringBuilder__init_();
-        jl_StringBuilder_append(jl_StringBuilder_append0(jl_StringBuilder_append(jl_StringBuilder_append(jl_StringBuilder_append2(var$8, var$3), $rt_s(22)), var$7), 32), var$2);
+        jl_StringBuilder_append(jl_StringBuilder_append0(jl_StringBuilder_append(jl_StringBuilder_append(jl_StringBuilder_append2(var$8, var$3), $rt_s(23)), var$7), 32), var$2);
         var$8 = jl_AbstractStringBuilder_toString(var$8);
         var$6.setProperty("border", $rt_ustr(var$8));
         if (var$5.$radius) {
             var$2 = $this.$elem.style;
             var$3 = var$5.$radius;
             var$5 = jl_StringBuilder__init_();
-            jl_StringBuilder_append(jl_StringBuilder_append2(var$5, var$3), $rt_s(13));
+            jl_StringBuilder_append(jl_StringBuilder_append2(var$5, var$3), $rt_s(14));
             var$6 = jl_AbstractStringBuilder_toString(var$5);
             var$2.setProperty("border-radius", $rt_ustr(var$6));
         }
@@ -2605,7 +2734,7 @@ uiuci_HTMLComponent_box = ($this, $box) => {
         var$4 = $this.$elem.style;
         var$3 = $box.$padding0;
         $box = jl_StringBuilder__init_();
-        jl_StringBuilder_append(jl_StringBuilder_append2($box, var$3), $rt_s(13));
+        jl_StringBuilder_append(jl_StringBuilder_append2($box, var$3), $rt_s(14));
         var$2 = jl_AbstractStringBuilder_toString($box);
         var$4.setProperty("padding", $rt_ustr(var$2));
     }
@@ -2617,7 +2746,7 @@ uiuci_HTMLComponent_addEventListener = ($this, $type, $listener) => {
         var$3 = (-1);
         switch (jl_String_hashCode($type)) {
             case -934437708:
-                if (!jl_String_equals($type, $rt_s(23)))
+                if (!jl_String_equals($type, $rt_s(24)))
                     break a;
                 var$3 = 2;
                 break a;
@@ -2627,7 +2756,7 @@ uiuci_HTMLComponent_addEventListener = ($this, $type, $listener) => {
                 var$3 = 1;
                 break a;
             case 1252611035:
-                if (!jl_String_equals($type, $rt_s(24)))
+                if (!jl_String_equals($type, $rt_s(25)))
                     break a;
                 var$3 = 0;
                 break a;
@@ -2685,7 +2814,6 @@ let otjdh_HTMLDocument_current = () => {
     return window.document;
 };
 let jl_IndexOutOfBoundsException = $rt_classWithoutFields(jl_RuntimeException);
-let juf_IntFunction = $rt_classWithoutFields(0);
 function uid_STS13Visualizer$_init_$lambda$_0_0() {
     jl_Object.call(this);
     this.$_09 = null;
@@ -2764,45 +2892,101 @@ let uid_STS13Visualizer$_init_$lambda$_0_1_apply = (var$0, var$1) => {
     uid_STS13Visualizer_$callClinit();
     return $rt_createArray(ju_BitSet, var$1);
 };
-let ju_Arrays = $rt_classWithoutFields();
-let ju_Arrays_copyOf = ($original, $newLength) => {
-    let var$3, $sz, $i;
-    var$3 = jl_Class_getComponentType(jl_Object_getClass($original));
-    if (var$3 === null) {
-        var$3 = new jl_NullPointerException;
-        jl_Exception__init_(var$3);
-        $rt_throw(var$3);
+let jus_Stream = $rt_classWithoutFields(0);
+let jusi_SimpleStreamImpl = $rt_classWithoutFields();
+let jusi_SimpleStreamImpl_filter = ($this, $predicate) => {
+    let var$2;
+    var$2 = new jusi_FilteringStreamImpl;
+    jusi_WrappingStreamImpl__init_(var$2, $this);
+    var$2.$filter2 = $predicate;
+    return var$2;
+},
+jusi_SimpleStreamImpl_map = ($this, $mapper) => {
+    let var$2;
+    var$2 = new jusi_MappingStreamImpl;
+    jusi_WrappingStreamImpl__init_(var$2, $this);
+    var$2.$mapper1 = $mapper;
+    return var$2;
+},
+jusi_SimpleStreamImpl_forEach = ($this, $action) => {
+    let var$2;
+    while (true) {
+        var$2 = new jusi_SimpleStreamImpl$forEachOrdered$lambda$_19_0;
+        var$2.$_017 = $action;
+        if (!jusi_ArrayStreamImpl_next($this, var$2))
+            break;
     }
-    if (var$3 === $rt_cls($rt_voidcls)) {
-        var$3 = new jl_IllegalArgumentException;
-        jl_Exception__init_(var$3);
-        $rt_throw(var$3);
+},
+jusi_SimpleStreamImpl_toArray = ($this, $generator) => {
+    let $estimatedSize, $array, $consumer, var$5, $list, $array_0, $i;
+    $estimatedSize = $this.$estimateSize();
+    if ($estimatedSize >= 0) {
+        $array = $generator.$apply($estimatedSize);
+        $consumer = new jusi_SimpleStreamImpl$ArrayFillingConsumer;
+        $consumer.$array1 = $array;
+        while ($this.$next($consumer)) {
+        }
+        var$5 = $array.data;
+        $estimatedSize = $consumer.$index1;
+        if ($estimatedSize < var$5.length)
+            $array = ju_Arrays_copyOf($array, $estimatedSize);
+        return $array;
     }
-    if ($newLength < 0) {
-        var$3 = new jl_NegativeArraySizeException;
-        jl_Exception__init_(var$3);
-        $rt_throw(var$3);
+    $list = new ju_ArrayList;
+    $list.$array2 = $rt_createArray(jl_Object, 10);
+    while (true) {
+        ju_Objects_requireNonNull($list);
+        $consumer = new jusi_SimpleStreamImpl$toArray$lambda$_21_0;
+        $consumer.$_018 = $list;
+        if (!$this.$next($consumer))
+            break;
     }
-    $original = $original.data;
-    var$3 = jlr_Array_newInstanceImpl(var$3.$platformClass, $newLength);
-    $sz = jl_Math_min($newLength, $original.length);
+    $array_0 = $generator.$apply($list.$size1);
     $i = 0;
-    while ($i < $sz) {
-        var$3.data[$i] = $original[$i];
+    while (true) {
+        $generator = $array_0.data;
+        if ($i >= $generator.length)
+            break;
+        $generator[$i] = ju_ArrayList_get($list, $i);
         $i = $i + 1 | 0;
     }
-    return var$3;
+    return $array_0;
 },
-ju_Arrays_stream = $array => {
-    let var$2, var$3, var$4;
-    var$2 = $array.data;
-    var$3 = new jusi_ArrayStreamImpl;
-    var$4 = var$2.length;
-    var$3.$array0 = $array;
-    var$3.$index0 = 0;
-    var$3.$end0 = var$4;
-    var$3.$size0 = var$4 - 0 | 0;
-    return var$3;
+jusi_SimpleStreamImpl_iterator = $this => {
+    let var$1;
+    var$1 = new jusi_SimpleStreamIterator;
+    var$1.$stream1 = $this;
+    return var$1;
+},
+jusi_SimpleStreamImpl_estimateSize = $this => {
+    return (-1);
+};
+function jusi_ArrayStreamImpl() {
+    let a = this; jusi_SimpleStreamImpl.call(a);
+    a.$array0 = null;
+    a.$index0 = 0;
+    a.$end0 = 0;
+    a.$size0 = 0;
+}
+let jusi_ArrayStreamImpl_next = ($this, $consumer) => {
+    let var$2, var$3;
+    a: {
+        while (true) {
+            var$2 = $this.$index0;
+            if (var$2 >= $this.$end0)
+                break a;
+            var$3 = $this.$array0.data;
+            $this.$index0 = var$2 + 1 | 0;
+            if ($consumer.$test0(var$3[var$2]))
+                continue;
+            else
+                break;
+        }
+    }
+    return $this.$index0 >= $this.$end0 ? 0 : 1;
+},
+jusi_ArrayStreamImpl_estimateSize = $this => {
+    return $this.$size0;
 };
 let jl_Math = $rt_classWithoutFields();
 let jl_Math_sin = var$1 => {
@@ -2925,8 +3109,8 @@ otji_JSWrapper_jsToJava = $o => {
                     b: {
                         if (otji_JSWrapper_wrappers !== null) {
                             var$3 = $rt_str(typeof var$2);
-                            if (!jl_String_equals(var$3, $rt_s(25)) && !jl_String_equals(var$3, $rt_s(26))) {
-                                if (jl_String_equals(var$3, $rt_s(27))) {
+                            if (!jl_String_equals(var$3, $rt_s(26)) && !jl_String_equals(var$3, $rt_s(27))) {
+                                if (jl_String_equals(var$3, $rt_s(28))) {
                                     $o = otji_JSWrapper_stringWrappers.get(var$2);
                                     $o = (typeof $o === 'undefined' ? 1 : 0) ? void 0 : $o.deref();
                                     if (!(typeof $o === 'undefined' ? 1 : 0)) {
@@ -2939,7 +3123,7 @@ otji_JSWrapper_jsToJava = $o => {
                                     otji_JSWrapper_register$js_body$_4(otji_JSWrapper_stringFinalizationRegistry, var$3, var$2);
                                     break a;
                                 }
-                                if (!jl_String_equals(var$3, $rt_s(28)))
+                                if (!jl_String_equals(var$3, $rt_s(29)))
                                     break b;
                                 else {
                                     $o = otji_JSWrapper_numberWrappers.get(var$2);
@@ -3013,7 +3197,7 @@ let jusi_WrappingIntStreamImpl_next = ($this, $consumer) => {
     let var$2, var$3;
     var$2 = $this.$sourceStream0;
     var$3 = new jusi_FilteringIntStreamImpl$wrap$lambda$_1_0;
-    var$3.$_017 = $this;
+    var$3.$_019 = $this;
     var$3.$_12 = $consumer;
     return var$2.$next1(var$3);
 };
@@ -3021,11 +3205,34 @@ function jusi_FilteringIntStreamImpl() {
     jusi_WrappingIntStreamImpl.call(this);
     this.$filter1 = null;
 }
+function jusi_WrappingStreamImpl() {
+    jusi_SimpleStreamImpl.call(this);
+    this.$sourceStream1 = null;
+}
+let jusi_WrappingStreamImpl__init_ = ($this, $sourceStream) => {
+    $this.$sourceStream1 = $sourceStream;
+},
+jusi_WrappingStreamImpl_next = ($this, $consumer) => {
+    return $this.$sourceStream1.$next($this.$wrap($consumer));
+},
+jusi_WrappingStreamImpl_estimateSize = $this => {
+    return $this.$sourceStream1.$estimateSize();
+};
+function jusi_MappingStreamImpl() {
+    jusi_WrappingStreamImpl.call(this);
+    this.$mapper1 = null;
+}
+let jusi_MappingStreamImpl_wrap = ($this, $consumer) => {
+    let var$2;
+    var$2 = new jusi_MappingStreamImpl$wrap$lambda$_1_0;
+    var$2.$_020 = $this;
+    var$2.$_13 = $consumer;
+    return var$2;
+};
 let uiuc_Canvas = $rt_classWithoutFields(0);
 let uiuci_HTMLCanvas = $rt_classWithoutFields(uiuci_HTMLComponent);
 let uiuc_Select = $rt_classWithoutFields(0);
 let uiuci_HTMLSelect = $rt_classWithoutFields(uiuci_HTMLComponent);
-let juf_Function = $rt_classWithoutFields(0);
 function uid_Visualizer$model$lambda$_4_0() {
     jl_Object.call(this);
     this.$_08 = null;
@@ -3106,8 +3313,8 @@ uid_F9Point_generateLines = () => {
             $j_0 = $j + 1 | 0;
             $infinity = ju_Arrays_stream(var$13[$j_0]);
             $line = new uid_F9Point$generateLines$lambda$_4_5;
-            $line.$_018 = $line_0;
-            $line.$_13 = $start;
+            $line.$_021 = $line_0;
+            $line.$_14 = $start;
             jusi_SimpleStreamImpl_forEach($infinity, $line);
             ju_BitSet_set($line_0, var$2 + $j | 0);
             var$10[$lineIdx] = $line_0;
@@ -3124,8 +3331,8 @@ uid_F9Point_generateLines = () => {
         ju_BitSet_set($line, uid_F9Point_idx($start));
         $line_0 = ju_Arrays_stream(var$17[0]);
         $infinity = new uid_F9Point$generateLines$lambda$_4_6;
-        $infinity.$_019 = $line;
-        $infinity.$_14 = $start;
+        $infinity.$_022 = $line;
+        $infinity.$_15 = $start;
         jusi_SimpleStreamImpl_forEach($line_0, $infinity);
         ju_BitSet_set($line, var$3);
         var$10[$lineIdx] = $line;
@@ -3159,12 +3366,12 @@ uid_F9Point_generateUnital = () => {
         var$9 = $hom.data;
         var$10 = new jusi_ArrayIntStreamImpl;
         var$8 = var$9.length;
-        var$10.$array1 = $hom;
-        var$10.$index1 = 0;
+        var$10.$array3 = $hom;
+        var$10.$index2 = 0;
         var$10.$end1 = var$8;
-        var$10.$size1 = var$8 - 0 | 0;
+        var$10.$size2 = var$8 - 0 | 0;
         $val = new uid_F9Point$generateUnital$lambda$_5_3;
-        $val.$_020 = 3;
+        $val.$_023 = 3;
         $val = jusi_SimpleIntStreamImpl_mapToObj(var$10, $val);
         var$10 = uid_F9_ZERO;
         var$12 = new uid_F9Point$generateUnital$lambda$_5_4;
@@ -3178,14 +3385,14 @@ uid_F9Point_generateUnital = () => {
     }
     $val = ju_Arrays_stream($lines);
     var$10 = new uid_F9Point$generateUnital$lambda$_5_0;
-    var$10.$_021 = $unital;
+    var$10.$_024 = $unital;
     return jusi_SimpleStreamImpl_toArray(jusi_SimpleStreamImpl_filter(jusi_SimpleStreamImpl_map($val, var$10), new uid_F9Point$generateUnital$lambda$_5_1), new uid_F9Point$generateUnital$lambda$_5_2);
 },
 uid_F9Point_idx = $this => {
     return $rt_imul(uid_F9_idx($this.$x0), uid_F9_COUNT) + uid_F9_idx($this.$y0) | 0;
 },
 uid_F9Point_toString = $this => {
-    return jl_AbstractStringBuilder_toString(jl_StringBuilder_append1(jl_StringBuilder_append(jl_StringBuilder_append1(jl_StringBuilder_append(jl_StringBuilder_append1(jl_StringBuilder__init_2($rt_s(29)), $rt_s(30)), $this.$x0), $rt_s(31)), $this.$y0), $rt_s(20)));
+    return jl_AbstractStringBuilder_toString(jl_StringBuilder_append1(jl_StringBuilder_append(jl_StringBuilder_append1(jl_StringBuilder_append(jl_StringBuilder_append1(jl_StringBuilder__init_2($rt_s(30)), $rt_s(31)), $this.$x0), $rt_s(32)), $this.$y0), $rt_s(21)));
 },
 uid_F9Point_hashCode = $this => {
     return ((31 + ju_Objects_hashCode($this.$x0) | 0) * 31 | 0) + ju_Objects_hashCode($this.$y0) | 0;
@@ -3213,75 +3420,6 @@ let uid_UnitalVisualizer$points$lambda$_3_2_accept = (var$0, var$1, var$2) => {
     ju_BitSet_set(var$1, var$2);
 };
 let uid_UnitalVisualizer$points$lambda$_3_3 = $rt_classWithoutFields();
-let jus_Stream = $rt_classWithoutFields(0);
-let jusi_SimpleStreamImpl = $rt_classWithoutFields();
-let jusi_SimpleStreamImpl_filter = ($this, $predicate) => {
-    let var$2;
-    var$2 = new jusi_FilteringStreamImpl;
-    jusi_WrappingStreamImpl__init_(var$2, $this);
-    var$2.$filter2 = $predicate;
-    return var$2;
-},
-jusi_SimpleStreamImpl_map = ($this, $mapper) => {
-    let var$2;
-    var$2 = new jusi_MappingStreamImpl;
-    jusi_WrappingStreamImpl__init_(var$2, $this);
-    var$2.$mapper1 = $mapper;
-    return var$2;
-},
-jusi_SimpleStreamImpl_forEach = ($this, $action) => {
-    let var$2;
-    while (true) {
-        var$2 = new jusi_SimpleStreamImpl$forEachOrdered$lambda$_19_0;
-        var$2.$_022 = $action;
-        if (!jusi_ArrayStreamImpl_next($this, var$2))
-            break;
-    }
-},
-jusi_SimpleStreamImpl_toArray = ($this, $generator) => {
-    let $estimatedSize, $array, $consumer, var$5, $list, $array_0, $i;
-    $estimatedSize = $this.$estimateSize();
-    if ($estimatedSize >= 0) {
-        $array = $generator.$apply($estimatedSize);
-        $consumer = new jusi_SimpleStreamImpl$ArrayFillingConsumer;
-        $consumer.$array2 = $array;
-        while ($this.$next($consumer)) {
-        }
-        var$5 = $array.data;
-        $estimatedSize = $consumer.$index2;
-        if ($estimatedSize < var$5.length)
-            $array = ju_Arrays_copyOf($array, $estimatedSize);
-        return $array;
-    }
-    $list = new ju_ArrayList;
-    $list.$array3 = $rt_createArray(jl_Object, 10);
-    while (true) {
-        ju_Objects_requireNonNull($list);
-        $consumer = new jusi_SimpleStreamImpl$toArray$lambda$_21_0;
-        $consumer.$_023 = $list;
-        if (!$this.$next($consumer))
-            break;
-    }
-    $array_0 = $generator.$apply($list.$size2);
-    $i = 0;
-    while (true) {
-        $generator = $array_0.data;
-        if ($i >= $generator.length)
-            break;
-        $generator[$i] = ju_ArrayList_get($list, $i);
-        $i = $i + 1 | 0;
-    }
-    return $array_0;
-},
-jusi_SimpleStreamImpl_iterator = $this => {
-    let var$1;
-    var$1 = new jusi_SimpleStreamIterator;
-    var$1.$stream1 = $this;
-    return var$1;
-},
-jusi_SimpleStreamImpl_estimateSize = $this => {
-    return (-1);
-};
 function jusi_MappingToObjStreamImpl() {
     let a = this; jusi_SimpleStreamImpl.call(a);
     a.$source = null;
@@ -3291,8 +3429,8 @@ let jusi_MappingToObjStreamImpl_next = ($this, $consumer) => {
     let var$2, var$3;
     var$2 = $this.$source;
     var$3 = new jusi_MappingToObjStreamImpl$next$lambda$_1_0;
-    var$3.$_024 = $this;
-    var$3.$_15 = $consumer;
+    var$3.$_025 = $this;
+    var$3.$_16 = $consumer;
     return var$2.$next1(var$3);
 },
 jusi_MappingToObjStreamImpl_estimateSize = $this => {
@@ -3324,39 +3462,12 @@ let uiu_LineConf$Children_values = () => {
 uiu_LineConf$Children__clinit_ = () => {
     let var$1;
     var$1 = new uiu_LineConf$Children;
-    jl_Enum__init_(var$1, $rt_s(32), 0);
+    jl_Enum__init_(var$1, $rt_s(33), 0);
     uiu_LineConf$Children_MAX_DIST = var$1;
     var$1 = new uiu_LineConf$Children;
-    jl_Enum__init_(var$1, $rt_s(33), 1);
+    jl_Enum__init_(var$1, $rt_s(34), 1);
     uiu_LineConf$Children_SPLIT_DIST = var$1;
     uiu_LineConf$Children_$VALUES = $rt_wrapArray(uiu_LineConf$Children, [uiu_LineConf$Children_MAX_DIST, var$1]);
-};
-function jusi_ArrayStreamImpl() {
-    let a = this; jusi_SimpleStreamImpl.call(a);
-    a.$array0 = null;
-    a.$index0 = 0;
-    a.$end0 = 0;
-    a.$size0 = 0;
-}
-let jusi_ArrayStreamImpl_next = ($this, $consumer) => {
-    let var$2, var$3;
-    a: {
-        while (true) {
-            var$2 = $this.$index0;
-            if (var$2 >= $this.$end0)
-                break a;
-            var$3 = $this.$array0.data;
-            $this.$index0 = var$2 + 1 | 0;
-            if ($consumer.$test0(var$3[var$2]))
-                continue;
-            else
-                break;
-        }
-    }
-    return $this.$index0 >= $this.$end0 ? 0 : 1;
-},
-jusi_ArrayStreamImpl_estimateSize = $this => {
-    return $this.$size0;
 };
 function uid_F9() {
     let a = this; jl_Record.call(a);
@@ -3451,16 +3562,16 @@ uid_F9__clinit_ = () => {
 };
 function uid_F9Point$generateUnital$lambda$_5_0() {
     jl_Object.call(this);
-    this.$_021 = null;
+    this.$_024 = null;
 }
 let uid_F9Point$generateUnital$lambda$_5_0_apply = (var$0, var$1) => {
     let var$2, var$3;
     var$1 = var$1;
-    var$2 = var$0.$_021;
+    var$2 = var$0.$_024;
     var$1 = ju_BitSet_stream(var$1);
     ju_Objects_requireNonNull(var$2);
     var$3 = new uid_F9Point$lambda$generateUnital$11$lambda$_16_0;
-    var$3.$_025 = var$2;
+    var$3.$_026 = var$2;
     return jusi_SimpleIntStreamImpl_collect(jusi_SimpleIntStreamImpl_filter(var$1, var$3), new uid_F9Point$lambda$generateUnital$11$lambda$_16_1, new uid_F9Point$lambda$generateUnital$11$lambda$_16_2, new uid_F9Point$lambda$generateUnital$11$lambda$_16_3);
 };
 let juf_Predicate = $rt_classWithoutFields(0);
@@ -3488,11 +3599,11 @@ let uid_F9Point$generateUnital$lambda$_5_2_apply = (var$0, var$1) => {
 };
 function uid_F9Point$generateUnital$lambda$_5_3() {
     jl_Object.call(this);
-    this.$_020 = 0;
+    this.$_023 = 0;
 }
 let uid_F9Point$generateUnital$lambda$_5_3_apply = (var$0, var$1) => {
     let var$2;
-    var$2 = var$0.$_020;
+    var$2 = var$0.$_023;
     uid_F9_$callClinit();
     return uid_F9_exponent(uid_F9_values.data[var$1], var$2 + 1 | 0);
 };
@@ -3528,7 +3639,7 @@ let uid_F9Point$generateLines$lambda$_4_3_apply = (var$0, var$1) => {
     uid_F9_$callClinit();
     var$2 = jusi_SimpleStreamImpl_filter(ju_Arrays_stream(uid_F9_values), new uid_F9Point$lambda$generateLines$6$lambda$_21_0);
     var$3 = new uid_F9Point$lambda$generateLines$6$lambda$_21_1;
-    var$3.$_026 = var$1;
+    var$3.$_027 = var$1;
     return jusi_SimpleStreamImpl_toArray(jusi_SimpleStreamImpl_map(var$2, var$3), new uid_F9Point$lambda$generateLines$6$lambda$_21_2);
 };
 let uid_F9Point$generateLines$lambda$_4_4 = $rt_classWithoutFields();
@@ -3537,48 +3648,48 @@ let uid_F9Point$generateLines$lambda$_4_4_apply = (var$0, var$1) => {
 };
 function uid_F9Point$generateLines$lambda$_4_5() {
     let a = this; jl_Object.call(a);
-    a.$_018 = null;
-    a.$_13 = null;
+    a.$_021 = null;
+    a.$_14 = null;
 }
 let uid_F9Point$generateLines$lambda$_4_5_accept = (var$0, var$1) => {
     var$1 = var$1;
-    ju_BitSet_set(var$0.$_018, uid_F9Point_idx(uid_F9Point_add(var$0.$_13, var$1)));
+    ju_BitSet_set(var$0.$_021, uid_F9Point_idx(uid_F9Point_add(var$0.$_14, var$1)));
 };
 function uid_F9Point$generateLines$lambda$_4_6() {
     let a = this; jl_Object.call(a);
-    a.$_019 = null;
-    a.$_14 = null;
+    a.$_022 = null;
+    a.$_15 = null;
 }
 let uid_F9Point$generateLines$lambda$_4_6_accept = (var$0, var$1) => {
     var$1 = var$1;
-    ju_BitSet_set(var$0.$_019, uid_F9Point_idx(uid_F9Point_add(var$0.$_14, var$1)));
+    ju_BitSet_set(var$0.$_022, uid_F9Point_idx(uid_F9Point_add(var$0.$_15, var$1)));
 };
 function jusi_ArrayIntStreamImpl() {
     let a = this; jusi_SimpleIntStreamImpl.call(a);
-    a.$array1 = null;
-    a.$index1 = 0;
+    a.$array3 = null;
+    a.$index2 = 0;
     a.$end1 = 0;
-    a.$size1 = 0;
+    a.$size2 = 0;
 }
 let jusi_ArrayIntStreamImpl_next = ($this, $consumer) => {
     let var$2, var$3;
     a: {
         while (true) {
-            var$2 = $this.$index1;
+            var$2 = $this.$index2;
             if (var$2 >= $this.$end1)
                 break a;
-            var$3 = $this.$array1.data;
-            $this.$index1 = var$2 + 1 | 0;
+            var$3 = $this.$array3.data;
+            $this.$index2 = var$2 + 1 | 0;
             if (jusi_MappingToObjStreamImpl$next$lambda$_1_0_test($consumer, var$3[var$2]))
                 continue;
             else
                 break;
         }
     }
-    return $this.$index1 >= $this.$end1 ? 0 : 1;
+    return $this.$index2 >= $this.$end1 ? 0 : 1;
 },
 jusi_ArrayIntStreamImpl_estimateSize = $this => {
-    return $this.$size1;
+    return $this.$size2;
 };
 let uid_F9$_clinit_$lambda$_20_0 = $rt_classWithoutFields();
 let uid_F9$_clinit_$lambda$_20_0_apply = (var$0, var$1) => {
@@ -3684,28 +3795,16 @@ jusi_SpecializedConcatStream_estimateSize = $this => {
     $secondSize = jusi_WrappingStreamImpl_estimateSize($this.$second);
     return $secondSize < 0 ? (-1) : 1 + $secondSize | 0;
 };
-let otjde_EventListener = $rt_classWithoutFields(0);
-function uiuci_HTMLSelect$addEventListener$lambda$_11_0() {
-    jl_Object.call(this);
-    this.$_0 = null;
-}
-let uiuci_HTMLSelect$addEventListener$lambda$_11_0_handleEvent$exported$0 = (var$0, var$1) => {
-    let var$2, var$3;
-    var$2 = var$0.$_0;
-    var$3 = new uiu_SelectEvent;
-    var$3.$value3 = $rt_str(var$1.target.value);
-    var$2.$accept(var$3);
-};
 function jusi_SimpleStreamImpl$ArrayFillingConsumer() {
     let a = this; jl_Object.call(a);
-    a.$array2 = null;
-    a.$index2 = 0;
+    a.$array1 = null;
+    a.$index1 = 0;
 }
 let jusi_SimpleStreamImpl$ArrayFillingConsumer_test = ($this, $t) => {
     let var$2, var$3;
-    var$2 = $this.$array2.data;
-    var$3 = $this.$index2;
-    $this.$index2 = var$3 + 1 | 0;
+    var$2 = $this.$array1.data;
+    var$3 = $this.$index1;
+    $this.$index1 = var$3 + 1 | 0;
     var$2[var$3] = $t;
     return 1;
 };
@@ -3726,10 +3825,10 @@ let ju_AbstractList_equals = ($this, $other) => {
     if (!$rt_isInstance($other, ju_List))
         return 0;
     $list = $other;
-    if ($this.$size2 != $list.$size2)
+    if ($this.$size1 != $list.$size1)
         return 0;
     $i = 0;
-    while ($i < $list.$size2) {
+    while ($i < $list.$size1) {
         if (!ju_Objects_equals(ju_ArrayList_get($this, $i), ju_ArrayList_get($list, $i)))
             return 0;
         $i = $i + 1 | 0;
@@ -3739,65 +3838,77 @@ let ju_AbstractList_equals = ($this, $other) => {
 let ju_RandomAccess = $rt_classWithoutFields(0);
 function ju_ArrayList() {
     let a = this; ju_AbstractList.call(a);
-    a.$array3 = null;
-    a.$size2 = 0;
+    a.$array2 = null;
+    a.$size1 = 0;
 }
 let ju_ArrayList_get = ($this, $index) => {
     let var$2;
-    if ($index >= 0 && $index < $this.$size2)
-        return $this.$array3.data[$index];
+    if ($index >= 0 && $index < $this.$size1)
+        return $this.$array2.data[$index];
     var$2 = new jl_IndexOutOfBoundsException;
     jl_Exception__init_(var$2);
     $rt_throw(var$2);
 },
 ju_ArrayList_toString = $this => {
     let var$1, $length, $buffer, $i, var$5;
-    var$1 = $this.$size2;
+    var$1 = $this.$size1;
     if (!var$1)
-        return $rt_s(34);
+        return $rt_s(35);
     $length = var$1 - 1 | 0;
     $buffer = new jl_StringBuilder;
     jl_AbstractStringBuilder__init_0($buffer, var$1 * 16 | 0);
     jl_StringBuilder_append0($buffer, 91);
     $i = 0;
     while ($i < $length) {
-        var$5 = $this.$array3.data;
-        jl_StringBuilder_append1(jl_StringBuilder_append($buffer, var$5[$i] !== $this ? var$5[$i] : $rt_s(35)), $rt_s(15));
+        var$5 = $this.$array2.data;
+        jl_StringBuilder_append1(jl_StringBuilder_append($buffer, var$5[$i] !== $this ? var$5[$i] : $rt_s(36)), $rt_s(16));
         $i = $i + 1 | 0;
     }
-    var$5 = $this.$array3.data;
-    jl_StringBuilder_append($buffer, var$5[$length] !== $this ? var$5[$length] : $rt_s(35));
+    var$5 = $this.$array2.data;
+    jl_StringBuilder_append($buffer, var$5[$length] !== $this ? var$5[$length] : $rt_s(36));
     return jl_AbstractStringBuilder_toString(jl_StringBuilder_append0($buffer, 93));
 },
 ju_ArrayList_hashCode = $this => {
     let $result, $i;
     $result = 1;
     $i = 0;
-    while ($i < $this.$size2) {
-        $result = (31 * $result | 0) + ju_Objects_hashCode($this.$array3.data[$i]) | 0;
+    while ($i < $this.$size1) {
+        $result = (31 * $result | 0) + ju_Objects_hashCode($this.$array2.data[$i]) | 0;
         $i = $i + 1 | 0;
     }
     return $result;
 };
 function jusi_SimpleStreamImpl$toArray$lambda$_21_0() {
     jl_Object.call(this);
-    this.$_023 = null;
+    this.$_018 = null;
 }
 let jusi_SimpleStreamImpl$toArray$lambda$_21_0_test = (var$0, var$1) => {
     let var$2, var$3, var$4, var$5, var$6;
-    var$2 = var$0.$_023;
-    var$3 = var$2.$size2 + 1 | 0;
-    var$4 = var$2.$array3.data.length;
+    var$2 = var$0.$_018;
+    var$3 = var$2.$size1 + 1 | 0;
+    var$4 = var$2.$array2.data.length;
     if (var$4 < var$3) {
         var$3 = var$4 >= 1073741823 ? 2147483647 : jl_Math_max(var$3, jl_Math_max(var$4 * 2 | 0, 5));
-        var$2.$array3 = ju_Arrays_copyOf(var$2.$array3, var$3);
+        var$2.$array2 = ju_Arrays_copyOf(var$2.$array2, var$3);
     }
-    var$5 = var$2.$array3.data;
-    var$6 = var$2.$size2;
-    var$2.$size2 = var$6 + 1 | 0;
+    var$5 = var$2.$array2.data;
+    var$6 = var$2.$size1;
+    var$2.$size1 = var$6 + 1 | 0;
     var$5[var$6] = var$1;
     var$2.$modCount = var$2.$modCount + 1 | 0;
     return 1;
+};
+let otjde_EventListener = $rt_classWithoutFields(0);
+function uiuci_HTMLSelect$addEventListener$lambda$_11_0() {
+    jl_Object.call(this);
+    this.$_0 = null;
+}
+let uiuci_HTMLSelect$addEventListener$lambda$_11_0_handleEvent$exported$0 = (var$0, var$1) => {
+    let var$2, var$3;
+    var$2 = var$0.$_0;
+    var$3 = new uiu_SelectEvent;
+    var$3.$value3 = $rt_str(var$1.target.value);
+    var$2.$accept(var$3);
 };
 function ju_Optional() {
     jl_Object.call(this);
@@ -3825,32 +3936,42 @@ ju_Optional_ofNullable = $value => {
 };
 function uiuci_HTMLComponent$box$lambda$_6_0() {
     jl_Object.call(this);
-    this.$_027 = null;
+    this.$_028 = null;
 }
-function jusi_WrappingStreamImpl() {
-    jusi_SimpleStreamImpl.call(this);
-    this.$sourceStream1 = null;
+function jusi_ReducingConsumer() {
+    let a = this; jl_Object.call(a);
+    a.$accumulator = null;
+    a.$result = null;
+    a.$initialized = 0;
 }
-let jusi_WrappingStreamImpl__init_ = ($this, $sourceStream) => {
-    $this.$sourceStream1 = $sourceStream;
+let jusi_ReducingConsumer__init_0 = ($this, $accumulator, $result, $initialized) => {
+    $this.$accumulator = $accumulator;
+    $this.$result = $result;
+    $this.$initialized = $initialized;
 },
-jusi_WrappingStreamImpl_next = ($this, $consumer) => {
-    return $this.$sourceStream1.$next($this.$wrap($consumer));
+jusi_ReducingConsumer__init_ = (var_0, var_1, var_2) => {
+    let var_3 = new jusi_ReducingConsumer();
+    jusi_ReducingConsumer__init_0(var_3, var_0, var_1, var_2);
+    return var_3;
 },
-jusi_WrappingStreamImpl_estimateSize = $this => {
-    return $this.$sourceStream1.$estimateSize();
+jusi_ReducingConsumer_test = ($this, $t) => {
+    if (!$this.$initialized) {
+        $this.$result = $t;
+        $this.$initialized = 1;
+    } else
+        $this.$result = $this.$accumulator.$apply0($this.$result, $t);
+    return 1;
 };
-function jusi_MappingStreamImpl() {
-    jusi_WrappingStreamImpl.call(this);
-    this.$mapper1 = null;
+let ju_Set = $rt_classWithoutFields(0);
+let ju_AbstractSet = $rt_classWithoutFields(ju_AbstractCollection);
+let ju_AbstractSet__init_ = $this => {
+    return;
+};
+let ju_TemplateCollections$AbstractImmutableSet = $rt_classWithoutFields(ju_AbstractSet);
+function ju_TemplateCollections$NEtriesMap$1() {
+    ju_TemplateCollections$AbstractImmutableSet.call(this);
+    this.$this$0 = null;
 }
-let jusi_MappingStreamImpl_wrap = ($this, $consumer) => {
-    let var$2;
-    var$2 = new jusi_MappingStreamImpl$wrap$lambda$_1_0;
-    var$2.$_028 = $this;
-    var$2.$_16 = $consumer;
-    return var$2;
-};
 function jusi_FlatMappingToIntStreamImpl() {
     let a = this; jusi_SimpleIntStreamImpl.call(a);
     a.$sourceStream = null;
@@ -3917,40 +4038,6 @@ let jusi_FlatMappingToIntStreamImpl_next = ($this, $consumer) => {
     }
     return 1;
 };
-function jusi_ReducingConsumer() {
-    let a = this; jl_Object.call(a);
-    a.$accumulator = null;
-    a.$result = null;
-    a.$initialized = 0;
-}
-let jusi_ReducingConsumer__init_0 = ($this, $accumulator, $result, $initialized) => {
-    $this.$accumulator = $accumulator;
-    $this.$result = $result;
-    $this.$initialized = $initialized;
-},
-jusi_ReducingConsumer__init_ = (var_0, var_1, var_2) => {
-    let var_3 = new jusi_ReducingConsumer();
-    jusi_ReducingConsumer__init_0(var_3, var_0, var_1, var_2);
-    return var_3;
-},
-jusi_ReducingConsumer_test = ($this, $t) => {
-    if (!$this.$initialized) {
-        $this.$result = $t;
-        $this.$initialized = 1;
-    } else
-        $this.$result = $this.$accumulator.$apply0($this.$result, $t);
-    return 1;
-};
-let ju_Set = $rt_classWithoutFields(0);
-let ju_AbstractSet = $rt_classWithoutFields(ju_AbstractCollection);
-let ju_AbstractSet__init_ = $this => {
-    return;
-};
-let ju_TemplateCollections$AbstractImmutableSet = $rt_classWithoutFields(ju_AbstractSet);
-function ju_TemplateCollections$NEtriesMap$1() {
-    ju_TemplateCollections$AbstractImmutableSet.call(this);
-    this.$this$0 = null;
-}
 function jusi_FilteringStreamImpl() {
     jusi_WrappingStreamImpl.call(this);
     this.$filter2 = null;
@@ -3961,6 +4048,15 @@ let jusi_FilteringStreamImpl_wrap = ($this, $consumer) => {
     var$2.$_030 = $this;
     var$2.$_17 = $consumer;
     return var$2;
+};
+let jlr_Array = $rt_classWithoutFields();
+let jlr_Array_newInstanceImpl = (var$1, var$2) => {
+    if (var$1.$meta.primitive) {
+        switch (var$1) {
+        }
+        ;
+    }
+    return $rt_createArray(var$1, var$2);
 };
 function uiuci_HTMLComponent$addEventListener$lambda$_10_0() {
     jl_Object.call(this);
@@ -3997,15 +4093,6 @@ function uiuci_HTMLComponent$addEventListener$lambda$_10_4() {
 let uiuci_HTMLComponent$addEventListener$lambda$_10_4_handleEvent$exported$0 = (var$0, var$1) => {
     var$0.$_016.$accept(null);
 };
-let jlr_Array = $rt_classWithoutFields();
-let jlr_Array_newInstanceImpl = (var$1, var$2) => {
-    if (var$1.$meta.primitive) {
-        switch (var$1) {
-        }
-        ;
-    }
-    return $rt_createArray(var$1, var$2);
-};
 let jl_NegativeArraySizeException = $rt_classWithoutFields(jl_RuntimeException);
 function uiuc_SelectOption() {
     let a = this; jl_Record.call(a);
@@ -4017,6 +4104,12 @@ function uiuci_HTMLGraphicsContext() {
     jl_Record.call(this);
     this.$context = null;
 }
+let ju_Iterator = $rt_classWithoutFields(0);
+function ju_TemplateCollections$NEtriesMap$1$1() {
+    let a = this; jl_Object.call(a);
+    a.$index3 = 0;
+    a.$this$1 = null;
+}
 function jusi_SimpleIntStreamImpl$collect$lambda$_19_0() {
     let a = this; jl_Object.call(a);
     a.$_011 = null;
@@ -4026,12 +4119,6 @@ let jusi_SimpleIntStreamImpl$collect$lambda$_19_0_test = (var$0, var$1) => {
     var$0.$_011.$accept0(var$0.$_11, var$1);
     return 1;
 };
-let ju_Iterator = $rt_classWithoutFields(0);
-function ju_TemplateCollections$NEtriesMap$1$1() {
-    let a = this; jl_Object.call(a);
-    a.$index3 = 0;
-    a.$this$1 = null;
-}
 function jusi_SimpleIntStreamImpl$forEachOrdered$lambda$_15_0() {
     jl_Object.call(this);
     this.$_010 = null;
@@ -4042,21 +4129,21 @@ let jusi_SimpleIntStreamImpl$forEachOrdered$lambda$_15_0_test = (var$0, var$1) =
 };
 function jusi_MappingToObjStreamImpl$next$lambda$_1_0() {
     let a = this; jl_Object.call(a);
-    a.$_024 = null;
-    a.$_15 = null;
+    a.$_025 = null;
+    a.$_16 = null;
 }
 let jusi_MappingToObjStreamImpl$next$lambda$_1_0_test = (var$0, var$1) => {
     let var$2;
-    var$2 = var$0.$_024;
-    return var$0.$_15.$test0(var$2.$mapper0.$apply(var$1));
+    var$2 = var$0.$_025;
+    return var$0.$_16.$test0(var$2.$mapper0.$apply(var$1));
 };
 let jl_StringIndexOutOfBoundsException = $rt_classWithoutFields(jl_IndexOutOfBoundsException);
 function jusi_SimpleStreamImpl$forEachOrdered$lambda$_19_0() {
     jl_Object.call(this);
-    this.$_022 = null;
+    this.$_017 = null;
 }
 let jusi_SimpleStreamImpl$forEachOrdered$lambda$_19_0_test = (var$0, var$1) => {
-    var$0.$_022.$accept(var$1);
+    var$0.$_017.$accept(var$1);
     return 1;
 };
 function uiu_Border() {
@@ -4085,14 +4172,14 @@ uiu_Border__init_0 = (var_0, var_1, var_2, var_3) => {
 },
 uiu_Border_color = $color => {
     uiu_Border_$callClinit();
-    return uiu_Border__init_0($color, $rt_s(36), 1, 0);
+    return uiu_Border__init_0($color, $rt_s(37), 1, 0);
 },
 uiu_Border__clinit_ = () => {
     uiu_Border_BLACK = uiu_Border_color(uiu_Color_BLACK);
     uiu_Border_TRANSPARENT = uiu_Border_color(uiu_Color_TRANSPARENT);
     uiu_Border_GRAY = uiu_Border_color(uiu_Color_TRANS_GRAY);
     uiu_Border_YELLOW = uiu_Border_color(uiu_Color_SELECTION);
-    uiu_Border_GRAY_INSET = uiu_Border__init_0(uiu_Color_GRAY, $rt_s(37), 1, 0);
+    uiu_Border_GRAY_INSET = uiu_Border__init_0(uiu_Color_GRAY, $rt_s(38), 1, 0);
 };
 function uiu_SelectEvent() {
     jl_Record.call(this);
@@ -4113,7 +4200,7 @@ let uiu_HTMLUtil_convert = $color => {
             var$9 = var$4 % 1000 | 0;
             if (var$9 < 10) {
                 $color = jl_StringBuilder__init_();
-                jl_StringBuilder_append2(jl_StringBuilder_append($color, $rt_s(38)), var$9);
+                jl_StringBuilder_append2(jl_StringBuilder_append($color, $rt_s(39)), var$9);
                 $color = jl_AbstractStringBuilder_toString($color);
             } else if (var$9 >= 100)
                 $color = jl_AbstractStringBuilder_toString(jl_StringBuilder_append2(jl_StringBuilder__init_(), var$9));
@@ -4126,7 +4213,7 @@ let uiu_HTMLUtil_convert = $color => {
             jl_StringBuilder_append(jl_StringBuilder_append0(jl_StringBuilder_append2(var$10, var$8), 46), $color);
             var$11 = jl_AbstractStringBuilder_toString(var$10);
             $color = jl_StringBuilder__init_();
-            jl_StringBuilder_append0(jl_StringBuilder_append(jl_StringBuilder_append0(jl_StringBuilder_append2(jl_StringBuilder_append0(jl_StringBuilder_append2(jl_StringBuilder_append0(jl_StringBuilder_append2(jl_StringBuilder_append($color, $rt_s(39)), var$5), 44), var$6), 44), var$7), 44), var$11), 41);
+            jl_StringBuilder_append0(jl_StringBuilder_append(jl_StringBuilder_append0(jl_StringBuilder_append2(jl_StringBuilder_append0(jl_StringBuilder_append2(jl_StringBuilder_append0(jl_StringBuilder_append2(jl_StringBuilder_append($color, $rt_s(40)), var$5), 44), var$6), 44), var$7), 44), var$11), 41);
             return jl_AbstractStringBuilder_toString($color);
         }
     }
@@ -4134,7 +4221,7 @@ let uiu_HTMLUtil_convert = $color => {
     var$6 = $color.$g;
     var$4 = $color.$b;
     $color = jl_StringBuilder__init_();
-    jl_StringBuilder_append0(jl_StringBuilder_append2(jl_StringBuilder_append0(jl_StringBuilder_append2(jl_StringBuilder_append0(jl_StringBuilder_append2(jl_StringBuilder_append($color, $rt_s(40)), var$5), 44), var$6), 44), var$4), 41);
+    jl_StringBuilder_append0(jl_StringBuilder_append2(jl_StringBuilder_append0(jl_StringBuilder_append2(jl_StringBuilder_append0(jl_StringBuilder_append2(jl_StringBuilder_append($color, $rt_s(41)), var$5), 44), var$6), 44), var$4), 41);
     return jl_AbstractStringBuilder_toString($color);
 };
 let uiu_MouseEvt = $rt_classWithoutFields(0);
@@ -4160,16 +4247,16 @@ let uiu_MouseEvt$Type_values = () => {
 uiu_MouseEvt$Type__clinit_ = () => {
     let var$1;
     var$1 = new uiu_MouseEvt$Type;
-    jl_Enum__init_(var$1, $rt_s(41), 0);
+    jl_Enum__init_(var$1, $rt_s(42), 0);
     uiu_MouseEvt$Type_OVER = var$1;
     var$1 = new uiu_MouseEvt$Type;
-    jl_Enum__init_(var$1, $rt_s(42), 1);
+    jl_Enum__init_(var$1, $rt_s(43), 1);
     uiu_MouseEvt$Type_OUT = var$1;
     var$1 = new uiu_MouseEvt$Type;
-    jl_Enum__init_(var$1, $rt_s(43), 2);
+    jl_Enum__init_(var$1, $rt_s(44), 2);
     uiu_MouseEvt$Type_MOVE = var$1;
     var$1 = new uiu_MouseEvt$Type;
-    jl_Enum__init_(var$1, $rt_s(44), 3);
+    jl_Enum__init_(var$1, $rt_s(45), 3);
     uiu_MouseEvt$Type_CLICK = var$1;
     uiu_MouseEvt$Type_$VALUES = $rt_wrapArray(uiu_MouseEvt$Type, [uiu_MouseEvt$Type_OVER, uiu_MouseEvt$Type_OUT, uiu_MouseEvt$Type_MOVE, var$1]);
 };
@@ -4224,15 +4311,26 @@ uiu_RGBAColor__init_0 = (var_0, var_1, var_2, var_3) => {
     uiu_RGBAColor__init_2(var_4, var_0, var_1, var_2, var_3);
     return var_4;
 };
+function jusi_FlatMappingToIntStreamImpl$next$lambda$_1_0() {
+    jl_Object.call(this);
+    this.$_029 = null;
+}
+let jusi_FlatMappingToIntStreamImpl$next$lambda$_1_0_test = (var$0, var$1) => {
+    let var$2;
+    var$2 = var$0.$_029;
+    var$2.$current2 = ju_BitSet_stream(var$1);
+    var$2.$currentSet = 1;
+    return 0;
+};
 function jusi_MappingStreamImpl$wrap$lambda$_1_0() {
     let a = this; jl_Object.call(a);
-    a.$_028 = null;
-    a.$_16 = null;
+    a.$_020 = null;
+    a.$_13 = null;
 }
 let jusi_MappingStreamImpl$wrap$lambda$_1_0_test = (var$0, var$1) => {
     let var$2;
-    var$2 = var$0.$_028;
-    return var$0.$_16.$test0(var$2.$mapper1.$apply1(var$1));
+    var$2 = var$0.$_020;
+    return var$0.$_13.$test0(var$2.$mapper1.$apply1(var$1));
 };
 function jusi_FilteringStreamImpl$wrap$lambda$_1_0() {
     let a = this; jl_Object.call(a);
@@ -4244,17 +4342,6 @@ let jusi_FilteringStreamImpl$wrap$lambda$_1_0_test = (var$0, var$1) => {
     var$2 = var$0.$_030;
     var$3 = var$0.$_17;
     return var$2.$filter2.$test0(var$1) ? var$3.$test0(var$1) : 1;
-};
-function jusi_FlatMappingToIntStreamImpl$next$lambda$_1_0() {
-    jl_Object.call(this);
-    this.$_029 = null;
-}
-let jusi_FlatMappingToIntStreamImpl$next$lambda$_1_0_test = (var$0, var$1) => {
-    let var$2;
-    var$2 = var$0.$_029;
-    var$2.$current2 = ju_BitSet_stream(var$1);
-    var$2.$currentSet = 1;
-    return 0;
 };
 function jusi_SimpleStreamIterator() {
     let a = this; jl_Object.call(a);
@@ -4312,7 +4399,7 @@ uid_Point_dist = ($this, $that) => {
     return jl_Math_sqrt(var$2 * var$2 + var$3 * var$3);
 },
 uid_Point_toString = $this => {
-    return jl_AbstractStringBuilder_toString(jl_StringBuilder_append1(jl_StringBuilder_append3(jl_StringBuilder_append1(jl_StringBuilder_append3(jl_StringBuilder_append1(jl_StringBuilder__init_2($rt_s(45)), $rt_s(30)), $this.$x), $rt_s(31)), $this.$y), $rt_s(20)));
+    return jl_AbstractStringBuilder_toString(jl_StringBuilder_append1(jl_StringBuilder_append3(jl_StringBuilder_append1(jl_StringBuilder_append3(jl_StringBuilder_append1(jl_StringBuilder__init_2($rt_s(46)), $rt_s(31)), $this.$x), $rt_s(32)), $this.$y), $rt_s(21)));
 },
 uid_Point_hashCode = $this => {
     return ((31 + jl_Double_hashCode($this.$x) | 0) * 31 | 0) + jl_Double_hashCode($this.$y) | 0;
@@ -4410,13 +4497,13 @@ let jus_Collector$Characteristics_values = () => {
 jus_Collector$Characteristics__clinit_ = () => {
     let var$1;
     var$1 = new jus_Collector$Characteristics;
-    jl_Enum__init_(var$1, $rt_s(46), 0);
+    jl_Enum__init_(var$1, $rt_s(47), 0);
     jus_Collector$Characteristics_CONCURRENT = var$1;
     var$1 = new jus_Collector$Characteristics;
-    jl_Enum__init_(var$1, $rt_s(47), 1);
+    jl_Enum__init_(var$1, $rt_s(48), 1);
     jus_Collector$Characteristics_UNORDERED = var$1;
     var$1 = new jus_Collector$Characteristics;
-    jl_Enum__init_(var$1, $rt_s(48), 2);
+    jl_Enum__init_(var$1, $rt_s(49), 2);
     jus_Collector$Characteristics_IDENTITY_FINISH = var$1;
     jus_Collector$Characteristics_$VALUES = $rt_wrapArray(jus_Collector$Characteristics, [jus_Collector$Characteristics_CONCURRENT, jus_Collector$Characteristics_UNORDERED, var$1]);
 };
@@ -4484,12 +4571,12 @@ let ju_BitSet$BitSetStream_next = ($this, $consumer) => {
 };
 function jusi_FilteringIntStreamImpl$wrap$lambda$_1_0() {
     let a = this; jl_Object.call(a);
-    a.$_017 = null;
+    a.$_019 = null;
     a.$_12 = null;
 }
 let jusi_FilteringIntStreamImpl$wrap$lambda$_1_0_test = (var$0, var$1) => {
     let var$2, var$3;
-    var$2 = var$0.$_017;
+    var$2 = var$0.$_019;
     var$3 = var$0.$_12;
     return var$2.$filter1.$test(var$1) ? var$3.$test(var$1) : 1;
 };
@@ -4571,7 +4658,7 @@ let jusi_SimpleStreamImpl$collect$lambda$_26_0_test = (var$0, var$1) => {
         return 1;
     var$3 = new jl_IllegalStateException;
     var$18 = jl_StringBuilder__init_();
-    jl_StringBuilder_append(jl_StringBuilder_append(jl_StringBuilder_append(jl_StringBuilder_append(jl_StringBuilder_append(jl_StringBuilder_append(var$18, $rt_s(49)), var$1), $rt_s(50)), var$16), $rt_s(51)), var$2);
+    jl_StringBuilder_append(jl_StringBuilder_append(jl_StringBuilder_append(jl_StringBuilder_append(jl_StringBuilder_append(jl_StringBuilder_append(var$18, $rt_s(50)), var$1), $rt_s(51)), var$16), $rt_s(52)), var$2);
     jl_RuntimeException__init_2(var$3, jl_AbstractStringBuilder_toString(var$18));
     $rt_throw(var$3);
 };
@@ -4622,61 +4709,61 @@ let uid_TextColor_values = () => {
 uid_TextColor__clinit_ = () => {
     let var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(52), 0);
+    jl_Enum__init_(var$1, $rt_s(53), 0);
     uid_TextColor_black = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(53), 1);
+    jl_Enum__init_(var$1, $rt_s(54), 1);
     uid_TextColor_blue = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(54), 2);
+    jl_Enum__init_(var$1, $rt_s(55), 2);
     uid_TextColor_brown = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(55), 3);
+    jl_Enum__init_(var$1, $rt_s(56), 3);
     uid_TextColor_cyan = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(56), 4);
+    jl_Enum__init_(var$1, $rt_s(57), 4);
     uid_TextColor_darkgray = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(57), 5);
+    jl_Enum__init_(var$1, $rt_s(58), 5);
     uid_TextColor_gray = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(58), 6);
+    jl_Enum__init_(var$1, $rt_s(59), 6);
     uid_TextColor_green = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(59), 7);
+    jl_Enum__init_(var$1, $rt_s(60), 7);
     uid_TextColor_lightgray = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(60), 8);
+    jl_Enum__init_(var$1, $rt_s(61), 8);
     uid_TextColor_lime = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(61), 9);
+    jl_Enum__init_(var$1, $rt_s(62), 9);
     uid_TextColor_magenta = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(62), 10);
+    jl_Enum__init_(var$1, $rt_s(63), 10);
     uid_TextColor_olive = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(63), 11);
+    jl_Enum__init_(var$1, $rt_s(64), 11);
     uid_TextColor_orange = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(64), 12);
+    jl_Enum__init_(var$1, $rt_s(65), 12);
     uid_TextColor_pink = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(65), 13);
+    jl_Enum__init_(var$1, $rt_s(66), 13);
     uid_TextColor_purple = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(66), 14);
+    jl_Enum__init_(var$1, $rt_s(67), 14);
     uid_TextColor_red = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(67), 15);
+    jl_Enum__init_(var$1, $rt_s(68), 15);
     uid_TextColor_teal = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(68), 16);
+    jl_Enum__init_(var$1, $rt_s(69), 16);
     uid_TextColor_violet = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(69), 17);
+    jl_Enum__init_(var$1, $rt_s(70), 17);
     uid_TextColor_yellow = var$1;
     var$1 = new uid_TextColor;
-    jl_Enum__init_(var$1, $rt_s(70), 18);
+    jl_Enum__init_(var$1, $rt_s(71), 18);
     uid_TextColor_white = var$1;
     uid_TextColor_$VALUES = $rt_wrapArray(uid_TextColor, [uid_TextColor_black, uid_TextColor_blue, uid_TextColor_brown, uid_TextColor_cyan, uid_TextColor_darkgray, uid_TextColor_gray, uid_TextColor_green, uid_TextColor_lightgray, uid_TextColor_lime, uid_TextColor_magenta, uid_TextColor_olive, uid_TextColor_orange, uid_TextColor_pink, uid_TextColor_purple, uid_TextColor_red, uid_TextColor_teal, uid_TextColor_violet, uid_TextColor_yellow, var$1]);
 };
@@ -4689,10 +4776,10 @@ let juc_ThreadLocalRandom__clinit_ = () => {
 };
 function uid_F9Point$lambda$generateUnital$11$lambda$_16_0() {
     jl_Object.call(this);
-    this.$_025 = null;
+    this.$_026 = null;
 }
 let uid_F9Point$lambda$generateUnital$11$lambda$_16_0_test = (var$0, var$1) => {
-    return ju_BitSet_get(var$0.$_025, var$1);
+    return ju_BitSet_get(var$0.$_026, var$1);
 };
 let uid_F9Point$lambda$generateUnital$11$lambda$_16_1 = $rt_classWithoutFields();
 let uid_F9Point$lambda$generateUnital$11$lambda$_16_1_get = var$0 => {
@@ -4711,12 +4798,12 @@ let uid_F9Point$lambda$generateLines$6$lambda$_21_0_test = (var$0, var$1) => {
 };
 function uid_F9Point$lambda$generateLines$6$lambda$_21_1() {
     jl_Object.call(this);
-    this.$_026 = null;
+    this.$_027 = null;
 }
 let uid_F9Point$lambda$generateLines$6$lambda$_21_1_apply = (var$0, var$1) => {
     let var$2, var$3;
     var$1 = var$1;
-    var$2 = var$0.$_026;
+    var$2 = var$0.$_027;
     var$3 = new uid_F9Point;
     uid_F9_$callClinit();
     uid_F9Point__init_(var$3, uid_F9_ONE, var$2);
@@ -5269,6 +5356,7 @@ otci_IntegerUtil, 0, jl_Object, [], 4, 3, 0, 0, 0,
 uid_Visualizer, 0, jl_Object, [], 3, 3, 0, 0, 0,
 uid_UnitalVisualizer, "UnitalVisualizer", 8, jl_Object, [uid_Visualizer], 0, 3, 0, 0, ["$coordinate", $rt_wrapFunction1(uid_UnitalVisualizer_coordinate), "$lines", $rt_wrapFunction0(uid_UnitalVisualizer_lines), "$points", $rt_wrapFunction0(uid_UnitalVisualizer_points)],
 uid_STS13Visualizer, "STS13Visualizer", 8, jl_Object, [uid_Visualizer], 0, 3, 0, uid_STS13Visualizer_$callClinit, ["$coordinate", $rt_wrapFunction1(uid_STS13Visualizer_coordinate), "$lines", $rt_wrapFunction0(uid_STS13Visualizer_lines), "$points", $rt_wrapFunction0(uid_STS13Visualizer_points)],
+uid_DennistonArcVisualizer, "DennistonArcVisualizer", 8, jl_Object, [uid_Visualizer], 0, 3, 0, 0, ["$coordinate", $rt_wrapFunction1(uid_DennistonArcVisualizer_coordinate), "$lines", $rt_wrapFunction0(uid_DennistonArcVisualizer_lines0), "$points", $rt_wrapFunction0(uid_DennistonArcVisualizer_points0)],
 ju_Map, 0, jl_Object, [], 3, 3, 0, 0, 0,
 uiu_UIFactory, 0, jl_Object, [], 3, 3, 0, 0, 0,
 uiu_HTMLUIFactory, 0, jl_Object, [uiu_UIFactory], 0, 3, 0, uiu_HTMLUIFactory_$callClinit, 0,
@@ -5285,14 +5373,19 @@ jl_Character, 0, jl_Object, [jl_Comparable], 0, 3, 0, 0, 0,
 ju_AbstractMap, 0, jl_Object, [ju_Map], 1, 3, 0, 0, ["$equals", $rt_wrapFunction1(ju_AbstractMap_equals), "$hashCode", $rt_wrapFunction0(ju_AbstractMap_hashCode), "$toString", $rt_wrapFunction0(ju_AbstractMap_toString)],
 ju_TemplateCollections$AbstractImmutableMap, 0, ju_AbstractMap, [], 1, 0, 0, 0, 0,
 ju_TemplateCollections$NEtriesMap, 0, ju_TemplateCollections$AbstractImmutableMap, [], 0, 0, 0, 0, 0,
-ju_Map$Entry, 0, jl_Object, [], 3, 3, 0, 0, 0,
-jusi_SimpleIntStreamImpl, 0, jl_Object, [jus_IntStream], 1, 3, 0, 0, ["$estimateSize", $rt_wrapFunction0(jusi_SimpleIntStreamImpl_estimateSize)]]);
-$rt_metadata([jusi_RangeIntStream, 0, jusi_SimpleIntStreamImpl, [], 0, 3, 0, 0, ["$next1", $rt_wrapFunction1(jusi_RangeIntStream_next)],
+ju_Map$Entry, 0, jl_Object, [], 3, 3, 0, 0, 0]);
+$rt_metadata([jusi_SimpleIntStreamImpl, 0, jl_Object, [jus_IntStream], 1, 3, 0, 0, ["$estimateSize", $rt_wrapFunction0(jusi_SimpleIntStreamImpl_estimateSize)],
+jusi_RangeIntStream, 0, jusi_SimpleIntStreamImpl, [], 0, 3, 0, 0, ["$next1", $rt_wrapFunction1(jusi_RangeIntStream_next)],
 uid_LineData, "LineData", 8, jl_Record, [], 32772, 3, 0, 0, ["$toString", $rt_wrapFunction0(uid_LineData_toString), "$hashCode", $rt_wrapFunction0(uid_LineData_hashCode), "$equals", $rt_wrapFunction1(uid_LineData_equals)],
 jl_Cloneable, 0, jl_Object, [], 3, 3, 0, 0, 0,
 ju_BitSet, "BitSet", 1, jl_Object, [jl_Cloneable, ji_Serializable], 0, 3, 0, 0, ["$equals", $rt_wrapFunction1(ju_BitSet_equals), "$hashCode", $rt_wrapFunction0(ju_BitSet_hashCode), "$toString", $rt_wrapFunction0(ju_BitSet_toString)],
 ui_Client$drawPoints$lambda$_3_0, 0, jl_Object, [juf_IntConsumer], 0, 3, 0, 0, ["$accept1", $rt_wrapFunction1(ui_Client$drawPoints$lambda$_3_0_accept)],
 ju_Objects, 0, jl_Object, [], 4, 3, 0, 0, 0,
+ju_Arrays, 0, jl_Object, [], 0, 3, 0, 0, 0,
+juf_Function, 0, jl_Object, [], 3, 3, 0, 0, 0,
+uid_DennistonArcVisualizer$_clinit_$lambda$_6_0, 0, jl_Object, [juf_Function], 0, 3, 0, 0, ["$apply1", $rt_wrapFunction1(uid_DennistonArcVisualizer$_clinit_$lambda$_6_0_apply)],
+juf_IntFunction, 0, jl_Object, [], 3, 3, 0, 0, 0,
+uid_DennistonArcVisualizer$_clinit_$lambda$_6_1, 0, jl_Object, [juf_IntFunction], 0, 3, 0, 0, ["$apply", $rt_wrapFunction1(uid_DennistonArcVisualizer$_clinit_$lambda$_6_1_apply)],
 ju_TemplateCollections$ImmutableEntry, 0, jl_Object, [ju_Map$Entry, jl_Cloneable], 0, 0, 0, 0, 0,
 uiuc_Component, 0, jl_Object, [], 3, 3, 0, 0, 0,
 uiuci_HTMLComponent, 0, jl_Object, [uiuc_Component], 0, 3, 0, 0, 0,
@@ -5304,10 +5397,11 @@ otjdx_Document, 0, jl_Object, [otjdx_Node], 3, 3, 0, 0, 0,
 otjde_EventTarget, 0, jl_Object, [otj_JSObject], 3, 3, 0, 0, 0,
 otjdh_HTMLDocument, 0, jl_Object, [otjdx_Document, otjde_EventTarget], 3, 3, 0, 0, 0,
 jl_IndexOutOfBoundsException, 0, jl_RuntimeException, [], 0, 3, 0, 0, 0,
-juf_IntFunction, 0, jl_Object, [], 3, 3, 0, 0, 0,
 uid_STS13Visualizer$_init_$lambda$_0_0, 0, jl_Object, [juf_IntFunction], 0, 3, 0, 0, ["$apply", $rt_wrapFunction1(uid_STS13Visualizer$_init_$lambda$_0_0_apply)],
 uid_STS13Visualizer$_init_$lambda$_0_1, 0, jl_Object, [juf_IntFunction], 0, 3, 0, 0, ["$apply", $rt_wrapFunction1(uid_STS13Visualizer$_init_$lambda$_0_1_apply)],
-ju_Arrays, 0, jl_Object, [], 0, 3, 0, 0, 0,
+jus_Stream, 0, jl_Object, [jus_BaseStream], 3, 3, 0, 0, 0,
+jusi_SimpleStreamImpl, 0, jl_Object, [jus_Stream], 1, 3, 0, 0, ["$estimateSize", $rt_wrapFunction0(jusi_SimpleStreamImpl_estimateSize)],
+jusi_ArrayStreamImpl, 0, jusi_SimpleStreamImpl, [], 0, 3, 0, 0, ["$next", $rt_wrapFunction1(jusi_ArrayStreamImpl_next), "$estimateSize", $rt_wrapFunction0(jusi_ArrayStreamImpl_estimateSize)],
 jl_Math, 0, jl_Object, [], 4, 3, 0, 0, 0,
 jl_IllegalArgumentException, 0, jl_RuntimeException, [], 0, 3, 0, 0, 0,
 otjde_FocusEventTarget, 0, jl_Object, [otjde_EventTarget], 3, 3, 0, 0, 0,
@@ -5330,15 +5424,16 @@ otji_JSWrapper$_clinit_$lambda$_30_0, 0, jl_Object, [otjc_JSFinalizationRegistry
 otjc_JSFinalizationRegistry, 0, jl_Object, [otj_JSObject], 1, 3, 0, 0, 0,
 otji_JSWrapper$_clinit_$lambda$_30_1, 0, jl_Object, [otjc_JSFinalizationRegistryConsumer], 0, 3, 0, 0, ["$accept$exported$0", $rt_wrapFunction1(otji_JSWrapper$_clinit_$lambda$_30_1_accept$exported$0)],
 otjc_JSObjects, 0, jl_Object, [], 4, 3, 0, 0, 0,
-jusi_WrappingIntStreamImpl, 0, jusi_SimpleIntStreamImpl, [], 1, 3, 0, 0, ["$next1", $rt_wrapFunction1(jusi_WrappingIntStreamImpl_next)],
-jusi_FilteringIntStreamImpl, 0, jusi_WrappingIntStreamImpl, [], 0, 3, 0, 0, 0,
+jusi_WrappingIntStreamImpl, 0, jusi_SimpleIntStreamImpl, [], 1, 3, 0, 0, ["$next1", $rt_wrapFunction1(jusi_WrappingIntStreamImpl_next)]]);
+$rt_metadata([jusi_FilteringIntStreamImpl, 0, jusi_WrappingIntStreamImpl, [], 0, 3, 0, 0, 0,
+jusi_WrappingStreamImpl, 0, jusi_SimpleStreamImpl, [], 1, 3, 0, 0, ["$next", $rt_wrapFunction1(jusi_WrappingStreamImpl_next), "$estimateSize", $rt_wrapFunction0(jusi_WrappingStreamImpl_estimateSize)],
+jusi_MappingStreamImpl, 0, jusi_WrappingStreamImpl, [], 0, 3, 0, 0, ["$wrap", $rt_wrapFunction1(jusi_MappingStreamImpl_wrap)],
 uiuc_Canvas, 0, jl_Object, [uiuc_Component], 3, 3, 0, 0, 0,
 uiuci_HTMLCanvas, 0, uiuci_HTMLComponent, [uiuc_Canvas], 0, 3, 0, 0, 0,
 uiuc_Select, 0, jl_Object, [uiuc_Component], 3, 3, 0, 0, 0,
 uiuci_HTMLSelect, 0, uiuci_HTMLComponent, [uiuc_Select], 0, 3, 0, 0, 0,
-juf_Function, 0, jl_Object, [], 3, 3, 0, 0, 0,
-uid_Visualizer$model$lambda$_4_0, 0, jl_Object, [juf_Function], 0, 3, 0, 0, ["$apply1", $rt_wrapFunction1(uid_Visualizer$model$lambda$_4_0_apply)]]);
-$rt_metadata([uid_Visualizer$model$lambda$_4_1, 0, jl_Object, [juf_IntFunction], 0, 3, 0, 0, ["$apply", $rt_wrapFunction1(uid_Visualizer$model$lambda$_4_1_apply)],
+uid_Visualizer$model$lambda$_4_0, 0, jl_Object, [juf_Function], 0, 3, 0, 0, ["$apply1", $rt_wrapFunction1(uid_Visualizer$model$lambda$_4_0_apply)],
+uid_Visualizer$model$lambda$_4_1, 0, jl_Object, [juf_IntFunction], 0, 3, 0, 0, ["$apply", $rt_wrapFunction1(uid_Visualizer$model$lambda$_4_1_apply)],
 uid_F9Point, "F9Point", 8, jl_Record, [], 32772, 3, 0, 0, ["$toString", $rt_wrapFunction0(uid_F9Point_toString), "$hashCode", $rt_wrapFunction0(uid_F9Point_hashCode), "$equals", $rt_wrapFunction1(uid_F9Point_equals)],
 uid_UnitalVisualizer$points$lambda$_3_0, 0, jl_Object, [juf_Function], 0, 3, 0, 0, 0,
 juf_Supplier, 0, jl_Object, [], 3, 3, 0, 0, 0,
@@ -5346,12 +5441,9 @@ uid_UnitalVisualizer$points$lambda$_3_1, 0, jl_Object, [juf_Supplier], 0, 3, 0, 
 juf_ObjIntConsumer, 0, jl_Object, [], 3, 3, 0, 0, 0,
 uid_UnitalVisualizer$points$lambda$_3_2, 0, jl_Object, [juf_ObjIntConsumer], 0, 3, 0, 0, ["$accept0", $rt_wrapFunction2(uid_UnitalVisualizer$points$lambda$_3_2_accept)],
 uid_UnitalVisualizer$points$lambda$_3_3, 0, jl_Object, [juf_BiConsumer], 0, 3, 0, 0, 0,
-jus_Stream, 0, jl_Object, [jus_BaseStream], 3, 3, 0, 0, 0,
-jusi_SimpleStreamImpl, 0, jl_Object, [jus_Stream], 1, 3, 0, 0, ["$estimateSize", $rt_wrapFunction0(jusi_SimpleStreamImpl_estimateSize)],
 jusi_MappingToObjStreamImpl, 0, jusi_SimpleStreamImpl, [], 0, 3, 0, 0, ["$next", $rt_wrapFunction1(jusi_MappingToObjStreamImpl_next), "$estimateSize", $rt_wrapFunction0(jusi_MappingToObjStreamImpl_estimateSize)],
 jl_Enum, 0, jl_Object, [jl_Comparable, ji_Serializable], 1, 3, 0, 0, ["$toString", $rt_wrapFunction0(jl_Enum_toString), "$equals", $rt_wrapFunction1(jl_Enum_equals), "$hashCode", $rt_wrapFunction0(jl_Enum_hashCode)],
 uiu_LineConf$Children, "LineConf$Children", 7, jl_Enum, [], 12, 3, 0, 0, 0,
-jusi_ArrayStreamImpl, 0, jusi_SimpleStreamImpl, [], 0, 3, 0, 0, ["$next", $rt_wrapFunction1(jusi_ArrayStreamImpl_next), "$estimateSize", $rt_wrapFunction0(jusi_ArrayStreamImpl_estimateSize)],
 uid_F9, "F9", 8, jl_Record, [jl_Comparable], 32772, 3, 0, uid_F9_$callClinit, ["$toString", $rt_wrapFunction0(uid_F9_toString), "$hashCode", $rt_wrapFunction0(uid_F9_hashCode), "$equals", $rt_wrapFunction1(uid_F9_equals)],
 uid_F9Point$generateUnital$lambda$_5_0, 0, jl_Object, [juf_Function], 0, 3, 0, 0, ["$apply1", $rt_wrapFunction1(uid_F9Point$generateUnital$lambda$_5_0_apply)],
 juf_Predicate, 0, jl_Object, [], 3, 3, 0, 0, 0,
@@ -5378,42 +5470,40 @@ uid_F9$_clinit_$lambda$_20_5, 0, jl_Object, [juf_IntFunction], 0, 3, 0, 0, ["$ap
 jusi_SingleStreamImpl, 0, jusi_SimpleStreamImpl, [], 0, 3, 0, 0, ["$next", $rt_wrapFunction1(jusi_SingleStreamImpl_next)],
 jusi_GenericConcatStream, 0, jusi_SimpleStreamImpl, [], 0, 3, 0, 0, ["$next", $rt_wrapFunction1(jusi_GenericConcatStream_next)],
 jusi_SpecializedConcatStream, 0, jusi_SimpleStreamImpl, [], 0, 3, 0, 0, ["$next", $rt_wrapFunction1(jusi_SpecializedConcatStream_next), "$estimateSize", $rt_wrapFunction0(jusi_SpecializedConcatStream_estimateSize)],
-otjde_EventListener, 0, jl_Object, [otj_JSObject], 3, 3, 0, 0, 0,
-uiuci_HTMLSelect$addEventListener$lambda$_11_0, 0, jl_Object, [otjde_EventListener], 0, 3, 0, 0, ["$handleEvent$exported$0", $rt_wrapFunction1(uiuci_HTMLSelect$addEventListener$lambda$_11_0_handleEvent$exported$0)],
 jusi_SimpleStreamImpl$ArrayFillingConsumer, 0, jl_Object, [juf_Predicate], 0, 0, 0, 0, ["$test0", $rt_wrapFunction1(jusi_SimpleStreamImpl$ArrayFillingConsumer_test)],
 jl_Iterable, 0, jl_Object, [], 3, 3, 0, 0, 0,
 ju_Collection, 0, jl_Object, [jl_Iterable], 3, 3, 0, 0, 0,
 ju_AbstractCollection, 0, jl_Object, [ju_Collection], 1, 3, 0, 0, 0,
-ju_SequencedCollection, 0, jl_Object, [ju_Collection], 3, 3, 0, 0, 0,
-ju_List, 0, jl_Object, [ju_SequencedCollection], 3, 3, 0, 0, 0,
+ju_SequencedCollection, 0, jl_Object, [ju_Collection], 3, 3, 0, 0, 0]);
+$rt_metadata([ju_List, 0, jl_Object, [ju_SequencedCollection], 3, 3, 0, 0, 0,
 ju_AbstractList, 0, ju_AbstractCollection, [ju_List], 1, 3, 0, 0, ["$equals", $rt_wrapFunction1(ju_AbstractList_equals)],
-ju_RandomAccess, 0, jl_Object, [], 3, 3, 0, 0, 0]);
-$rt_metadata([ju_ArrayList, "ArrayList", 1, ju_AbstractList, [jl_Cloneable, ji_Serializable, ju_RandomAccess], 0, 3, 0, 0, ["$toString", $rt_wrapFunction0(ju_ArrayList_toString), "$hashCode", $rt_wrapFunction0(ju_ArrayList_hashCode)],
+ju_RandomAccess, 0, jl_Object, [], 3, 3, 0, 0, 0,
+ju_ArrayList, "ArrayList", 1, ju_AbstractList, [jl_Cloneable, ji_Serializable, ju_RandomAccess], 0, 3, 0, 0, ["$toString", $rt_wrapFunction0(ju_ArrayList_toString), "$hashCode", $rt_wrapFunction0(ju_ArrayList_hashCode)],
 jusi_SimpleStreamImpl$toArray$lambda$_21_0, 0, jl_Object, [juf_Predicate], 0, 3, 0, 0, ["$test0", $rt_wrapFunction1(jusi_SimpleStreamImpl$toArray$lambda$_21_0_test)],
+otjde_EventListener, 0, jl_Object, [otj_JSObject], 3, 3, 0, 0, 0,
+uiuci_HTMLSelect$addEventListener$lambda$_11_0, 0, jl_Object, [otjde_EventListener], 0, 3, 0, 0, ["$handleEvent$exported$0", $rt_wrapFunction1(uiuci_HTMLSelect$addEventListener$lambda$_11_0_handleEvent$exported$0)],
 ju_Optional, 0, jl_Object, [], 4, 3, 0, 0, 0,
 uiuci_HTMLComponent$box$lambda$_6_0, 0, jl_Object, [juf_Consumer], 0, 3, 0, 0, 0,
-jusi_WrappingStreamImpl, 0, jusi_SimpleStreamImpl, [], 1, 3, 0, 0, ["$next", $rt_wrapFunction1(jusi_WrappingStreamImpl_next), "$estimateSize", $rt_wrapFunction0(jusi_WrappingStreamImpl_estimateSize)],
-jusi_MappingStreamImpl, 0, jusi_WrappingStreamImpl, [], 0, 3, 0, 0, ["$wrap", $rt_wrapFunction1(jusi_MappingStreamImpl_wrap)],
-jusi_FlatMappingToIntStreamImpl, 0, jusi_SimpleIntStreamImpl, [], 0, 3, 0, 0, ["$next1", $rt_wrapFunction1(jusi_FlatMappingToIntStreamImpl_next)],
 jusi_ReducingConsumer, "ReducingConsumer", 3, jl_Object, [juf_Predicate], 0, 0, 0, 0, ["$test0", $rt_wrapFunction1(jusi_ReducingConsumer_test)],
 ju_Set, 0, jl_Object, [ju_Collection], 3, 3, 0, 0, 0,
 ju_AbstractSet, 0, ju_AbstractCollection, [ju_Set], 1, 3, 0, 0, 0,
 ju_TemplateCollections$AbstractImmutableSet, 0, ju_AbstractSet, [], 1, 0, 0, 0, 0,
 ju_TemplateCollections$NEtriesMap$1, 0, ju_TemplateCollections$AbstractImmutableSet, [], 0, 0, 0, 0, 0,
+jusi_FlatMappingToIntStreamImpl, 0, jusi_SimpleIntStreamImpl, [], 0, 3, 0, 0, ["$next1", $rt_wrapFunction1(jusi_FlatMappingToIntStreamImpl_next)],
 jusi_FilteringStreamImpl, 0, jusi_WrappingStreamImpl, [], 0, 3, 0, 0, ["$wrap", $rt_wrapFunction1(jusi_FilteringStreamImpl_wrap)],
+jlr_Array, 0, jl_Object, [], 4, 3, 0, 0, 0,
 uiuci_HTMLComponent$addEventListener$lambda$_10_0, 0, jl_Object, [otjde_EventListener], 0, 3, 0, 0, ["$handleEvent$exported$0", $rt_wrapFunction1(uiuci_HTMLComponent$addEventListener$lambda$_10_0_handleEvent$exported$0)],
 uiuci_HTMLComponent$addEventListener$lambda$_10_1, 0, jl_Object, [otjde_EventListener], 0, 3, 0, 0, ["$handleEvent$exported$0", $rt_wrapFunction1(uiuci_HTMLComponent$addEventListener$lambda$_10_1_handleEvent$exported$0)],
 uiuci_HTMLComponent$addEventListener$lambda$_10_2, 0, jl_Object, [otjde_EventListener], 0, 3, 0, 0, ["$handleEvent$exported$0", $rt_wrapFunction1(uiuci_HTMLComponent$addEventListener$lambda$_10_2_handleEvent$exported$0)],
 uiuci_HTMLComponent$addEventListener$lambda$_10_3, 0, jl_Object, [otjde_EventListener], 0, 3, 0, 0, ["$handleEvent$exported$0", $rt_wrapFunction1(uiuci_HTMLComponent$addEventListener$lambda$_10_3_handleEvent$exported$0)],
 uiuci_HTMLComponent$addEventListener$lambda$_10_4, 0, jl_Object, [otjde_EventListener], 0, 3, 0, 0, ["$handleEvent$exported$0", $rt_wrapFunction1(uiuci_HTMLComponent$addEventListener$lambda$_10_4_handleEvent$exported$0)],
-jlr_Array, 0, jl_Object, [], 4, 3, 0, 0, 0,
 jl_NegativeArraySizeException, 0, jl_RuntimeException, [], 0, 3, 0, 0, 0,
 uiuc_SelectOption, 0, jl_Record, [], 32772, 3, 0, 0, 0,
 uiuc_GraphicsContext, 0, jl_Object, [], 3, 3, 0, 0, 0,
 uiuci_HTMLGraphicsContext, 0, jl_Record, [uiuc_GraphicsContext], 32772, 3, 0, 0, 0,
-jusi_SimpleIntStreamImpl$collect$lambda$_19_0, 0, jl_Object, [juf_IntPredicate], 0, 3, 0, 0, ["$test", $rt_wrapFunction1(jusi_SimpleIntStreamImpl$collect$lambda$_19_0_test)],
 ju_Iterator, 0, jl_Object, [], 3, 3, 0, 0, 0,
 ju_TemplateCollections$NEtriesMap$1$1, 0, jl_Object, [ju_Iterator], 0, 0, 0, 0, 0,
+jusi_SimpleIntStreamImpl$collect$lambda$_19_0, 0, jl_Object, [juf_IntPredicate], 0, 3, 0, 0, ["$test", $rt_wrapFunction1(jusi_SimpleIntStreamImpl$collect$lambda$_19_0_test)],
 jusi_SimpleIntStreamImpl$forEachOrdered$lambda$_15_0, 0, jl_Object, [juf_IntPredicate], 0, 3, 0, 0, ["$test", $rt_wrapFunction1(jusi_SimpleIntStreamImpl$forEachOrdered$lambda$_15_0_test)],
 jusi_MappingToObjStreamImpl$next$lambda$_1_0, 0, jl_Object, [juf_IntPredicate], 0, 3, 0, 0, ["$test", $rt_wrapFunction1(jusi_MappingToObjStreamImpl$next$lambda$_1_0_test)],
 jl_StringIndexOutOfBoundsException, 0, jl_IndexOutOfBoundsException, [], 0, 3, 0, 0, 0,
@@ -5426,19 +5516,19 @@ uiuci_HTMLComponent$HTMLMouseEvent, 0, jl_Object, [uiu_MouseEvt], 0, 3, 0, 0, 0,
 uiu_MouseEvt$Type, "MouseEvt$Type", 7, jl_Enum, [], 12, 3, 0, 0, 0,
 uiu_Color, 0, jl_Object, [], 3, 3, 0, 0, 0,
 uiu_RGBAColor, 0, jl_Record, [uiu_Color], 32772, 3, 0, 0, 0,
+jusi_FlatMappingToIntStreamImpl$next$lambda$_1_0, 0, jl_Object, [juf_Predicate], 0, 3, 0, 0, ["$test0", $rt_wrapFunction1(jusi_FlatMappingToIntStreamImpl$next$lambda$_1_0_test)],
 jusi_MappingStreamImpl$wrap$lambda$_1_0, 0, jl_Object, [juf_Predicate], 0, 3, 0, 0, ["$test0", $rt_wrapFunction1(jusi_MappingStreamImpl$wrap$lambda$_1_0_test)],
 jusi_FilteringStreamImpl$wrap$lambda$_1_0, 0, jl_Object, [juf_Predicate], 0, 3, 0, 0, ["$test0", $rt_wrapFunction1(jusi_FilteringStreamImpl$wrap$lambda$_1_0_test)],
-jusi_FlatMappingToIntStreamImpl$next$lambda$_1_0, 0, jl_Object, [juf_Predicate], 0, 3, 0, 0, ["$test0", $rt_wrapFunction1(jusi_FlatMappingToIntStreamImpl$next$lambda$_1_0_test)],
 jusi_SimpleStreamIterator, 0, jl_Object, [ju_Iterator], 0, 3, 0, 0, 0,
 ju_PrimitiveIterator, 0, jl_Object, [ju_Iterator], 3, 3, 0, 0, 0,
 ju_PrimitiveIterator$OfInt, 0, jl_Object, [ju_PrimitiveIterator], 3, 3, 0, 0, 0,
 uid_Point, "Point", 8, jl_Record, [], 32772, 3, 0, 0, ["$toString", $rt_wrapFunction0(uid_Point_toString), "$hashCode", $rt_wrapFunction0(uid_Point_hashCode), "$equals", $rt_wrapFunction1(uid_Point_equals)],
 ui_Client$lambda$main$1$lambda$_10_0, 0, jl_Object, [juf_Function], 0, 3, 0, 0, 0,
-jus_Collectors, 0, jl_Object, [], 4, 3, 0, 0, 0,
-juf_ToDoubleFunction, 0, jl_Object, [], 3, 3, 0, 0, 0,
+jus_Collectors, 0, jl_Object, [], 4, 3, 0, 0, 0]);
+$rt_metadata([juf_ToDoubleFunction, 0, jl_Object, [], 3, 3, 0, 0, 0,
 ui_Client$lambda$main$1$lambda$_10_1, 0, jl_Object, [juf_ToDoubleFunction], 0, 3, 0, 0, 0,
-jl_Double, "Double", 4, jl_Number, [jl_Comparable], 0, 3, 0, 0, ["$doubleValue", $rt_wrapFunction0(jl_Double_doubleValue), "$toString", $rt_wrapFunction0(jl_Double_toString), "$equals", $rt_wrapFunction1(jl_Double_equals), "$hashCode", $rt_wrapFunction0(jl_Double_hashCode0)]]);
-$rt_metadata([juf_Function$identity$lambda$_3_0, 0, jl_Object, [juf_Function], 0, 3, 0, 0, 0,
+jl_Double, "Double", 4, jl_Number, [jl_Comparable], 0, 3, 0, 0, ["$doubleValue", $rt_wrapFunction0(jl_Double_doubleValue), "$toString", $rt_wrapFunction0(jl_Double_toString), "$equals", $rt_wrapFunction1(jl_Double_equals), "$hashCode", $rt_wrapFunction0(jl_Double_hashCode0)],
+juf_Function$identity$lambda$_3_0, 0, jl_Object, [juf_Function], 0, 3, 0, 0, 0,
 jus_Collectors$toMap$lambda$_12_0, 0, jl_Object, [juf_Supplier], 0, 3, 0, 0, 0,
 jus_Collectors$toMap$lambda$_12_1, 0, jl_Object, [juf_BiConsumer], 0, 3, 0, 0, 0,
 jus_Collectors$toMap$lambda$_12_2, 0, jl_Object, [juf_BinaryOperator], 0, 3, 0, 0, 0,
@@ -5484,18 +5574,18 @@ jusi_SimpleIntStreamIterator$fetchIfNeeded$lambda$_3_0, 0, jl_Object, [juf_IntPr
 ui_Client$drawLine$lambda$_4_0, 0, jl_Object, [juf_Consumer], 0, 3, 0, 0, ["$accept", $rt_wrapFunction1(ui_Client$drawLine$lambda$_4_0_accept)],
 ju_MapEntry, 0, jl_Object, [ju_Map$Entry, jl_Cloneable], 0, 0, 0, 0, 0,
 ju_HashMap$HashEntry, 0, ju_MapEntry, [], 0, 0, 0, 0, 0,
-ju_HashMap$HashMapEntrySet, 0, ju_AbstractSet, [], 0, 0, 0, 0, 0,
-jl_IllegalStateException, 0, jl_RuntimeException, [], 0, 3, 0, 0, 0,
+ju_HashMap$HashMapEntrySet, 0, ju_AbstractSet, [], 0, 0, 0, 0, 0]);
+$rt_metadata([jl_IllegalStateException, 0, jl_RuntimeException, [], 0, 3, 0, 0, 0,
 ju_HashMap$AbstractMapIterator, 0, jl_Object, [], 0, 0, 0, 0, 0,
-ju_HashMap$EntryIterator, 0, ju_HashMap$AbstractMapIterator, [ju_Iterator], 0, 0, 0, 0, 0]);
-$rt_metadata([jl_AbstractStringBuilder$Constants, 0, jl_Object, [], 0, 0, 0, 0, 0,
+ju_HashMap$EntryIterator, 0, ju_HashMap$AbstractMapIterator, [ju_Iterator], 0, 0, 0, 0, 0,
+jl_AbstractStringBuilder$Constants, 0, jl_Object, [], 0, 0, 0, 0, 0,
 otcit_DoubleAnalyzer, 0, jl_Object, [], 4, 3, 0, 0, 0,
 otcit_DoubleAnalyzer$Result, 0, jl_Object, [], 0, 3, 0, 0, 0,
 jl_Long, 0, jl_Number, [jl_Comparable], 0, 3, 0, 0, 0,
 otcit_FloatAnalyzer$Result, 0, jl_Object, [], 0, 3, 0, 0, 0]);
 let $rt_charArrayCls = $rt_arraycls($rt_charcls), $rt_shortArrayCls = $rt_arraycls($rt_shortcls), $rt_intArrayCls = $rt_arraycls($rt_intcls), $rt_longArrayCls = $rt_arraycls($rt_longcls);
-$rt_stringPool(["0", "click", "select", "unital", "sts13fst", "sts13snd", "null", "00000011111222223334445556", "13579b3469a3467867868a7897", "2468ac578bc95acbbacc9bbac9", "2468ac578bc95abcbcac9babc9", "vertical", "horizontal", "px", "(this Map)", ", ", "LineData[", "points=", ", color=", ", bezier=", "]", "", "px ", "resize", "mousecontact", "object", "function", "string", "number", "F9Point[", "x=", ", y=", "MAX_DIST", "SPLIT_DIST", "[]", "(this Collection)", "solid", "inset", "00", "rgba(", "rgb(", "OVER",
-"OUT", "MOVE", "CLICK", "Point[", "CONCURRENT", "UNORDERED", "IDENTITY_FINISH", "Key ", " corresponds to values ", " and ", "black", "blue", "brown", "cyan", "darkgray", "gray", "green", "lightgray", "lime", "magenta", "olive", "orange", "pink", "purple", "red", "teal", "violet", "yellow", "white"]);
+$rt_stringPool(["0", "click", "select", "unital", "sts13fst", "sts13snd", "denniston", "null", "00000011111222223334445556", "13579b3469a3467867868a7897", "2468ac578bc95acbbacc9bbac9", "2468ac578bc95abcbcac9babc9", "vertical", "horizontal", "px", "(this Map)", ", ", "LineData[", "points=", ", color=", ", bezier=", "]", "", "px ", "resize", "mousecontact", "object", "function", "string", "number", "F9Point[", "x=", ", y=", "MAX_DIST", "SPLIT_DIST", "[]", "(this Collection)", "solid", "inset", "00", "rgba(", "rgb(",
+"OVER", "OUT", "MOVE", "CLICK", "Point[", "CONCURRENT", "UNORDERED", "IDENTITY_FINISH", "Key ", " corresponds to values ", " and ", "black", "blue", "brown", "cyan", "darkgray", "gray", "green", "lightgray", "lime", "magenta", "olive", "orange", "pink", "purple", "red", "teal", "violet", "yellow", "white"]);
 jl_String.prototype.toString = function() {
     return $rt_ustr(this);
 };
@@ -5545,3 +5635,5 @@ let $rt_jso_marker = Symbol('jsoClass');
     c.handleEvent = c.$handleEvent$exported$0;
 })();
 }));
+
+//# sourceMappingURL=classes.js.map
