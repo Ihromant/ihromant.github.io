@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="exc-pennant-frame-left" viewBox="0 0 250 24">
+        <path fill="orange" d="M 250 0 h -250 l 12 12 l -12 12 h 250 z"/>
+    </symbol>
+    <symbol id="exc-pennant-flag-left" viewBox="0 0 250 24">
+        <path fill="red" d="M 250 2 h -245 l 10 10 l -10 10 h 245 z"/>
+    </symbol>
+    <symbol id="exc-pennant-frame-right" viewBox="0 0 250 24">
+        <path fill="orange" d="M 0 0 h 250 l -12 12 l 12 12 h -250 z"/>
+    </symbol>
+    <symbol id="exc-pennant-flag-right" viewBox="0 0 250 24">
+        <path fill="red" d="M 0 2 h 245 l -10 10 l 10 10 h -245 z"/>
+    </symbol>
+</svg>
