@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/api/generated.css" type="text/css">
+    <script type="text/javascript" charset="utf-8" src="/wasm/classes.wasm-runtime.js"></script>
+</head>
+<body>
+<script>
+    async function main() {
+        let teavm = await TeaVM.wasmGC.load("/wasm/classes.wasm");
+        teavm.exports.main([]);
+    }
+    main();
+</script>
+</body>
+</html>
